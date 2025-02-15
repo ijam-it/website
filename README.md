@@ -4,6 +4,7 @@
 
 ## Getting started
 
+```
 $ hugo new site . --force
 $ git submodule add https://github.com/opera7133/tella.git themes/tella
 $ git submodule add https://github.com/martignoni/hugo-cloak-email.git themes/hugo-cloak-email
@@ -18,6 +19,7 @@ $ convert acoustic.svg -resize 192x192 android-chrome-192x192.png
 $ convert acoustic.svg -resize 512x512 android-chrome-512x512.png
 
 $ hugo
+```
 
 ## TODO
 
