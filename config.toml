@@ -1,5 +1,5 @@
 baseURL = "https://test.ijam.it"
-title = "iJam IT"
+title = "iJAM IT"
 #author = "username"
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -25,15 +25,15 @@ cleanDestinationDir = true
   googleFonts = true
 
   [params.logo]
-    main = "img/logo/logo.svg"
-    alt = "iJam IT Logo"
+    main = "img/logo/logo.jpeg"
+    alt = "iJAM IT Logo"
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
     size = "h-14"
 
   [params.site]
-    name = "iJam IT"
+    name = "iJAM IT"
 
   [params.icon]
     #If you want to use FontAwesome, set this parameter to true.
