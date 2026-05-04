@@ -1,10 +1,11 @@
 [
   {
-    "title": "iJAM IT",
-    "image": "img/slide05.jpg"
+    "title": "iJam Where we jam rocksolid IT solutions",
+    "image": "img/blickpixel-circuit-board-564815.jpg",
+    "color": "text-white"
   },
   {
     "title": "Sample text here...",
-    "image": "img/slide06.jpg"
+    "image": "img/software-architecture-patterns.jpeg"
   }
 ]

@@ -1,8 +1,8 @@
 baseURL = "https://test.ijam.it"
-title = "iJAM IT"
+title = "iJam IT B.V."
 #author = "username"
-languageCode = "en"
-DefaultContentLanguage = "en"
+languageCode = "nl"
+DefaultContentLanguage = "nl"
 enableInlineShortcodes = true
 theme = ["hugo-cloak-email", "tella"]
 enableRobotsTXT = true
@@ -21,19 +21,18 @@ cleanDestinationDir = true
 
   showBlog = false
   mainSections = ['vacatures']
-
   googleFonts = true
 
   [params.logo]
-    main = "img/logo/logo.jpeg"
-    alt = "iJAM IT Logo"
+    main = "img/logo/logo.png"
+    alt = "iJam IT Logo"
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
-    size = "h-14"
+    size = "h-32"
 
   [params.site]
-    name = "iJAM IT"
+    name = "iJam IT B.V."
 
   [params.icon]
     #If you want to use FontAwesome, set this parameter to true.
@@ -48,16 +47,28 @@ cleanDestinationDir = true
     weight = 1
 
   [[menu.main]]
+    identifier = "labels"
+    name = "Labels"
+    url = "/labels/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "team"
+    name = "The Team"
+    url = "/team/"
+    weight = 3
+
+  [[menu.main]]
     identifier = "vacatures"
     name = "Vacatures"
     url = "/vacatures/"
-    weight = 2
+    weight = 4
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 3
+    weight = 5
 
   # Footer Menu
   [[menu.footer]]
