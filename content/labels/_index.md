@@ -1,3 +1,3 @@
 ---
-title: "Labels"
+title: "Onze Labels"
 ---

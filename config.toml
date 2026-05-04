@@ -42,19 +42,19 @@ cleanDestinationDir = true
 
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "Over Ons"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
     identifier = "labels"
-    name = "Labels"
+    name = "Onze Labels"
     url = "/labels/"
     weight = 2
 
   [[menu.main]]
     identifier = "team"
-    name = "The Team"
+    name = "Het Team"
     url = "/team/"
     weight = 3
 
