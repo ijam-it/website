@@ -29,7 +29,7 @@ cleanDestinationDir = true
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
-    size = "h-32"
+    size = "h-18"
 
   [params.site]
     name = "iJam IT B.V."

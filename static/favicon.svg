@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="930mm"
-   height="930mm"
-   viewBox="0 0 930 930"
+   width="820mm"
+   height="820mm"
+   viewBox="0 0 820 820"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
@@ -24,7 +24,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.12551319"
-     inkscape:cx="4852.0797"
+     inkscape:cx="4848.096"
      inkscape:cy="3031.5539"
      inkscape:window-width="1920"
      inkscape:window-height="1006"
@@ -56,8 +56,8 @@
        id="rect1029121"
        width="640"
        height="640"
-       x="145"
-       y="145"
+       x="90"
+       y="90"
        ry="60"
        rx="60" />
     <rect
@@ -65,8 +65,8 @@
        id="rect1029123"
        width="200"
        height="45"
-       x="675"
-       y="270"
+       x="620"
+       y="215"
        rx="22.500002"
        ry="22.5" />
     <rect
@@ -74,8 +74,8 @@
        id="rect1029123-03"
        width="45"
        height="200"
-       x="270"
-       y="55"
+       x="215"
+       y="-7.1054274e-15"
        rx="22.5"
        ry="22.5" />
     <rect
@@ -83,8 +83,8 @@
        id="rect1029123-03-3"
        width="45"
        height="200"
-       x="385"
-       y="55"
+       x="330"
+       y="-7.1054274e-15"
        rx="22.5"
        ry="22.5" />
     <rect
@@ -92,8 +92,8 @@
        id="rect1029123-03-5"
        width="45"
        height="200"
-       x="615"
-       y="55"
+       x="560"
+       y="-7.1054274e-15"
        rx="22.5"
        ry="22.5" />
     <rect
@@ -101,8 +101,8 @@
        id="rect1029123-03-56"
        width="45"
        height="200"
-       x="500"
-       y="55"
+       x="445"
+       y="-7.1054274e-15"
        rx="22.5"
        ry="22.5" />
     <rect
@@ -110,8 +110,8 @@
        id="rect1029123-03-52"
        width="45"
        height="200"
-       x="270"
-       y="675"
+       x="215"
+       y="620"
        rx="22.5"
        ry="22.5" />
     <rect
@@ -119,8 +119,8 @@
        id="rect1029123-03-3-5"
        width="45"
        height="200"
-       x="385"
-       y="675"
+       x="330"
+       y="620"
        rx="22.5"
        ry="22.5" />
     <rect
@@ -128,8 +128,8 @@
        id="rect1029123-03-5-4"
        width="45"
        height="200"
-       x="615"
-       y="675"
+       x="560"
+       y="620"
        rx="22.5"
        ry="22.5" />
     <rect
@@ -137,8 +137,8 @@
        id="rect1029123-03-56-7"
        width="45"
        height="200"
-       x="500"
-       y="675"
+       x="445"
+       y="620"
        rx="22.5"
        ry="22.5" />
     <rect
@@ -146,8 +146,8 @@
        id="rect1029123-0"
        width="200"
        height="45"
-       x="675"
-       y="615"
+       x="620"
+       y="560"
        rx="22.500002"
        ry="22.5" />
     <rect
@@ -155,8 +155,8 @@
        id="rect1029123-9"
        width="200"
        height="45"
-       x="675"
-       y="500"
+       x="620"
+       y="445"
        rx="22.500002"
        ry="22.5" />
     <rect
@@ -164,8 +164,8 @@
        id="rect1029123-7"
        width="200"
        height="45"
-       x="675"
-       y="385"
+       x="620"
+       y="330"
        rx="22.500002"
        ry="22.5" />
     <rect
@@ -173,8 +173,8 @@
        id="rect1029123-93"
        width="200"
        height="45"
-       x="55"
-       y="270"
+       x="-7.1054274e-15"
+       y="215"
        rx="22.500002"
        ry="22.5" />
     <rect
@@ -182,8 +182,8 @@
        id="rect1029123-0-1"
        width="200"
        height="45"
-       x="55"
-       y="615"
+       x="-7.1054274e-15"
+       y="560"
        rx="22.500002"
        ry="22.5" />
     <rect
@@ -191,8 +191,8 @@
        id="rect1029123-9-9"
        width="200"
        height="45"
-       x="55"
-       y="500"
+       x="-7.1054274e-15"
+       y="445"
        rx="22.500002"
        ry="22.5" />
     <rect
@@ -200,8 +200,8 @@
        id="rect1029123-7-4"
        width="200"
        height="45"
-       x="55"
-       y="385"
+       x="-7.1054274e-15"
+       y="330"
        rx="22.500002"
        ry="22.5" />
     <rect
@@ -209,13 +209,13 @@
        id="rect1029124"
        width="160"
        height="160"
-       x="495"
-       y="275" />
+       x="440"
+       y="220" />
     <circle
        style="fill:#ffff00;fill-opacity:1;stroke-width:0.264583"
        id="path1"
-       cx="465"
-       cy="595"
+       cx="410"
+       cy="540"
        r="100" />
     <path
        sodipodi:type="star"
@@ -234,6 +234,6 @@
        d="m 459.10164,278.74028 -596.92,-1.1849 299.48615,-516.35543 z"
        inkscape:transform-center-x="0.11459884"
        inkscape:transform-center-y="-28.767664"
-       transform="matrix(0.33504635,0,0,0.33504635,281.17554,341.60909)" />
+       transform="matrix(0.33504635,0,0,0.33504635,226.17554,286.60909)" />
   </g>
 </svg>
