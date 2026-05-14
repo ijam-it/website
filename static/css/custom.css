@@ -7,10 +7,21 @@
   --ijam-red: #d9232e;
   --ijam-yellow: #f4be23;
   --ijam-blue: #1769d6;
+  --ijam-focus: rgba(23, 105, 214, 0.4);
+  --ijam-bg: #ffffff;
+  --ijam-header-bg: rgba(255, 255, 255, 0.92);
+  --ijam-chip-bg: rgba(255, 255, 255, 0.72);
 }
+
 
 * {
   box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--ijam-blue);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px var(--ijam-focus);
 }
 
 html {
@@ -19,10 +30,11 @@ html {
 
 body.ijam-site {
   margin: 0;
-  background: #fff;
+  background: var(--ijam-bg);
   color: var(--ijam-ink);
   font-family: "Montserrat", "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.65;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -43,8 +55,8 @@ a:hover {
   gap: 1.5rem;
   align-items: center;
   padding: 1rem clamp(1rem, 4vw, 4rem);
-  border-bottom: 1px solid rgba(11, 13, 16, 0.08);
-  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid var(--ijam-line);
+  background: var(--ijam-header-bg);
   backdrop-filter: blur(18px);
 }
 
@@ -101,6 +113,11 @@ a:hover {
 .lang-switch span {
   padding: 0.25rem 0.55rem;
   border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-switch a:hover {
+  background: var(--ijam-soft);
 }
 
 .lang-switch span {
@@ -113,10 +130,16 @@ a:hover {
   justify-self: end;
   border: 1px solid var(--ijam-line);
   border-radius: 999px;
-  background: #fff;
+  background: transparent;
   color: var(--ijam-black);
   padding: 0.5rem 0.8rem;
   font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nav-toggle:hover {
+  background: var(--ijam-soft);
 }
 
 .home-hero,
@@ -158,6 +181,7 @@ a:hover {
 
 .home-hero .lead {
   margin-top: 2rem;
+  margin-bottom: 1.25rem;
   color: var(--ijam-black);
   font-size: clamp(1.35rem, 2vw, 1.75rem);
   font-weight: 700;
@@ -171,6 +195,24 @@ a:hover {
 .page-hero p {
   color: var(--ijam-muted);
   font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+}
+
+.page-hero p:not(.eyebrow) {
+  margin-top: 1.25rem;
+}
+
+.home-hero p:last-child,
+.split-section p:last-child,
+.trust-band p:last-child,
+.section-block > p:last-child,
+.page-hero p:last-child {
+  margin-bottom: 0;
+}
+
+.trust-band p,
+.section-block > p {
+  margin-top: 1.25rem;
 }
 
 .hero-actions {
@@ -188,6 +230,7 @@ a:hover {
   padding: 0.75rem 1.1rem;
   border-radius: 999px;
   font-weight: 800;
+  transition: all 0.2s ease;
 }
 
 .button.primary {
@@ -197,7 +240,7 @@ a:hover {
 
 .button.secondary {
   border: 1px solid var(--ijam-line);
-  background: #fff;
+  background: transparent;
   color: var(--ijam-black);
 }
 
@@ -220,9 +263,9 @@ a:hover {
 .chip-card {
   position: absolute;
   inset: 14%;
-  border: 1px solid rgba(11, 13, 16, 0.12);
+  border: 1px solid var(--ijam-line);
   border-radius: 1.25rem;
-  background: rgba(255, 255, 255, 0.72);
+  background: var(--ijam-chip-bg);
   box-shadow: 0 28px 70px rgba(11, 13, 16, 0.12);
 }
 
@@ -302,6 +345,7 @@ a:hover {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
   gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
   padding: clamp(3rem, 7vw, 6rem) 0;
 }
 
@@ -355,8 +399,15 @@ a:hover {
   padding: 1.5rem;
   border: 1px solid var(--ijam-line);
   border-radius: 1.2rem;
-  background: #fff;
+  background: transparent;
   box-shadow: 0 16px 44px rgba(11, 13, 16, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.info-card:hover,
+.person-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(11, 13, 16, 0.08);
 }
 
 .info-card::before {
@@ -382,6 +433,15 @@ a:hover {
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 1.2;
+}
+
+.info-card h2 a::before,
+.info-card h3 a::before,
+.person-card h2 a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .info-card p,
@@ -428,7 +488,7 @@ a:hover {
   padding: clamp(1.5rem, 4vw, 3rem);
   border: 1px solid var(--ijam-line);
   border-radius: 1.3rem;
-  background: #fff;
+  background: transparent;
 }
 
 .prose-content {
@@ -451,6 +511,23 @@ a:hover {
 .prose-content h3 {
   margin-top: 1.5rem;
   font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.prose-content p,
+.prose-content ul,
+.prose-content ol {
+  margin-bottom: 1.25rem;
+}
+
+.prose-content p:last-child,
+.prose-content ul:last-child,
+.prose-content ol:last-child {
+  margin-bottom: 0;
+}
+
+.prose-content li {
+  margin-bottom: 0.5rem;
 }
 
 .prose-content a {
@@ -458,8 +535,18 @@ a:hover {
   font-weight: 700;
 }
 
+.prose-content a:hover {
+  text-decoration: underline;
+}
+
 .prose-content ul {
   padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.prose-content ol {
+  padding-left: 1.25rem;
+  list-style-type: decimal;
 }
 
 .site-footer {
@@ -490,6 +577,7 @@ a:hover {
 .site-footer p,
 .registered {
   color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
 }
 
 .footer-links {
@@ -501,6 +589,12 @@ a:hover {
 .footer-links a,
 .footer-bottom a {
   color: rgba(255, 255, 255, 0.78);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-bottom a:hover {
+  color: #fff;
 }
 
 .footer-bottom {
@@ -524,18 +618,27 @@ a:hover {
   }
 
   .site-nav {
-    display: none;
+    display: flex;
     grid-column: 1 / -1;
     justify-self: stretch;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.7rem;
-    padding: 1rem 0 0.25rem;
     border-top: 1px solid var(--ijam-line);
+    
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    visibility: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease, visibility 0.3s;
   }
 
   .site-nav.is-open {
-    display: flex;
+    max-height: 400px;
+    opacity: 1;
+    visibility: visible;
+    padding: 1rem 0 0.25rem;
   }
 
   .home-hero,
@@ -594,5 +697,24 @@ a:hover {
   .info-card,
   .person-card {
     min-height: auto;
+  }
+}
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

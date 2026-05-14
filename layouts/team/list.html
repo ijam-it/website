@@ -5,12 +5,14 @@
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
+  {{ if .Content }}
   <div class="content-panel prose-content">
     {{ .Content }}
   </div>
+  {{ end }}
   <div class="card-grid team-grid">
     {{ range .Pages.ByWeight }}
-      <article class="person-card">
+      <article class="person-card reveal-up">
         <div class="person-mark" aria-hidden="true">{{ substr .Title 0 1 }}</div>
         <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p>{{ .Description }}</p>

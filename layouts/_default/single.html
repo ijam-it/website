@@ -9,8 +9,10 @@
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
+  {{ if .Content }}
   <div class="content-panel prose-content">
     {{ .Content }}
   </div>
+  {{ end }}
 </article>
 {{ end }}

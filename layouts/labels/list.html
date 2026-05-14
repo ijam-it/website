@@ -5,9 +5,11 @@
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
+  {{ if .Content }}
   <div class="content-panel prose-content">
     {{ .Content }}
   </div>
+  {{ end }}
   <div class="card-grid two-cols">
     {{ range .Pages.ByWeight }}
       <article class="info-card label-card">
