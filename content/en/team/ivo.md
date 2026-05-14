@@ -2,6 +2,8 @@
 title: "Ivo"
 weight: 3
 description: "Security architect & digital resilience specialist"
+build:
+  render: never
 ---
 
 Ivo has deep experience in security architecture, CERT work, security monitoring and threat intelligence. He helps organisations reduce complex security challenges to their essence and translate risks to practical measures.

@@ -7,6 +7,6 @@ Are you working on a complex digital challenge? Are you looking for senior help 
 
 We would be happy to think along.
 
-**Email:** {{< cloakemail address="info@ijam.nl" >}}  
+**Email:** {{< cloakemail address="info@ijam-it.nl" >}}  
 **LinkedIn:** iJam  
 **Location:** The Netherlands

@@ -3,16 +3,134 @@
 {{ end }}
 
 {{ define "main" }}
+{{ $isNL := eq .Site.Language.Lang "nl" }}
+{{ $base := "" }}{{ with .File }}{{ $base = .BaseFileName }}{{ end }}
 <article class="page-shell">
   <header class="page-hero compact">
     <p class="eyebrow">iJam</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
+
+  {{ if or (eq $base "approach") (eq $base "aanpak") }}
+  <div class="page-layout">
+    <aside class="sticky-aside outcome-panel">
+      {{ if $isNL }}
+        <p class="eyebrow">Onze manier van werken</p>
+        <h2>Van complexiteit naar richting</h2>
+        <p>We combineren analyse, architectuur en uitvoering. Niet als losse adviezen, maar als praktische stappen richting oplossingen die blijven werken.</p>
+        <ul>
+          <li>Systeem en context eerst begrijpen</li>
+          <li>Security vanaf de basis meenemen</li>
+          <li>Bouwen voor de teams die leveren</li>
+        </ul>
+      {{ else }}
+        <p class="eyebrow">How we work</p>
+        <h2>From complexity to direction</h2>
+        <p>We combine analysis, architecture and implementation. Not as detached advice, but as practical steps toward solutions that hold up.</p>
+        <ul>
+          <li>Understand the system and context first</li>
+          <li>Make security part of the foundation</li>
+          <li>Build for the teams that deliver</li>
+        </ul>
+      {{ end }}
+    </aside>
+    <div class="process-stack">
+      {{ $stepsEN := slice
+        (dict "n" "01" "t" "Understand the system" "d" "We look at technology, organisation, processes, teams and context before choosing a direction.")
+        (dict "n" "02" "t" "Reduce complexity" "d" "We make dependencies, risks and trade-offs visible so decisions become easier to own.")
+        (dict "n" "03" "t" "Design the foundation" "d" "We shape secure, scalable and maintainable architectures that match operational reality.")
+        (dict "n" "04" "t" "Build and transfer" "d" "We deliver working solutions and make sure teams can operate and evolve them afterwards.")
+      }}
+      {{ $stepsNL := slice
+        (dict "n" "01" "t" "Begrijp het systeem" "d" "We kijken naar technologie, organisatie, processen, teams en context voordat we richting kiezen.")
+        (dict "n" "02" "t" "Reduceer complexiteit" "d" "We maken afhankelijkheden, risico's en keuzes zichtbaar zodat besluiten beter gedragen worden.")
+        (dict "n" "03" "t" "Ontwerp het fundament" "d" "We ontwerpen veilige, schaalbare en beheerbare architecturen die passen bij de praktijk.")
+        (dict "n" "04" "t" "Bouw en draag over" "d" "We leveren werkende oplossingen en zorgen dat teams ze kunnen beheren en doorontwikkelen.")
+      }}
+      {{ range (cond $isNL $stepsNL $stepsEN) }}
+      <section class="process-card reveal-up">
+        <span class="step-number">{{ .n }}</span>
+        <div><h2>{{ .t }}</h2><p>{{ .d }}</p></div>
+      </section>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ else if or (eq $base "services") (eq $base "diensten") }}
+  <div class="page-layout">
+    <aside class="sticky-aside brand-panel content-panel">
+      {{ if $isNL }}
+        <p class="eyebrow">Capabilities</p>
+        <h2>Waar senior ervaring het verschil maakt</h2>
+        <p>iJam helpt bij vraagstukken waar software, security, cloud, platform engineering en organisatie elkaar raken.</p>
+      {{ else }}
+        <p class="eyebrow">Capabilities</p>
+        <h2>Where senior experience makes the difference</h2>
+        <p>iJam helps where software, security, cloud, platform engineering and organisational change meet.</p>
+      {{ end }}
+    </aside>
+    <div class="designed-stack">
+      {{ $servicesEN := slice
+        (dict "i" "PE" "t" "Platform Engineering" "d" "Internal platforms, CI/CD, developer experience, observability and self-service capabilities that teams can actually use.")
+        (dict "i" "CK" "t" "Cloud & Kubernetes" "d" "Cloud strategy, migrations, architecture decisions and guidance from assessment through implementation.")
+        (dict "i" "SD" "t" "Secure Software Delivery" "d" "Threat modeling, dependency management, secure pipelines and security by design embedded in delivery.")
+        (dict "i" "SM" "t" "Security Architecture & Monitoring" "d" "Security architecture, SIEM, detection engineering, threat intelligence and incident response improvement.")
+        (dict "i" "DT" "t" "Digital Transformation & Team Building" "d" "Team structures, ways of working, leadership and DevOps adoption that make digital change sustainable.")
+        (dict "i" "SA" "t" "Software Architecture & Development" "d" "Custom applications, integrations, portals and MVPs with maintainability, security and production use in mind.")
+      }}
+      {{ $servicesNL := slice
+        (dict "i" "PE" "t" "Platform Engineering" "d" "Interne platformen, CI/CD, developer experience, observability en self-service die teams echt kunnen gebruiken.")
+        (dict "i" "CK" "t" "Cloud & Kubernetes" "d" "Cloudstrategie, migraties, architectuurkeuzes en begeleiding van assessment tot implementatie.")
+        (dict "i" "SD" "t" "Secure Software Delivery" "d" "Threat modeling, dependency management, veilige pipelines en security by design in delivery.")
+        (dict "i" "SM" "t" "Security Architecture & Monitoring" "d" "Security architecture, SIEM, detection engineering, threat intelligence en incident response verbetering.")
+        (dict "i" "DT" "t" "Digitale Transformatie & Team Building" "d" "Teamstructuren, werkwijzen, leiderschap en DevOps-adoptie die verandering duurzaam maken.")
+        (dict "i" "SA" "t" "Software Architecture & Development" "d" "Applicaties, integraties, portalen en MVP's met aandacht voor beheerbaarheid, security en productiegebruik.")
+      }}
+      {{ range (cond $isNL $servicesNL $servicesEN) }}
+      <section class="designed-card reveal-up">
+        <span class="card-icon">{{ .i }}</span>
+        <h2>{{ .t }}</h2>
+        <p>{{ .d }}</p>
+      </section>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ else if or (eq $base "contact") }}
+  <div class="contact-grid">
+    <section class="contact-card">
+      {{ if $isNL }}
+        <p class="eyebrow">Contact</p>
+        <h2>Bespreek een complex digitaal vraagstuk</h2>
+        <p>Werk je aan software delivery, security, cloud, platform engineering of digitale transformatie? We denken graag mee.</p>
+        <a class="button" href="mailto:{{ .Site.Params.contactEmail }}">Mail {{ .Site.Params.contactEmail }}</a>
+      {{ else }}
+        <p class="eyebrow">Contact</p>
+        <h2>Discuss a complex digital challenge</h2>
+        <p>Working on software delivery, security, cloud, platform engineering or digital transformation? We would be happy to think along.</p>
+        <a class="button" href="mailto:{{ .Site.Params.contactEmail }}">Email {{ .Site.Params.contactEmail }}</a>
+      {{ end }}
+    </section>
+    <section class="contact-detail">
+      {{ if $isNL }}
+        <strong>Email</strong><a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
+        <strong>LinkedIn</strong><span>iJam</span>
+        <strong>Locatie</strong><span>Nederland</span>
+      {{ else }}
+        <strong>Email</strong><a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
+        <strong>LinkedIn</strong><span>iJam</span>
+        <strong>Location</strong><span>The Netherlands</span>
+      {{ end }}
+    </section>
+  </div>
+
+  {{ else }}
   {{ if .Content }}
   <div class="content-panel prose-content">
     {{ .Content }}
   </div>
+  {{ end }}
   {{ end }}
 </article>
 {{ end }}

@@ -2,6 +2,8 @@
 title: "Maarten"
 weight: 2
 description: "Technology leader, kwartiermaker & organisator van digitale verandering"
+build:
+  render: never
 ---
 
 Maarten bouwt en ontwikkelt teams, afdelingen en programma's in complexe organisaties. Hij brengt structuur, energie en richting in omgevingen waar techniek, organisatie, inkoop, processen en mensen samenkomen.

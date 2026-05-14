@@ -1,20 +1,32 @@
 {{ define "main" }}
+{{ $isNL := eq .Site.Language.Lang "nl" }}
 <section class="page-shell">
   <header class="page-hero compact">
     <p class="eyebrow">iJam</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
+  <div class="team-intro-grid">
   {{ if .Content }}
-  <div class="content-panel prose-content">
+  <div class="content-panel prose-content brand-panel">
     {{ .Content }}
   </div>
   {{ end }}
+    <aside class="team-proof">
+      {{ if $isNL }}
+        <strong>Senior, direct en verantwoordelijk.</strong>
+        <span>Geen onnodige lagen. Je werkt met mensen die strategie, architectuur en uitvoering kunnen verbinden.</span>
+      {{ else }}
+        <strong>Senior, direct and accountable.</strong>
+        <span>No unnecessary layers. You work with people who can connect strategy, architecture and implementation.</span>
+      {{ end }}
+    </aside>
+  </div>
   <div class="card-grid team-grid">
     {{ range .Pages.ByWeight }}
       <article class="person-card reveal-up">
         <div class="person-mark" aria-hidden="true">{{ substr .Title 0 1 }}</div>
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <h2>{{ .Title }}</h2>
         <p>{{ .Description }}</p>
       </article>
     {{ end }}

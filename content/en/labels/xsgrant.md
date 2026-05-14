@@ -2,6 +2,8 @@
 title: "xsGrant"
 weight: 1
 description: "Digital support for simplifying and improving grant and subsidy processes."
+build:
+  render: never
 ---
 
 xsGrant focuses on simplifying grant and subsidy processes.

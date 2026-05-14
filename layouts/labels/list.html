@@ -1,20 +1,19 @@
 {{ define "main" }}
+{{ $isNL := eq .Site.Language.Lang "nl" }}
 <section class="page-shell">
   <header class="page-hero compact">
     <p class="eyebrow">iJam ecosystem</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
-  {{ if .Content }}
-  <div class="content-panel prose-content">
-    {{ .Content }}
-  </div>
-  {{ end }}
   <div class="card-grid two-cols">
     {{ range .Pages.ByWeight }}
-      <article class="info-card label-card">
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ $isOpsteady := eq (lower .Title) "opsteady" }}
+      {{ $labelURL := cond $isOpsteady "https://opsteady.com/" "https://xsgrant.com/" }}
+      <article class="info-card label-card {{ if $isOpsteady }}opsteady-card{{ else }}xsgrant-card{{ end }}">
+        <div class="label-logo"><span class="label-mark">{{ if $isOpsteady }}O{{ else }}X{{ end }}</span>{{ .Title }}</div>
         <p>{{ .Description }}</p>
+        <div class="hero-actions"><a class="button secondary" href="{{ $labelURL }}">{{ if $isNL }}Naar {{ .Title }}{{ else }}Visit {{ .Title }}{{ end }}</a></div>
       </article>
     {{ end }}
   </div>

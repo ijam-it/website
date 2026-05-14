@@ -2,6 +2,8 @@
 title: "Opsteady"
 weight: 2
 description: "A reference approach for modern, secure and manageable Kubernetes and platform environments."
+build:
+  render: never
 ---
 
 Opsteady focuses on modern platform engineering and Kubernetes environments.

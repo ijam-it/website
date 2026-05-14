@@ -2,6 +2,8 @@
 title: "Jacco"
 weight: 4
 description: "Security specialist, technical lead & product-oriented builder"
+build:
+  render: never
 ---
 
 Jacco combines security expertise with technical leadership and product development. He has broad experience designing and delivering security services, registers, portals and detection platforms in complex government environments.

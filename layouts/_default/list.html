@@ -1,12 +1,18 @@
 {{ define "main" }}
+{{ $isNL := eq .Site.Language.Lang "nl" }}
+{{ $isCareers := or (eq .Section "careers") (eq .Section "werken-bij") }}
 <section class="page-shell">
   <header class="page-hero compact">
     <p class="eyebrow">iJam</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
+  {{ if $isCareers }}
+  <div class="career-layout">
+    <div>
+  {{ end }}
   {{ if .Content }}
-  <div class="content-panel prose-content">
+  <div class="content-panel prose-content {{ if $isCareers }}brand-panel{{ end }}">
     {{ .Content }}
   </div>
   {{ end }}
@@ -18,6 +24,26 @@
         <p>{{ .Description | default .Summary }}</p>
       </article>
     {{ end }}
+  </div>
+  {{ end }}
+  {{ if $isCareers }}
+    </div>
+    <aside class="career-values">
+      <div class="outcome-panel">
+        {{ if $isNL }}
+          <p class="eyebrow">Werken bij iJam</p>
+          <h2>Voor mensen die eigenaarschap nemen</h2>
+          <p>Een kleine senior omgeving met autonomie, kwaliteit en werk dat ertoe doet.</p>
+        {{ else }}
+          <p class="eyebrow">Careers at iJam</p>
+          <h2>For people who take ownership</h2>
+          <p>A small senior environment with autonomy, quality and work that matters.</p>
+        {{ end }}
+      </div>
+      <div class="value-pill">{{ if $isNL }}Autonomie{{ else }}Autonomy{{ end }}</div>
+      <div class="value-pill">{{ if $isNL }}Vakmanschap{{ else }}Craftsmanship{{ end }}</div>
+      <div class="value-pill">{{ if $isNL }}Senior samenwerking{{ else }}Senior collaboration{{ end }}</div>
+    </aside>
   </div>
   {{ end }}
 </section>

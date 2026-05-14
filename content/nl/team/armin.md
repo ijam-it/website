@@ -2,6 +2,8 @@
 title: "Armin"
 weight: 1
 description: "Platform architect, DevOps strategist & cloud-native specialist"
+build:
+  render: never
 ---
 
 Armin helpt organisaties hun software delivery te verbeteren met moderne platformen, cloud-native architectuur en DevOps-werkwijzen. Hij combineert hands-on technische diepgang met strategisch inzicht en begeleidt teams van ontwerp tot productie.

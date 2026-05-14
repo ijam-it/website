@@ -44,27 +44,6 @@
   {{ end }}
 </section>
 
-<section class="split-section reveal-up">
-  <div>
-    {{ if $isNL }}
-      <p class="eyebrow">Grip op complexiteit</p>
-      <h2>Wij maken complexe digitale vraagstukken beheersbaar</h2>
-    {{ else }}
-      <p class="eyebrow">Control over complexity</p>
-      <h2>We make complex digital challenges manageable</h2>
-    {{ end }}
-  </div>
-  <div>
-    {{ if $isNL }}
-      <p>Technologie wordt vaak complexer dan nodig. Teams raken vertraagd door onduidelijke architectuur, versnipperde tooling, kwetsbare processen of platformen die niet goed aansluiten op de praktijk.</p>
-      <p>iJam helpt organisaties om weer grip te krijgen. Wij ontwerpen, bouwen en verbeteren digitale fundamenten die veilig, schaalbaar en werkbaar zijn voor de teams die ermee moeten leveren.</p>
-    {{ else }}
-      <p>Technology often becomes more complex than it needs to be. Teams slow down because of unclear architecture, fragmented tooling, fragile processes or platforms that do not match day-to-day reality.</p>
-      <p>iJam helps organisations regain control. We design, build and improve digital foundations that are secure, scalable and workable for the teams that depend on them.</p>
-    {{ end }}
-  </div>
-</section>
-
 <section class="section-block reveal-up">
   {{ if $isNL }}<h2>Waar wij bij helpen</h2>{{ else }}<h2>Where we help</h2>{{ end }}
   <div class="card-grid capability-grid">
@@ -87,7 +66,7 @@
   </div>
 </section>
 
-<section class="split-section dark-panel reveal-up">
+<section class="split-section why-panel reveal-up">
   <div>
     {{ if $isNL }}
       <p class="eyebrow">Waarom iJam</p>
@@ -117,8 +96,8 @@
     <p>Alongside iJam, we build specialised labels that focus on specific challenges.</p>
   {{ end }}
   <div class="card-grid two-cols">
-    <article class="info-card"><h3>xsGrant</h3><p>{{ if $isNL }}Digitale oplossingen voor het vereenvoudigen en verbeteren van grant- en subsidieprocessen.{{ else }}Digital solutions for simplifying and improving grant and subsidy processes.{{ end }}</p></article>
-    <article class="info-card"><h3>Opsteady</h3><p>{{ if $isNL }}Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen.{{ else }}A reference approach for modern, secure and manageable Kubernetes and platform environments.{{ end }}</p></article>
+    <article class="info-card"><h3>xsGrant</h3><p>{{ if $isNL }}Digitale oplossingen voor het vereenvoudigen en verbeteren van grant- en subsidieprocessen.{{ else }}Digital solutions for simplifying and improving grant and subsidy processes.{{ end }}</p><div class="hero-actions"><a class="button secondary" href="https://xsgrant.com/">{{ if $isNL }}Naar xsGrant{{ else }}Visit xsGrant{{ end }}</a></div></article>
+    <article class="info-card"><h3>Opsteady</h3><p>{{ if $isNL }}Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen.{{ else }}A reference approach for modern, secure and manageable Kubernetes and platform environments.{{ end }}</p><div class="hero-actions"><a class="button secondary" href="https://opsteady.com/">{{ if $isNL }}Naar Opsteady{{ else }}Visit Opsteady{{ end }}</a></div></article>
   </div>
 </section>
 {{ end }}

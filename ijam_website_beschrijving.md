@@ -778,7 +778,7 @@ Werk je aan een complex digitaal vraagstuk? Zoek je senior hulp bij software del
 
 We denken graag mee.
 
-**E-mail:** info@ijam.nl  
+**E-mail:** info@ijam-it.nl  
 **LinkedIn:** iJam  
 **Locatie:** Nederland
 
@@ -790,7 +790,7 @@ Are you working on a complex digital challenge? Are you looking for senior help 
 
 We would be happy to think along.
 
-**Email:** info@ijam.nl  
+**Email:** info@ijam-it.nl  
 **LinkedIn:** iJam  
 **Location:** The Netherlands
 

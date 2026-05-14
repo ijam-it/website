@@ -2,6 +2,8 @@
 title: "Opsteady"
 weight: 2
 description: "Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen."
+build:
+  render: never
 ---
 
 Opsteady richt zich op moderne platform engineering en Kubernetes-omgevingen.

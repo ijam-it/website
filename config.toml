@@ -1,4 +1,4 @@
-baseURL = "https://ijam.nl"
+baseURL = "https://ijam-it.nl"
 title = "iJam IT Solutions"
 locale = "nl-NL"
 defaultContentLanguage = "nl"
@@ -35,7 +35,7 @@ cleanDestinationDir = true
     contentDir = "content/nl"
     [languages.nl.params]
       description = "iJam helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
-      contactEmail = "info@ijam.nl"
+      contactEmail = "info@ijam-it.nl"
       footerIntro = "Experienced minds. Reliable solutions."
 
   [languages.en]
@@ -46,7 +46,7 @@ cleanDestinationDir = true
     contentDir = "content/en"
     [languages.en.params]
       description = "iJam helps organisations make complex digital challenges simpler, safer and easier to manage."
-      contactEmail = "info@ijam.nl"
+      contactEmail = "info@ijam-it.nl"
       footerIntro = "Experienced minds. Reliable solutions."
 
 [[languages.nl.menu.main]]

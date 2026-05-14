@@ -7,6 +7,6 @@ Werk je aan een complex digitaal vraagstuk? Zoek je senior hulp bij software del
 
 We denken graag mee.
 
-**E-mail:** {{< cloakemail address="info@ijam.nl" >}}  
+**E-mail:** {{< cloakemail address="info@ijam-it.nl" >}}  
 **LinkedIn:** iJam  
 **Locatie:** Nederland
