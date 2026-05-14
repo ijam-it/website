@@ -147,7 +147,7 @@ a:hover {
 .section-block,
 .trust-band,
 .page-shell {
-  width: min(1160px, calc(100% - 2rem));
+  width: min(1300px, calc(100% - 2rem));
   margin-inline: auto;
 }
 
@@ -772,8 +772,8 @@ a:hover {
   grid-template-columns: 3rem minmax(0, 1fr) auto;
   gap: 1.2rem;
   align-items: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--ijam-line);
+  padding: 1.5rem 0;
+  border-bottom: none;
 }
 
 .service-row:last-child {
@@ -787,9 +787,10 @@ a:hover {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 0.9rem;
-  background: var(--ijam-soft);
+  background: transparent;
   color: var(--ijam-black);
   font-weight: 900;
+  font-size: 1.5rem;
 }
 
 .service-row h3 {
@@ -1057,5 +1058,170 @@ a:hover {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+}
+
+/* New High-End B2B Styles */
+body.ijam-site {
+  background: var(--ijam-soft);
+}
+
+.blue-dot {
+  color: var(--ijam-blue);
+}
+
+.hero-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(217, 35, 46, 0.08), transparent 40%),
+    radial-gradient(circle at 70% 30%, rgba(244, 190, 35, 0.08), transparent 40%),
+    radial-gradient(circle at 50% 70%, rgba(23, 105, 214, 0.08), transparent 50%),
+    radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-visual {
+  background: none;
+  border: none;
+  overflow: visible;
+}
+
+.chip-card {
+  z-index: 1;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 30px 80px rgba(11, 13, 16, 0.08);
+}
+
+.impact-section {
+  width: min(1300px, calc(100% - 2rem));
+  margin: clamp(4rem, 8vw, 7rem) auto;
+  display: grid;
+  grid-template-columns: minmax(300px, 0.35fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 3rem);
+  align-items: start;
+}
+
+.impact-intro h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--ijam-black);
+  margin-top: 1rem;
+}
+
+.impact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.impact-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 40px rgba(11, 13, 16, 0.03);
+  border: 1px solid var(--ijam-line);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(11, 13, 16, 0.08);
+}
+
+.impact-card .card-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.impact-card.accent-red .card-icon { background: rgba(217, 35, 46, 0.1); color: var(--ijam-red); }
+.impact-card.accent-blue .card-icon { background: rgba(23, 105, 214, 0.1); color: var(--ijam-blue); }
+.impact-card.accent-yellow .card-icon { background: rgba(244, 190, 35, 0.1); color: var(--ijam-yellow); }
+.impact-card.accent-black .card-icon { background: rgba(11, 13, 16, 0.1); color: var(--ijam-black); }
+
+.impact-card h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  color: var(--ijam-black);
+}
+
+.impact-card p {
+  font-size: 0.95rem;
+  color: var(--ijam-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.why-panel {
+  background: var(--ijam-black);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: clamp(3rem, 7vw, 5rem);
+}
+
+.why-panel h2 {
+  color: #fff;
+}
+
+.why-panel p.eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.why-panel p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.what-we-do-section {
+  width: min(1300px, calc(100% - 2rem));
+  margin: clamp(4rem, 8vw, 7rem) auto;
+  display: grid;
+  grid-template-columns: minmax(300px, 0.4fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.what-we-do-intro h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--ijam-black);
+  margin-top: 1rem;
+}
+
+.labels-teaser .labels-intro h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+@media (max-width: 1024px) {
+  .impact-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .impact-section, .what-we-do-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .impact-cards {
+    grid-template-columns: 1fr;
   }
 }

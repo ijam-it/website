@@ -4,7 +4,7 @@
 <section class="page-shell">
   <header class="page-hero compact">
     <p class="eyebrow">iJam</p>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}<span class="blue-dot">.</span></h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
   {{ if $isCareers }}
@@ -32,11 +32,11 @@
       <div class="outcome-panel">
         {{ if $isNL }}
           <p class="eyebrow">Werken bij iJam</p>
-          <h2>Voor mensen die eigenaarschap nemen</h2>
+          <h2>Voor mensen die eigenaarschap nemen<span class="blue-dot">.</span></h2>
           <p>Een kleine senior omgeving met autonomie, kwaliteit en werk dat ertoe doet.</p>
         {{ else }}
           <p class="eyebrow">Careers at iJam</p>
-          <h2>For people who take ownership</h2>
+          <h2>For people who take ownership<span class="blue-dot">.</span></h2>
           <p>A small senior environment with autonomy, quality and work that matters.</p>
         {{ end }}
       </div>

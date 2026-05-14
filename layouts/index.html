@@ -7,24 +7,25 @@
 <section class="home-hero">
   <div class="hero-copy">
     <p class="eyebrow">iJam IT Solutions</p>
-    <h1>Experienced minds. Reliable solutions.</h1>
+    <h1>Experienced minds.<br>Reliable solutions<span class="blue-dot">.</span></h1>
     {{ if $isNL }}
       <p class="lead">Wij helpen organisaties veilige, schaalbare en toekomstbestendige digitale oplossingen bouwen.</p>
-      <p>iJam is een collectief van senior IT-professionals met jarenlange ervaring in software delivery, security, cloud, platform engineering en digitale transformatie. Wij brengen complexe omgevingen terug tot de essentie en helpen organisaties vooruit met oplossingen die werken.</p>
+      <p>iJam is een collectief van senior IT-professionals met diepe ervaring in software delivery, security, cloud, platform engineering en digitale transformatie.</p>
       <div class="hero-actions">
-        <a class="button primary" href="{{ "team/" | relLangURL }}">Maak kennis met iJam</a>
-        <a class="button secondary" href="{{ "aanpak/" | relLangURL }}">Bekijk onze aanpak</a>
+        <a class="button primary" href="{{ "team/" | relLangURL }}">Maak kennis met iJam &rarr;</a>
+        <a class="button secondary" href="{{ "aanpak/" | relLangURL }}">Bekijk onze aanpak &rarr;</a>
       </div>
     {{ else }}
       <p class="lead">We help organisations build secure, scalable and future-ready digital solutions.</p>
-      <p>iJam is a collective of senior IT professionals with years of experience in software delivery, security, cloud, platform engineering and digital transformation. We reduce complex environments to their essence and help organisations move forward with solutions that work.</p>
+      <p>iJam is a collective of senior IT professionals with deep experience in software delivery, security, cloud, platform engineering and digital transformation.</p>
       <div class="hero-actions">
-        <a class="button primary" href="{{ "team/" | relLangURL }}">Meet iJam</a>
-        <a class="button secondary" href="{{ "approach/" | relLangURL }}">View our approach</a>
+        <a class="button primary" href="{{ "team/" | relLangURL }}">Meet iJam &rarr;</a>
+        <a class="button secondary" href="{{ "approach/" | relLangURL }}">View our approach &rarr;</a>
       </div>
     {{ end }}
   </div>
   <div class="hero-visual" aria-hidden="true">
+    <div class="hero-glow"></div>
     <div class="chip-card">
       <span class="shape triangle"></span>
       <span class="shape circle"></span>
@@ -34,32 +35,34 @@
   </div>
 </section>
 
-<section class="trust-band reveal-up">
-  {{ if $isNL }}
-    <h2>Gebouwd op ervaring in omgevingen waar betrouwbaarheid telt.</h2>
-    <p>Onze mensen hebben gewerkt aan digitale dienstverlening, securityplatformen, cloudomgevingen, ontwikkelplatformen en detectiecapaciteiten voor organisaties binnen overheid, vitale infrastructuur, finance, transport, onderwijs en enterprise IT.</p>
-  {{ else }}
-    <h2>Built on experience in environments where reliability matters.</h2>
-    <p>Our people have worked on digital services, security platforms, cloud environments, developer platforms and detection capabilities for organisations in government, critical infrastructure, finance, transport, education and enterprise IT.</p>
-  {{ end }}
-</section>
-
-<section class="section-block reveal-up">
-  {{ if $isNL }}<h2>Waar wij bij helpen</h2>{{ else }}<h2>Where we help</h2>{{ end }}
-  <div class="card-grid capability-grid">
-    <article class="info-card accent-red">
+<section class="impact-section reveal-up">
+  <div class="impact-intro">
+    {{ if $isNL }}
+      <p class="eyebrow">Waar we impact maken</p>
+      <h2>Complexiteit omzetten in helderheid en vooruitgang<span class="blue-dot">.</span></h2>
+    {{ else }}
+      <p class="eyebrow">Where we create impact</p>
+      <h2>Turning complexity into clarity and progress<span class="blue-dot">.</span></h2>
+    {{ end }}
+  </div>
+  <div class="impact-cards">
+    <article class="impact-card accent-red">
+      <div class="card-icon"><i class="bi bi-shield-check"></i></div>
       <h3>Secure Platforms</h3>
       <p>{{ if $isNL }}Wij ontwerpen en bouwen platformen waarop teams veilig, zelfstandig en voorspelbaar software kunnen leveren.{{ else }}We design and build platforms that help teams deliver software securely, independently and predictably.{{ end }}</p>
     </article>
-    <article class="info-card accent-blue">
+    <article class="impact-card accent-blue">
+      <div class="card-icon"><i class="bi bi-box"></i></div>
       <h3>Software Delivery</h3>
       <p>{{ if $isNL }}Wij helpen organisaties van idee naar productie, met aandacht voor kwaliteit, snelheid, security en beheerbaarheid.{{ else }}We help organisations move from idea to production with a focus on quality, speed, security and maintainability.{{ end }}</p>
     </article>
-    <article class="info-card accent-yellow">
+    <article class="impact-card accent-yellow">
+      <div class="card-icon"><i class="bi bi-link-45deg"></i></div>
       <h3>Security & Resilience</h3>
-      <p>{{ if $isNL }}Wij versterken digitale weerbaarheid met ervaring in security architecture, monitoring, threat intelligence, vulnerability management en incident response.{{ else }}We strengthen digital resilience through experience in security architecture, monitoring, threat intelligence, vulnerability management and incident response.{{ end }}</p>
+      <p>{{ if $isNL }}Wij versterken digitale weerbaarheid met ervaring in security architecture, monitoring, threat intelligence, vulnerability management en incident response.{{ else }}We strengthen digital resilience through security architecture, monitoring, threat intelligence, vulnerability management and incident response.{{ end }}</p>
     </article>
-    <article class="info-card accent-black">
+    <article class="impact-card accent-black">
+      <div class="card-icon"><i class="bi bi-diagram-3"></i></div>
       <h3>Leadership & Transformation</h3>
       <p>{{ if $isNL }}Wij bouwen teams, begeleiden verandering en brengen structuur in complexe IT-organisaties.{{ else }}We build teams, guide change and bring structure to complex IT organisations.{{ end }}</p>
     </article>
@@ -70,34 +73,104 @@
   <div>
     {{ if $isNL }}
       <p class="eyebrow">Waarom iJam</p>
-      <h2>Senior betrokkenheid, zonder onnodige lagen</h2>
+      <h2>Senior betrokkenheid, zonder onnodige lagen<span class="blue-dot">.</span></h2>
     {{ else }}
       <p class="eyebrow">Why iJam</p>
-      <h2>Senior involvement, without unnecessary layers</h2>
+      <h2>Senior involvement, without unnecessary layers<span class="blue-dot">.</span></h2>
     {{ end }}
   </div>
   <div>
     {{ if $isNL }}
-      <p>Bij iJam werk je direct met mensen die gewend zijn verantwoordelijkheid te nemen. Geen grote teams met veel overdracht, maar senior professionals die kunnen schakelen tussen strategie, architectuur, uitvoering en organisatie.</p>
+      <p>Bij iJam werk je direct met senior professionals die verantwoordelijkheid nemen. Geen grote teams met veel overdracht, maar ervaren denkers die schakelen tussen strategie, architectuur, uitvoering en organisatie.</p>
       <p>Wij zijn op ons best in omgevingen waar veel samenkomt: techniek, security, processen, mensen, governance en delivery. Juist daar brengen wij rust, richting en voortgang.</p>
     {{ else }}
-      <p>With iJam, you work directly with people who are used to taking responsibility. No large teams with endless handovers, but senior professionals who can move between strategy, architecture, implementation and organisation.</p>
+      <p>With iJam, you work directly with senior professionals who take responsibility. No large teams with endless handovers, but experienced minds who move between strategy, architecture, implementation and organisation.</p>
       <p>We are at our best in environments where many things come together: technology, security, processes, people, governance and delivery. That is where we bring clarity, direction and progress.</p>
     {{ end }}
   </div>
 </section>
 
+<section class="what-we-do-section reveal-up">
+  <div class="what-we-do-intro">
+    {{ if $isNL }}
+      <p class="eyebrow">Wat we doen</p>
+      <h2>We werken op het snijvlak van technologie en organisatie<span class="blue-dot">.</span></h2>
+      <a class="button secondary mt-6" style="margin-top: 1.5rem" href="{{ "diensten/" | relLangURL }}">Bekijk alle diensten &rarr;</a>
+    {{ else }}
+      <p class="eyebrow">What we do</p>
+      <h2>We work at the intersection of technology and organisation<span class="blue-dot">.</span></h2>
+      <a class="button secondary mt-6" style="margin-top: 1.5rem" href="{{ "services/" | relLangURL }}">View all services &rarr;</a>
+    {{ end }}
+  </div>
+  <div class="service-list">
+    <div class="service-row">
+      <div class="service-icon"><i class="bi bi-layers"></i></div>
+      <div>
+        <h3>Platform Engineering</h3>
+        <p>{{ if $isNL }}Wij ontwerpen en bouwen interne platformen die ontwikkelteams veiliger en onafhankelijker maken.{{ else }}We design and build internal platforms that help development teams deliver faster, safer and more independently.{{ end }}</p>
+      </div>
+      <div class="service-arrow"><i class="bi bi-chevron-right"></i></div>
+    </div>
+    <div class="service-row">
+      <div class="service-icon"><i class="bi bi-cloud"></i></div>
+      <div>
+        <h3>Cloud & Kubernetes</h3>
+        <p>{{ if $isNL }}Wij helpen organisaties met cloudstrategie, migratie, architectuur en platformkeuzes.{{ else }}We help organisations with cloud strategy, migration, architecture and platform decisions.{{ end }}</p>
+      </div>
+      <div class="service-arrow"><i class="bi bi-chevron-right"></i></div>
+    </div>
+    <div class="service-row">
+      <div class="service-icon"><i class="bi bi-lock"></i></div>
+      <div>
+        <h3>Secure Software Delivery</h3>
+        <p>{{ if $isNL }}Wij brengen security dichter bij het ontwikkelproces via secure CI/CD, threat modeling en vulnerability management.{{ else }}We bring security closer to the development process through secure CI/CD, threat modeling and vulnerability management.{{ end }}</p>
+      </div>
+      <div class="service-arrow"><i class="bi bi-chevron-right"></i></div>
+    </div>
+    <div class="service-row">
+      <div class="service-icon"><i class="bi bi-shield"></i></div>
+      <div>
+        <h3>Security Architecture & Monitoring</h3>
+        <p>{{ if $isNL }}Wij ondersteunen met security architectuur, monitoring, SIEM, threat intelligence en incident response.{{ else }}We support with security architecture, monitoring, SIEM, threat intelligence and incident response.{{ end }}</p>
+      </div>
+      <div class="service-arrow"><i class="bi bi-chevron-right"></i></div>
+    </div>
+    <div class="service-row">
+      <div class="service-icon"><i class="bi bi-people"></i></div>
+      <div>
+        <h3>Digital Transformation & Team Building</h3>
+        <p>{{ if $isNL }}Wij begeleiden organisaties in verandering, bouwen high-performing teams en verbeteren werkwijzen.{{ else }}We guide organisations in change, build high-performing teams and improve ways of working.{{ end }}</p>
+      </div>
+      <div class="service-arrow"><i class="bi bi-chevron-right"></i></div>
+    </div>
+  </div>
+</section>
+
 <section class="section-block labels-teaser reveal-up">
-  {{ if $isNL }}
-    <h2>Labels binnen het iJam-ecosysteem</h2>
-    <p>Naast iJam bouwen we aan gespecialiseerde labels die specifieke vraagstukken oplossen.</p>
-  {{ else }}
-    <h2>Labels within the iJam ecosystem</h2>
-    <p>Alongside iJam, we build specialised labels that focus on specific challenges.</p>
-  {{ end }}
+  <div class="labels-intro" style="margin-bottom: 2.5rem;">
+    {{ if $isNL }}
+      <p class="eyebrow">Onze gespecialiseerde labels</p>
+      <h2 style="margin-top: 0.5rem">Labels binnen het iJam ecosysteem<span class="blue-dot">.</span></h2>
+      <p style="margin-top: 1rem">Naast iJam bouwen we aan gespecialiseerde labels die focussen op specifieke uitdagingen.</p>
+      <a class="button secondary mt-6" style="margin-top: 1.5rem" href="{{ "labels/" | relLangURL }}">Bekijk alle labels &rarr;</a>
+    {{ else }}
+      <p class="eyebrow">Our specialised labels</p>
+      <h2 style="margin-top: 0.5rem">Labels within the iJam ecosystem<span class="blue-dot">.</span></h2>
+      <p style="margin-top: 1rem">Alongside iJam, we build specialised labels that focus on specific challenges.</p>
+      <a class="button secondary mt-6" style="margin-top: 1.5rem" href="{{ "labels/" | relLangURL }}">View all labels &rarr;</a>
+    {{ end }}
+  </div>
   <div class="card-grid two-cols">
-    <article class="info-card"><h3>xsGrant</h3><p>{{ if $isNL }}Digitale oplossingen voor het vereenvoudigen en verbeteren van grant- en subsidieprocessen.{{ else }}Digital solutions for simplifying and improving grant and subsidy processes.{{ end }}</p><div class="hero-actions"><a class="button secondary" href="https://xsgrant.com/">{{ if $isNL }}Naar xsGrant{{ else }}Visit xsGrant{{ end }}</a></div></article>
-    <article class="info-card"><h3>Opsteady</h3><p>{{ if $isNL }}Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen.{{ else }}A reference approach for modern, secure and manageable Kubernetes and platform environments.{{ end }}</p><div class="hero-actions"><a class="button secondary" href="https://opsteady.com/">{{ if $isNL }}Naar Opsteady{{ else }}Visit Opsteady{{ end }}</a></div></article>
+    <article class="info-card" style="padding: 2.5rem;">
+      <h3 style="font-size: 1.5rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--ijam-blue)"><i class="bi bi-files"></i></span> xsGrant</h3>
+      <p style="margin-top: 1rem; margin-bottom: 2rem;">{{ if $isNL }}Digitale oplossingen voor het vereenvoudigen en verbeteren van grant- en subsidieprocessen.{{ else }}Digital solutions for simplifying and improving grant and subsidy processes.{{ end }}</p>
+      <a style="color: var(--ijam-blue); font-weight: 700; font-size: 1.05rem;" href="https://xsgrant.com/">Learn more &rarr;</a>
+    </article>
+    <article class="info-card" style="padding: 2.5rem;">
+      <h3 style="font-size: 1.5rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: #16b981"><i class="bi bi-shield-shaded"></i></span> Opsteady</h3>
+      <p style="margin-top: 1rem; margin-bottom: 2rem;">{{ if $isNL }}Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen.{{ else }}A reference approach for modern, secure and manageable Kubernetes and platform environments.{{ end }}</p>
+      <a style="color: var(--ijam-blue); font-weight: 700; font-size: 1.05rem;" href="https://opsteady.com/">Learn more &rarr;</a>
+    </article>
   </div>
 </section>
 {{ end }}

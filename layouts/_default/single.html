@@ -8,7 +8,7 @@
 <article class="page-shell">
   <header class="page-hero compact">
     <p class="eyebrow">iJam</p>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}<span class="blue-dot">.</span></h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
 
@@ -17,7 +17,7 @@
     <aside class="sticky-aside outcome-panel">
       {{ if $isNL }}
         <p class="eyebrow">Onze manier van werken</p>
-        <h2>Van complexiteit naar richting</h2>
+        <h2>Van complexiteit naar richting<span class="blue-dot">.</span></h2>
         <p>We combineren analyse, architectuur en uitvoering. Niet als losse adviezen, maar als praktische stappen richting oplossingen die blijven werken.</p>
         <ul>
           <li>Systeem en context eerst begrijpen</li>
@@ -26,7 +26,7 @@
         </ul>
       {{ else }}
         <p class="eyebrow">How we work</p>
-        <h2>From complexity to direction</h2>
+        <h2>From complexity to direction<span class="blue-dot">.</span></h2>
         <p>We combine analysis, architecture and implementation. Not as detached advice, but as practical steps toward solutions that hold up.</p>
         <ul>
           <li>Understand the system and context first</li>
@@ -62,11 +62,11 @@
     <aside class="sticky-aside brand-panel content-panel">
       {{ if $isNL }}
         <p class="eyebrow">Capabilities</p>
-        <h2>Waar senior ervaring het verschil maakt</h2>
+        <h2>Waar senior ervaring het verschil maakt<span class="blue-dot">.</span></h2>
         <p>iJam helpt bij vraagstukken waar software, security, cloud, platform engineering en organisatie elkaar raken.</p>
       {{ else }}
         <p class="eyebrow">Capabilities</p>
-        <h2>Where senior experience makes the difference</h2>
+        <h2>Where senior experience makes the difference<span class="blue-dot">.</span></h2>
         <p>iJam helps where software, security, cloud, platform engineering and organisational change meet.</p>
       {{ end }}
     </aside>
@@ -102,12 +102,12 @@
     <section class="contact-card">
       {{ if $isNL }}
         <p class="eyebrow">Contact</p>
-        <h2>Bespreek een complex digitaal vraagstuk</h2>
+        <h2>Bespreek een complex digitaal vraagstuk<span class="blue-dot">.</span></h2>
         <p>Werk je aan software delivery, security, cloud, platform engineering of digitale transformatie? We denken graag mee.</p>
         <a class="button" href="mailto:{{ .Site.Params.contactEmail }}">Mail {{ .Site.Params.contactEmail }}</a>
       {{ else }}
         <p class="eyebrow">Contact</p>
-        <h2>Discuss a complex digital challenge</h2>
+        <h2>Discuss a complex digital challenge<span class="blue-dot">.</span></h2>
         <p>Working on software delivery, security, cloud, platform engineering or digital transformation? We would be happy to think along.</p>
         <a class="button" href="mailto:{{ .Site.Params.contactEmail }}">Email {{ .Site.Params.contactEmail }}</a>
       {{ end }}

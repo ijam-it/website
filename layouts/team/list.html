@@ -3,7 +3,7 @@
 <section class="page-shell">
   <header class="page-hero compact">
     <p class="eyebrow">iJam</p>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}<span class="blue-dot">.</span></h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
   <div class="team-intro-grid">
@@ -14,10 +14,10 @@
   {{ end }}
     <aside class="team-proof">
       {{ if $isNL }}
-        <strong>Senior, direct en verantwoordelijk.</strong>
+        <strong>Senior, direct en verantwoordelijk<span class="blue-dot">.</span></strong>
         <span>Geen onnodige lagen. Je werkt met mensen die strategie, architectuur en uitvoering kunnen verbinden.</span>
       {{ else }}
-        <strong>Senior, direct and accountable.</strong>
+        <strong>Senior, direct and accountable<span class="blue-dot">.</span></strong>
         <span>No unnecessary layers. You work with people who can connect strategy, architecture and implementation.</span>
       {{ end }}
     </aside>
