@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  {{- partial "head.html" . -}}
+  {{ block "meta_tags" . }}{{ end }}
+</head>
+<body class="ijam-site">
+  {{- partial "header.html" . -}}
+  <main id="main-content">
+    {{- block "main" . }}{{- end }}
+  </main>
+  {{- partial "footer.html" . -}}
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

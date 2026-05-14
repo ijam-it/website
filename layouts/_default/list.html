@@ -1,20 +1,22 @@
 {{ define "main" }}
 <section class="page-shell">
   <header class="page-hero compact">
-    <p class="eyebrow">iJam ecosystem</p>
+    <p class="eyebrow">iJam</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
   <div class="content-panel prose-content">
     {{ .Content }}
   </div>
-  <div class="card-grid two-cols">
+  {{ if .Pages }}
+  <div class="card-grid section-grid">
     {{ range .Pages.ByWeight }}
-      <article class="info-card label-card">
+      <article class="info-card">
         <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Description }}</p>
+        <p>{{ .Description | default .Summary }}</p>
       </article>
     {{ end }}
   </div>
+  {{ end }}
 </section>
 {{ end }}

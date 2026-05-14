@@ -1,0 +1,124 @@
+{{ define "meta_tags" }}
+  <meta name="description" content="{{ .Site.Params.description }}">
+{{ end }}
+
+{{ define "main" }}
+{{ $isNL := eq .Site.Language.Lang "nl" }}
+<section class="home-hero">
+  <div class="hero-copy">
+    <p class="eyebrow">iJam IT Solutions</p>
+    <h1>Experienced minds. Reliable solutions.</h1>
+    {{ if $isNL }}
+      <p class="lead">Wij helpen organisaties veilige, schaalbare en toekomstbestendige digitale oplossingen bouwen.</p>
+      <p>iJam is een collectief van senior IT-professionals met jarenlange ervaring in software delivery, security, cloud, platform engineering en digitale transformatie. Wij brengen complexe omgevingen terug tot de essentie en helpen organisaties vooruit met oplossingen die werken.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="{{ "team/" | relLangURL }}">Maak kennis met iJam</a>
+        <a class="button secondary" href="{{ "aanpak/" | relLangURL }}">Bekijk onze aanpak</a>
+      </div>
+    {{ else }}
+      <p class="lead">We help organisations build secure, scalable and future-ready digital solutions.</p>
+      <p>iJam is a collective of senior IT professionals with years of experience in software delivery, security, cloud, platform engineering and digital transformation. We reduce complex environments to their essence and help organisations move forward with solutions that work.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="{{ "team/" | relLangURL }}">Meet iJam</a>
+        <a class="button secondary" href="{{ "approach/" | relLangURL }}">View our approach</a>
+      </div>
+    {{ end }}
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="chip-card">
+      <span class="shape triangle"></span>
+      <span class="shape circle"></span>
+      <span class="shape square"></span>
+      <div class="chip-lines"></div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-band">
+  {{ if $isNL }}
+    <h2>Gebouwd op ervaring in omgevingen waar betrouwbaarheid telt.</h2>
+    <p>Onze mensen hebben gewerkt aan digitale dienstverlening, securityplatformen, cloudomgevingen, ontwikkelplatformen en detectiecapaciteiten voor organisaties binnen overheid, vitale infrastructuur, finance, transport, onderwijs en enterprise IT.</p>
+  {{ else }}
+    <h2>Built on experience in environments where reliability matters.</h2>
+    <p>Our people have worked on digital services, security platforms, cloud environments, developer platforms and detection capabilities for organisations in government, critical infrastructure, finance, transport, education and enterprise IT.</p>
+  {{ end }}
+</section>
+
+<section class="split-section">
+  <div>
+    {{ if $isNL }}
+      <p class="eyebrow">Grip op complexiteit</p>
+      <h2>Wij maken complexe digitale vraagstukken beheersbaar</h2>
+    {{ else }}
+      <p class="eyebrow">Control over complexity</p>
+      <h2>We make complex digital challenges manageable</h2>
+    {{ end }}
+  </div>
+  <div>
+    {{ if $isNL }}
+      <p>Technologie wordt vaak complexer dan nodig. Teams raken vertraagd door onduidelijke architectuur, versnipperde tooling, kwetsbare processen of platformen die niet goed aansluiten op de praktijk.</p>
+      <p>iJam helpt organisaties om weer grip te krijgen. Wij ontwerpen, bouwen en verbeteren digitale fundamenten die veilig, schaalbaar en werkbaar zijn voor de teams die ermee moeten leveren.</p>
+    {{ else }}
+      <p>Technology often becomes more complex than it needs to be. Teams slow down because of unclear architecture, fragmented tooling, fragile processes or platforms that do not match day-to-day reality.</p>
+      <p>iJam helps organisations regain control. We design, build and improve digital foundations that are secure, scalable and workable for the teams that depend on them.</p>
+    {{ end }}
+  </div>
+</section>
+
+<section class="section-block">
+  {{ if $isNL }}<h2>Waar wij bij helpen</h2>{{ else }}<h2>Where we help</h2>{{ end }}
+  <div class="card-grid capability-grid">
+    <article class="info-card accent-red">
+      <h3>Secure Platforms</h3>
+      <p>{{ if $isNL }}Wij ontwerpen en bouwen platformen waarop teams veilig, zelfstandig en voorspelbaar software kunnen leveren.{{ else }}We design and build platforms that help teams deliver software securely, independently and predictably.{{ end }}</p>
+    </article>
+    <article class="info-card accent-blue">
+      <h3>Software Delivery</h3>
+      <p>{{ if $isNL }}Wij helpen organisaties van idee naar productie, met aandacht voor kwaliteit, snelheid, security en beheerbaarheid.{{ else }}We help organisations move from idea to production with a focus on quality, speed, security and maintainability.{{ end }}</p>
+    </article>
+    <article class="info-card accent-yellow">
+      <h3>Security & Resilience</h3>
+      <p>{{ if $isNL }}Wij versterken digitale weerbaarheid met ervaring in security architecture, monitoring, threat intelligence, vulnerability management en incident response.{{ else }}We strengthen digital resilience through experience in security architecture, monitoring, threat intelligence, vulnerability management and incident response.{{ end }}</p>
+    </article>
+    <article class="info-card accent-black">
+      <h3>Leadership & Transformation</h3>
+      <p>{{ if $isNL }}Wij bouwen teams, begeleiden verandering en brengen structuur in complexe IT-organisaties.{{ else }}We build teams, guide change and bring structure to complex IT organisations.{{ end }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="split-section dark-panel">
+  <div>
+    {{ if $isNL }}
+      <p class="eyebrow">Waarom iJam</p>
+      <h2>Senior betrokkenheid, zonder onnodige lagen</h2>
+    {{ else }}
+      <p class="eyebrow">Why iJam</p>
+      <h2>Senior involvement, without unnecessary layers</h2>
+    {{ end }}
+  </div>
+  <div>
+    {{ if $isNL }}
+      <p>Bij iJam werk je direct met mensen die gewend zijn verantwoordelijkheid te nemen. Geen grote teams met veel overdracht, maar senior professionals die kunnen schakelen tussen strategie, architectuur, uitvoering en organisatie.</p>
+      <p>Wij zijn op ons best in omgevingen waar veel samenkomt: techniek, security, processen, mensen, governance en delivery. Juist daar brengen wij rust, richting en voortgang.</p>
+    {{ else }}
+      <p>With iJam, you work directly with people who are used to taking responsibility. No large teams with endless handovers, but senior professionals who can move between strategy, architecture, implementation and organisation.</p>
+      <p>We are at our best in environments where many things come together: technology, security, processes, people, governance and delivery. That is where we bring clarity, direction and progress.</p>
+    {{ end }}
+  </div>
+</section>
+
+<section class="section-block labels-teaser">
+  {{ if $isNL }}
+    <h2>Labels binnen het iJam-ecosysteem</h2>
+    <p>Naast iJam bouwen we aan gespecialiseerde labels die specifieke vraagstukken oplossen.</p>
+  {{ else }}
+    <h2>Labels within the iJam ecosystem</h2>
+    <p>Alongside iJam, we build specialised labels that focus on specific challenges.</p>
+  {{ end }}
+  <div class="card-grid two-cols">
+    <article class="info-card"><h3>xsGrant</h3><p>{{ if $isNL }}Digitale oplossingen voor het vereenvoudigen en verbeteren van grant- en subsidieprocessen.{{ else }}Digital solutions for simplifying and improving grant and subsidy processes.{{ end }}</p></article>
+    <article class="info-card"><h3>Opsteady</h3><p>{{ if $isNL }}Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen.{{ else }}A reference approach for modern, secure and manageable Kubernetes and platform environments.{{ end }}</p></article>
+  </div>
+</section>
+{{ end }}

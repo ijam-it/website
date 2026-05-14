@@ -1,77 +1,122 @@
-baseURL = "https://test.ijam.it"
-title = "iJam IT B.V."
-#author = "username"
-languageCode = "nl"
-DefaultContentLanguage = "nl"
+baseURL = "https://ijam.nl"
+title = "iJam IT Solutions"
+locale = "nl-NL"
+defaultContentLanguage = "nl"
+defaultContentLanguageInSubdir = false
 enableInlineShortcodes = true
 theme = ["hugo-cloak-email", "tella"]
 enableRobotsTXT = true
 cleanDestinationDir = true
 
-# Please enable this feature if the site is available in Japanese, Chinese or Korean.
-#hasCJKLanguage = true
-
-# If you're using Google Analytics, you can enable this feature.
-#googleAnalytics = "UA-12345678-1"
-
-# Disqus Comment System
-#disqusShortname = ""
-
 [params]
-
+  description = "iJam helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
+  tagline = "Experienced minds. Reliable solutions."
   showBlog = false
-  mainSections = ['vacatures']
+  mainSections = []
   googleFonts = true
 
   [params.logo]
     main = "img/logo/logo.png"
-    alt = "iJam IT Logo"
-
-    # The size parameter is the class name of tailwindcss
-    # https://tailwindcss.com/
-    size = "h-18"
+    alt = "iJam IT Solutions"
+    size = "h-14"
 
   [params.site]
-    name = "iJam IT B.V."
+    name = "iJam"
 
   [params.icon]
-    #If you want to use FontAwesome, set this parameter to true.
     fontawesome = true
 
-[menu]
-
-  [[menu.main]]
-    identifier = "about"
-    name = "Over Ons"
-    url = "/about/"
+[languages]
+  [languages.nl]
+    label = "Nederlands"
+    locale = "nl-NL"
     weight = 1
+    title = "iJam IT Solutions"
+    contentDir = "content/nl"
+    [languages.nl.params]
+      description = "iJam helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
+      contactEmail = "info@ijam.nl"
+      footerIntro = "Experienced minds. Reliable solutions."
 
-  [[menu.main]]
-    identifier = "labels"
-    name = "Onze Labels"
-    url = "/labels/"
+  [languages.en]
+    label = "English"
+    locale = "en-GB"
     weight = 2
+    title = "iJam IT Solutions"
+    contentDir = "content/en"
+    [languages.en.params]
+      description = "iJam helps organisations make complex digital challenges simpler, safer and easier to manage."
+      contactEmail = "info@ijam.nl"
+      footerIntro = "Experienced minds. Reliable solutions."
 
-  [[menu.main]]
-    identifier = "team"
-    name = "Het Team"
-    url = "/team/"
-    weight = 3
+[[languages.nl.menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+[[languages.nl.menu.main]]
+  identifier = "aanpak"
+  name = "Aanpak"
+  url = "/aanpak/"
+  weight = 2
+[[languages.nl.menu.main]]
+  identifier = "diensten"
+  name = "Diensten"
+  url = "/diensten/"
+  weight = 3
+[[languages.nl.menu.main]]
+  identifier = "labels"
+  name = "Labels"
+  url = "/labels/"
+  weight = 4
+[[languages.nl.menu.main]]
+  identifier = "team"
+  name = "Team"
+  url = "/team/"
+  weight = 5
+[[languages.nl.menu.main]]
+  identifier = "careers"
+  name = "Werken bij"
+  url = "/werken-bij/"
+  weight = 6
+[[languages.nl.menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 7
 
-  [[menu.main]]
-    identifier = "vacatures"
-    name = "Vacatures"
-    url = "/vacatures/"
-    weight = 4
-
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 5
-
-  # Footer Menu
-  [[menu.footer]]
-    name = "Home"
-    url = "/"
-      weight = 1
+[[languages.en.menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/en/"
+  weight = 1
+[[languages.en.menu.main]]
+  identifier = "approach"
+  name = "Approach"
+  url = "/en/approach/"
+  weight = 2
+[[languages.en.menu.main]]
+  identifier = "services"
+  name = "Services"
+  url = "/en/services/"
+  weight = 3
+[[languages.en.menu.main]]
+  identifier = "labels"
+  name = "Labels"
+  url = "/en/labels/"
+  weight = 4
+[[languages.en.menu.main]]
+  identifier = "team"
+  name = "Team"
+  url = "/en/team/"
+  weight = 5
+[[languages.en.menu.main]]
+  identifier = "careers"
+  name = "Careers"
+  url = "/en/careers/"
+  weight = 6
+[[languages.en.menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/en/contact/"
+  weight = 7
