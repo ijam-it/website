@@ -1,6 +1,14 @@
 ---
 title: "Werken bij iJam"
 description: "Voor senior professionals die autonomie, kwaliteit en inhoud belangrijk vinden."
+career_values:
+  eyebrow: "Werken bij iJam"
+  title: "Voor mensen die eigenaarschap nemen"
+  text: "Een kleine senior omgeving met autonomie, kwaliteit en werk dat ertoe doet."
+  pills:
+    - "Autonomie"
+    - "Vakmanschap"
+    - "Senior samenwerking"
 ---
 
 Bij iJam werk je aan vraagstukken die ertoe doen. We zoeken mensen die verantwoordelijkheid nemen, kwaliteit belangrijk vinden en energie krijgen van complexe digitale omgevingen.

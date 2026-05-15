@@ -1,19 +1,19 @@
 {{ define "main" }}
-{{ $isNL := eq .Site.Language.Lang "nl" }}
 <section class="page-shell">
   <header class="page-hero compact">
-    <p class="eyebrow">iJam ecosystem</p>
+    <p class="eyebrow">iJam</p>
     <h1>{{ .Title }}<span class="blue-dot">.</span></h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
   <div class="card-grid two-cols">
     {{ range .Pages.ByWeight }}
-      {{ $isOpsteady := eq (lower .Title) "opsteady" }}
-      {{ $labelURL := cond $isOpsteady "https://opsteady.com/" "https://xsgrant.com/" }}
-      <article class="info-card label-card {{ if $isOpsteady }}opsteady-card{{ else }}xsgrant-card{{ end }}">
-        <div class="label-logo"><span class="label-mark">{{ if $isOpsteady }}O{{ else }}X{{ end }}</span>{{ .Title }}</div>
-        <p>{{ .Description }}</p>
-        <div class="hero-actions"><a class="button secondary" href="{{ $labelURL }}">{{ if $isNL }}Naar {{ .Title }}{{ else }}Visit {{ .Title }}{{ end }}</a></div>
+      {{ $label := . }}
+      <article class="info-card label-card {{ $label.Params.card_class }}">
+        <div class="label-logo"><span class="label-mark">{{ $label.Params.mark }}</span>{{ $label.Title }}</div>
+        <p>{{ $label.Description }}</p>
+        {{ with $label.Params.external_url }}
+          <div class="hero-actions"><a class="button secondary" href="{{ . }}">{{ $label.Params.visit_label | default (i18n "visit") }}</a></div>
+        {{ end }}
       </article>
     {{ end }}
   </div>

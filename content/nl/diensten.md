@@ -1,6 +1,31 @@
 ---
 title: "Wat wij doen"
 description: "iJam werkt op het snijvlak van software, security, cloud, platform engineering en organisatieontwikkeling."
+layout_variant: "services"
+side_panel:
+  class: "brand-panel content-panel"
+  eyebrow: "Capabilities"
+  title: "Waar senior ervaring het verschil maakt"
+  text: "iJam helpt bij vraagstukken waar software, security, cloud, platform engineering en organisatie elkaar raken."
+service_cards:
+  - code: "PE"
+    title: "Platform Engineering"
+    description: "Interne platformen, CI/CD, developer experience, observability en self-service die teams echt kunnen gebruiken."
+  - code: "CK"
+    title: "Cloud & Kubernetes"
+    description: "Cloudstrategie, migraties, architectuurkeuzes en begeleiding van assessment tot implementatie."
+  - code: "SD"
+    title: "Secure Software Delivery"
+    description: "Threat modeling, dependency management, veilige pipelines en security by design in delivery."
+  - code: "SM"
+    title: "Security Architecture & Monitoring"
+    description: "Security architecture, SIEM, detection engineering, threat intelligence en incident response verbetering."
+  - code: "DT"
+    title: "Digitale Transformatie & Team Building"
+    description: "Teamstructuren, werkwijzen, leiderschap en DevOps-adoptie die verandering duurzaam maken."
+  - code: "SA"
+    title: "Software Architecture & Development"
+    description: "Applicaties, integraties, portalen en MVP's met aandacht voor beheerbaarheid, security en productiegebruik."
 ---
 
 iJam helpt organisaties bij het ontwerpen, bouwen en verbeteren van veilige digitale oplossingen. Wij werken op het snijvlak van software, security, cloud, platform engineering en organisatieontwikkeling.

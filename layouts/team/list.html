@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ $isNL := eq .Site.Language.Lang "nl" }}
 <section class="page-shell">
   <header class="page-hero compact">
     <p class="eyebrow">iJam</p>
@@ -12,15 +11,12 @@
     {{ .Content }}
   </div>
   {{ end }}
-    <aside class="team-proof">
-      {{ if $isNL }}
-        <strong>Senior, direct en verantwoordelijk<span class="blue-dot">.</span></strong>
-        <span>Geen onnodige lagen. Je werkt met mensen die strategie, architectuur en uitvoering kunnen verbinden.</span>
-      {{ else }}
-        <strong>Senior, direct and accountable<span class="blue-dot">.</span></strong>
-        <span>No unnecessary layers. You work with people who can connect strategy, architecture and implementation.</span>
-      {{ end }}
-    </aside>
+    {{ with .Params.proof }}
+      <aside class="team-proof">
+        <strong>{{ .title }}<span class="blue-dot">.</span></strong>
+        <span>{{ .text }}</span>
+      </aside>
+    {{ end }}
   </div>
   <div class="card-grid team-grid">
     {{ range .Pages.ByWeight }}

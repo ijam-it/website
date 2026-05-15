@@ -2,6 +2,10 @@
 title: "xsGrant"
 weight: 1
 description: "Digitale ondersteuning voor het vereenvoudigen en verbeteren van grant- en subsidieprocessen."
+external_url: "https://xsgrant.com/"
+card_class: "xsgrant-card"
+mark: "X"
+visit_label: "Naar xsGrant"
 build:
   render: never
 ---

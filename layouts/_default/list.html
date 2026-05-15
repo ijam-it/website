@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ $isNL := eq .Site.Language.Lang "nl" }}
 {{ $isCareers := or (eq .Section "careers") (eq .Section "werken-bij") }}
 <section class="page-shell">
   <header class="page-hero compact">
@@ -29,20 +28,14 @@
   {{ if $isCareers }}
     </div>
     <aside class="career-values">
+      {{ with .Params.career_values }}
       <div class="outcome-panel">
-        {{ if $isNL }}
-          <p class="eyebrow">Werken bij iJam</p>
-          <h2>Voor mensen die eigenaarschap nemen<span class="blue-dot">.</span></h2>
-          <p>Een kleine senior omgeving met autonomie, kwaliteit en werk dat ertoe doet.</p>
-        {{ else }}
-          <p class="eyebrow">Careers at iJam</p>
-          <h2>For people who take ownership<span class="blue-dot">.</span></h2>
-          <p>A small senior environment with autonomy, quality and work that matters.</p>
-        {{ end }}
+        {{ with .eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+        {{ with .title }}<h2>{{ . }}<span class="blue-dot">.</span></h2>{{ end }}
+        {{ with .text }}<p>{{ . }}</p>{{ end }}
       </div>
-      <div class="value-pill">{{ if $isNL }}Autonomie{{ else }}Autonomy{{ end }}</div>
-      <div class="value-pill">{{ if $isNL }}Vakmanschap{{ else }}Craftsmanship{{ end }}</div>
-      <div class="value-pill">{{ if $isNL }}Senior samenwerking{{ else }}Senior collaboration{{ end }}</div>
+      {{ range .pills }}<div class="value-pill">{{ . }}</div>{{ end }}
+      {{ end }}
     </aside>
   </div>
   {{ end }}

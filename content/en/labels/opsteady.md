@@ -2,6 +2,10 @@
 title: "Opsteady"
 weight: 2
 description: "A reference approach for modern, secure and manageable Kubernetes and platform environments."
+external_url: "https://opsteady.com/"
+card_class: "opsteady-card"
+mark: "O"
+visit_label: "Visit Opsteady"
 build:
   render: never
 ---

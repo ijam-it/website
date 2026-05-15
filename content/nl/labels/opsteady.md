@@ -2,6 +2,10 @@
 title: "Opsteady"
 weight: 2
 description: "Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen."
+external_url: "https://opsteady.com/"
+card_class: "opsteady-card"
+mark: "O"
+visit_label: "Naar Opsteady"
 build:
   render: never
 ---
