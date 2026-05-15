@@ -13,16 +13,16 @@ $ git submodule update --remote --merge
 $ cp themes/tella/exampleSite/package.json .
 $ npm install
 
-$ convert logo-notekst.svg -define icon:auto-resize=256,64,48,32,16 favicon.ico
-$ convert logo-notekst.svg -resize 16x16 favicon-16x16.png
-$ convert logo-notekst.svg -resize 32x32 favicon-32x32.png
-$ convert logo-notekst.svg -resize 96x96 favicon-96x96.png
-$ convert logo-notekst.svg -resize 180x180 apple-touch-icon.png
-$ convert logo-notekst.svg -resize 192x192 web-app-manifest-192x192.png
-$ convert logo-notekst.svg -resize 512x512 web-app-manifest-512x512.png
+$ magick raw/logo-notekst.svg -define icon:auto-resize=256,64,48,32,16 static/favicon.ico
+$ magick raw/logo-notekst.svg -resize 16x16 static/favicon-16x16.png
+$ magick raw/logo-notekst.svg -resize 32x32 static/favicon-32x32.png
+$ magick raw/logo-notekst.svg -resize 96x96 static/favicon-96x96.png
+$ magick raw/logo-notekst.svg -resize 180x180 static/apple-touch-icon.png
+$ magick raw/logo-notekst.svg -resize 192x192 static/web-app-manifest-192x192.png
+$ magick raw/logo-notekst.svg -resize 512x512 static/web-app-manifest-512x512.png
 
 
-$ hugo
+$ hugo --config config.toml
 ```
 
 ## TODO
