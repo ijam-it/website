@@ -6,7 +6,9 @@
 <article class="page-shell">
   <header class="page-hero compact">
     <h1>{{ .Title }}<span class="blue-dot">.</span></h1>
+    {{ if ne .Params.layout_variant "services" }}
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ end }}
   </header>
 
   {{ if eq .Params.layout_variant "process" }}
@@ -54,10 +56,12 @@
       </div>
       {{ end }}
       {{ range .Params.service_cards }}
-      <section class="designed-card reveal-up">
-        <span class="card-icon">{{ .code }}</span>
-        <h2>{{ .title }}</h2>
-        <p>{{ .description }}</p>
+      <section class="process-card reveal-up">
+        <span class="step-number">{{ .code }}</span>
+        <div>
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
       </section>
       {{ end }}
     </div>
