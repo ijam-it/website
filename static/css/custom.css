@@ -521,7 +521,7 @@ a:hover {
 }
 
 .page-hero.compact {
-  max-width: 900px;
+  max-width: 1040px;
   margin-bottom: 2rem;
 }
 
@@ -908,25 +908,83 @@ a:hover {
 .label-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
   margin-bottom: 1rem;
   color: var(--ijam-black);
-  font-size: 1.35rem;
+  font-size: clamp(1.6rem, 2vw, 2rem);
   font-weight: 900;
+  letter-spacing: -0.04em;
 }
 
-.label-mark {
+.label-summary {
+  margin-bottom: 1rem;
+  color: var(--ijam-black) !important;
+  font-weight: 700;
+}
+
+.label-points {
+  margin: 1.25rem 0 0;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  list-style-position: outside;
+  color: var(--ijam-muted);
+}
+
+.label-points li {
+  margin-bottom: 0.5rem;
+}
+
+.label-points li + li {
+  margin-top: 0.65rem;
+}
+
+.labels-directory {
   display: grid;
-  place-items: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1rem;
-  background: var(--ijam-soft);
-  color: var(--ijam-blue);
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.opsteady-card .label-mark {
-  color: #16b981;
+.label-link-card {
+  display: block;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 1px solid var(--ijam-line);
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0 16px 44px rgba(11, 13, 16, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.label-link-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(23, 105, 214, 0.2);
+  box-shadow: 0 20px 48px rgba(11, 13, 16, 0.08);
+}
+
+.label-link-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  color: var(--ijam-blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.label-link-card h3 {
+  margin: 0;
+  color: var(--ijam-black);
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.label-link-card p {
+  margin: 0.85rem 0 1.4rem;
+  color: var(--ijam-muted);
+}
+
+.label-link-action {
+  color: var(--ijam-black);
+  font-weight: 800;
 }
 
 .team-intro-grid {

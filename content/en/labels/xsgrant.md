@@ -4,8 +4,12 @@ weight: 1
 description: "Just-in-time access management that replaces standing privileges with secure, time-bound access."
 external_url: "https://xsgrant.com/"
 card_class: "xsgrant-card"
-mark: "X"
 visit_label: "Visit xsGrant"
+intro: "xsGrant is built for organisations that want to reduce privileged access risk without replacing their existing identity and directory stack."
+focus_points:
+  - "Replaces permanent elevated permissions with secure, time-bound access."
+  - "Adds just-in-time approval and revocation workflows on top of existing IDM and directory systems."
+  - "Helps security, IT and compliance teams reduce the attack surface created by standing privileges."
 build:
   render: never
 ---

@@ -4,8 +4,12 @@ weight: 2
 description: "A fully managed software delivery platform from code to production with built-in security and observability."
 external_url: "https://opsteady.com/"
 card_class: "opsteady-card"
-mark: "O"
 visit_label: "Visit Opsteady"
+intro: "Opsteady is for teams that want a production-ready software delivery platform without the cost and delay of assembling and running one themselves."
+focus_points:
+  - "Brings the full path from code to production into one managed platform."
+  - "Reduces tool sprawl with secure development workflows, CI/CD, infrastructure and observability in one setup."
+  - "Lets development, platform and security teams focus on delivery instead of operating a large internal platform stack."
 build:
   render: never
 ---

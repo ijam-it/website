@@ -1,6 +1,6 @@
 ---
 title: "Onze labels"
-description: "Onze labels vertalen gerichte expertise naar producten: xsGrant voor just-in-time access management en Opsteady voor volledig beheerde software delivery-platformen."
+description: "Onze labels vertalen gerichte expertise naar producten en managed platformen met een eigen, duidelijke identiteit."
 ---
 
-Onder iJam bouwen we aan gespecialiseerde labels die gerichte expertise vertalen naar producten. xsGrant helpt organisaties om risico op privileged access te verkleinen met just-in-time access management, terwijl Opsteady een volledig beheerd platform biedt voor veilige software delivery van code tot productie.
+Onder iJam bouwen we gespecialiseerde labels wanneer een gericht aanbod een eigen identiteit verdient. xsGrant pakt risico rond privileged access aan met just-in-time toegangsworkflows, terwijl Opsteady een volledig beheerd platform biedt voor veilige software delivery van code tot productie.

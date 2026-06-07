@@ -8,9 +8,17 @@
   <div class="card-grid two-cols">
     {{ range .Pages.ByWeight }}
       {{ $label := . }}
-      <article class="info-card label-card {{ $label.Params.card_class }}">
-        <div class="label-logo"><span class="label-mark">{{ $label.Params.mark }}</span>{{ $label.Title }}</div>
-        <p>{{ $label.Description }}</p>
+      <article id="{{ $label.File.TranslationBaseName }}" class="info-card label-card {{ $label.Params.card_class }}">
+        <div class="label-logo">{{ $label.Title }}</div>
+        <p class="label-summary">{{ $label.Description }}</p>
+        {{ with $label.Params.intro }}
+          <p>{{ . }}</p>
+        {{ end }}
+        {{ with $label.Params.focus_points }}
+          <ul class="label-points">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        {{ end }}
         {{ with $label.Params.external_url }}
           <div class="hero-actions"><a class="button secondary" href="{{ . }}">{{ $label.Params.visit_label | default (i18n "visit") }}</a></div>
         {{ end }}
