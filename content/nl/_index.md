@@ -47,7 +47,7 @@ why:
 labels_teaser:
   eyebrow: "Onze gespecialiseerde labels"
   title: "Labels binnen het iJam ecosysteem"
-  text: "Naast iJam bouwen we aan gespecialiseerde labels die focussen op specifieke uitdagingen."
+  text: "Naast iJam bouwen we aan gespecialiseerde labels die specifieke software en diensten leveren."
   action:
     label: "Bekijk alle labels"
     url: "labels/"
@@ -55,13 +55,13 @@ labels_teaser:
     - title: "xsGrant"
       icon: "bi bi-files"
       color: "var(--ijam-blue)"
-      description: "Digitale oplossingen voor het vereenvoudigen en verbeteren van grant- en subsidieprocessen."
+      description: "Just-in-time access management dat permanente rechten vervangt door veilige, tijdelijke toegang boven op je bestaande identity-stack."
       url: "https://xsgrant.com/"
       label: "Learn more"
     - title: "Opsteady"
       icon: "bi bi-shield-shaded"
       color: "#16b981"
-      description: "Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen."
+      description: "Een volledig beheerd software delivery-platform voor de hele route van code tot productie, met ingebouwde security, CI/CD en observability."
       url: "https://opsteady.com/"
       label: "Learn more"
 ---

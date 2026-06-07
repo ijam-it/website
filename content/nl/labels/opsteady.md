@@ -1,7 +1,7 @@
 ---
 title: "Opsteady"
 weight: 2
-description: "Een referentieaanpak voor moderne, veilige en beheersbare Kubernetes- en platformomgevingen."
+description: "Een volledig beheerd software delivery-platform van code tot productie, met ingebouwde security en observability."
 external_url: "https://opsteady.com/"
 card_class: "opsteady-card"
 mark: "O"
@@ -10,10 +10,10 @@ build:
   render: never
 ---
 
-Opsteady richt zich op moderne platform engineering en Kubernetes-omgevingen.
+Opsteady biedt een volledig beheerd software delivery-platform.
 
-Het label is ontstaan vanuit de overtuiging dat ontwikkelteams sneller en veiliger kunnen leveren wanneer het onderliggende platform goed ontworpen, voorspelbaar en prettig bruikbaar is.
+Teams verliezen vaak tijd aan tool sprawl, trage handmatige security reviews en de kosten van het opbouwen van een eigen platform engineering-capaciteit.
 
-Opsteady biedt een referentieaanpak voor cloud-native platformen, met aandacht voor security, CI/CD, observability, developer experience en beheerbaarheid.
+Opsteady brengt de hele route van code tot productie samen in één beheerd platform, inclusief veilige ontwikkelworkflows, geautomatiseerde CI/CD, productieklare infrastructuur en volledige observability.
 
 **Website:** [Opsteady.com](https://opsteady.com/)

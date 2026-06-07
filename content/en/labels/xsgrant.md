@@ -1,7 +1,7 @@
 ---
 title: "xsGrant"
 weight: 1
-description: "Digital support for simplifying and improving grant and subsidy processes."
+description: "Just-in-time access management that replaces standing privileges with secure, time-bound access."
 external_url: "https://xsgrant.com/"
 card_class: "xsgrant-card"
 mark: "X"
@@ -10,10 +10,10 @@ build:
   render: never
 ---
 
-xsGrant focuses on simplifying grant and subsidy processes.
+xsGrant focuses on just-in-time access management.
 
-Many organisations still rely on processes built around documents, manual checks, separate systems and a lot of coordination. xsGrant helps make these processes clearer, more efficient and easier to manage.
+Traditional access control often leaves elevated permissions permanently available. That creates standing privileges that expand the attack surface and increase the impact of stolen credentials.
 
-With xsGrant, we build digital support for applications, review, collaboration, progress tracking and accountability.
+xsGrant adds secure, time-bound access workflows on top of your existing identity and directory systems, so organisations can grant access only when needed and revoke it automatically afterwards.
 
 **Website:** [xsGrant.com](https://xsgrant.com/)

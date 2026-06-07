@@ -1,7 +1,7 @@
 ---
 title: "xsGrant"
 weight: 1
-description: "Digitale ondersteuning voor het vereenvoudigen en verbeteren van grant- en subsidieprocessen."
+description: "Just-in-time access management dat permanente rechten vervangt door veilige, tijdelijke toegang."
 external_url: "https://xsgrant.com/"
 card_class: "xsgrant-card"
 mark: "X"
@@ -10,10 +10,10 @@ build:
   render: never
 ---
 
-xsGrant richt zich op het vereenvoudigen van grant- en subsidieprocessen.
+xsGrant richt zich op just-in-time access management.
 
-Veel organisaties werken met processen die afhankelijk zijn van documenten, handmatige controles, losse systemen en veel afstemming. xsGrant helpt om deze processen overzichtelijker, efficiënter en beter beheersbaar te maken.
+Traditionele toegangscontrole laat verhoogde rechten vaak permanent beschikbaar. Daardoor ontstaan standing privileges die het aanvalsoppervlak vergroten en de impact van gestolen credentials verhogen.
 
-Met xsGrant bouwen we digitale ondersteuning voor aanvragen, beoordeling, samenwerking, voortgang en verantwoording.
+xsGrant voegt veilige, tijdelijke toegangsworkflows toe boven op bestaande identity- en directorysystemen, zodat organisaties toegang alleen geven wanneer dat nodig is en die daarna automatisch weer intrekken.
 
 **Website:** [xsGrant.com](https://xsgrant.com/)

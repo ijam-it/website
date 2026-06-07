@@ -1,7 +1,7 @@
 ---
 title: "Opsteady"
 weight: 2
-description: "A reference approach for modern, secure and manageable Kubernetes and platform environments."
+description: "A fully managed software delivery platform from code to production with built-in security and observability."
 external_url: "https://opsteady.com/"
 card_class: "opsteady-card"
 mark: "O"
@@ -10,10 +10,10 @@ build:
   render: never
 ---
 
-Opsteady focuses on modern platform engineering and Kubernetes environments.
+Opsteady provides a fully managed software delivery platform.
 
-The label was created from the belief that development teams can deliver faster and more securely when the underlying platform is well designed, predictable and pleasant to use.
+Teams often lose time to tool sprawl, slow manual security reviews and the cost of building in-house platform engineering capabilities.
 
-Opsteady provides a reference approach for cloud-native platforms, with attention to security, CI/CD, observability, developer experience and maintainability.
+Opsteady brings the full path from code to production into one managed platform, including secure development workflows, automated CI/CD, production-ready infrastructure and complete observability.
 
 **Website:** [Opsteady.com](https://opsteady.com/)
