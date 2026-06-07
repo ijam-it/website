@@ -1026,20 +1026,67 @@ a:hover {
   background: #fff;
 }
 
-.career-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.55fr);
-  gap: 1.5rem;
-  align-items: start;
+.career-main {
+  max-width: 1120px;
+  margin-inline: auto;
 }
 
-.career-values {
-  display: grid;
-  gap: 0.75rem;
+.career-main .content-panel {
+  max-width: none;
+  width: 100%;
+  margin-inline: auto;
 }
 
-.career-layout .section-grid {
+.career-main .prose-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.career-main .section-grid {
   grid-template-columns: 1fr;
+}
+
+.career-vacancies .info-card {
+  min-height: 0;
+  padding: clamp(1.75rem, 4vw, 3rem);
+}
+
+.career-vacancies .info-card h2 {
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.career-vacancies .info-card p + p,
+.vacancy-body {
+  margin-top: 1rem;
+}
+
+.vacancy-body p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.vacancy-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.vacancy-sections h3 {
+  margin: 0 0 0.75rem;
+  color: var(--ijam-black);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.vacancy-sections ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--ijam-muted);
+  list-style-type: disc;
+}
+
+.vacancy-sections li {
+  margin-bottom: 0.45rem;
 }
 
 .value-pill {
@@ -1098,8 +1145,15 @@ a:hover {
   .signal-grid,
   .page-layout,
   .team-intro-grid,
-  .career-layout,
   .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-main .section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vacancy-sections {
     grid-template-columns: 1fr;
   }
 

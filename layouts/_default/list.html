@@ -6,15 +6,40 @@
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
   {{ if $isCareers }}
-  <div class="career-layout">
-    <div>
+  <div class="career-main">
   {{ end }}
   {{ if .Content }}
   <div class="content-panel prose-content {{ if $isCareers }}brand-panel{{ end }}">
     {{ .Content }}
   </div>
   {{ end }}
-  {{ if .Pages }}
+  {{ if and $isCareers .Params.vacancies }}
+  <div class="card-grid section-grid career-vacancies">
+    {{ range .Params.vacancies }}
+      <article class="info-card reveal-up">
+        <h2>{{ .title }}</h2>
+        {{ with .description }}<p>{{ . }}</p>{{ end }}
+        {{ with .text }}
+        <div class="vacancy-body">
+          {{ range . }}<p>{{ . }}</p>{{ end }}
+        </div>
+        {{ end }}
+        {{ with .sections }}
+        <div class="vacancy-sections">
+          {{ range . }}
+          <section>
+            <h3>{{ .title }}</h3>
+            <ul>
+              {{ range .items }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          </section>
+          {{ end }}
+        </div>
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+  {{ else if .Pages }}
   <div class="card-grid section-grid">
     {{ range .Pages.ByWeight }}
       <article class="info-card reveal-up">
@@ -25,17 +50,6 @@
   </div>
   {{ end }}
   {{ if $isCareers }}
-    </div>
-    <aside class="career-values">
-      {{ with .Params.career_values }}
-      <div class="outcome-panel">
-        {{ with .eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
-        {{ with .title }}<h2>{{ . }}<span class="blue-dot">.</span></h2>{{ end }}
-        {{ with .text }}<p>{{ . }}</p>{{ end }}
-      </div>
-      {{ range .pills }}<div class="value-pill">{{ . }}</div>{{ end }}
-      {{ end }}
-    </aside>
   </div>
   {{ end }}
 </section>
