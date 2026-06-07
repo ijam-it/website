@@ -249,6 +249,7 @@ a:hover {
 }
 
 .hero-visual {
+  align-self: start;
   position: relative;
   min-height: 420px;
   border-radius: 2rem;
@@ -1163,7 +1164,6 @@ body.ijam-site {
 }
 
 .impact-card {
-  background: #fff;
   border-radius: 1.25rem;
   padding: 2rem 1.5rem;
   box-shadow: 0 10px 40px rgba(11, 13, 16, 0.03);
@@ -1179,33 +1179,53 @@ body.ijam-site {
 }
 
 .impact-card .card-icon {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.25rem;
+  display: none;
 }
 
-.impact-card.accent-red .card-icon { background: rgba(217, 35, 46, 0.1); color: var(--ijam-red); }
-.impact-card.accent-blue .card-icon { background: rgba(23, 105, 214, 0.1); color: var(--ijam-blue); }
-.impact-card.accent-yellow .card-icon { background: rgba(244, 190, 35, 0.1); color: var(--ijam-yellow); }
-.impact-card.accent-black .card-icon { background: rgba(11, 13, 16, 0.1); color: var(--ijam-black); }
+.impact-card.accent-red {
+  background: var(--ijam-red);
+  border-color: var(--ijam-red);
+}
+
+.impact-card.accent-blue {
+  background: var(--ijam-blue);
+  border-color: var(--ijam-blue);
+}
+
+.impact-card.accent-yellow {
+  background: var(--ijam-yellow);
+  border-color: var(--ijam-yellow);
+}
+
+.impact-card.accent-black {
+  background: var(--ijam-black);
+  border-color: var(--ijam-black);
+}
 
 .impact-card h3 {
   font-size: 1.15rem;
   font-weight: 800;
   margin-bottom: 0.75rem;
-  color: var(--ijam-black);
 }
 
 .impact-card p {
   font-size: 0.95rem;
-  color: var(--ijam-muted);
   line-height: 1.5;
   margin: 0;
+}
+
+.impact-card.accent-red h3,
+.impact-card.accent-blue h3,
+.impact-card.accent-black h3,
+.impact-card.accent-red p,
+.impact-card.accent-blue p,
+.impact-card.accent-black p {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.impact-card.accent-yellow h3,
+.impact-card.accent-yellow p {
+  color: var(--ijam-black);
 }
 
 .why-panel {

@@ -12,6 +12,7 @@ $ git submodule update --init --recursive
 $ git submodule update --remote --merge
 $ cp themes/tella/exampleSite/package.json .
 $ npm install
+$ npm run build:css
 
 $ magick raw/logo-notekst.svg -define icon:auto-resize=256,64,48,32,16 static/favicon.ico
 $ magick raw/logo-notekst.svg -resize 16x16 static/favicon-16x16.png
@@ -22,7 +23,7 @@ $ magick raw/logo-notekst.svg -resize 192x192 static/web-app-manifest-192x192.pn
 $ magick raw/logo-notekst.svg -resize 512x512 static/web-app-manifest-512x512.png
 
 
-$ hugo --config config.toml
+$ hugo server
 ```
 
 ## TODO
