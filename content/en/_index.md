@@ -41,28 +41,9 @@ why:
   paragraphs:
     - "With iJam, you work directly with senior professionals who take responsibility. No large teams with endless handovers, but experienced minds who move between strategy, architecture, implementation and organisation."
     - "We are at our best in environments where many things come together: technology, security, processes, people, governance and delivery. That is where we bring clarity, direction and progress."
-services_teaser:
-  eyebrow: "What we do"
-  title: "We work at the intersection of technology and organisation"
   action:
     label: "View all services"
     url: "services/"
-  rows:
-    - title: "Platform Engineering"
-      icon: "bi bi-layers"
-      description: "We design and build internal platforms that help development teams deliver faster, safer and more independently."
-    - title: "Cloud & Kubernetes"
-      icon: "bi bi-cloud"
-      description: "We help organisations with cloud strategy, migration, architecture and platform decisions."
-    - title: "Secure Software Delivery"
-      icon: "bi bi-lock"
-      description: "We bring security closer to the development process through secure CI/CD, threat modeling and vulnerability management."
-    - title: "Security Architecture & Monitoring"
-      icon: "bi bi-shield"
-      description: "We support with security architecture, monitoring, SIEM, threat intelligence and incident response."
-    - title: "Digital Transformation & Team Building"
-      icon: "bi bi-people"
-      description: "We guide organisations in change, build high-performing teams and improve ways of working."
 labels_teaser:
   eyebrow: "Our specialised labels"
   title: "Labels within the iJam ecosystem"

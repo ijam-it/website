@@ -56,27 +56,7 @@
   </div>
   <div>
     {{ range $why.paragraphs }}<p>{{ . }}</p>{{ end }}
-  </div>
-</section>
-
-{{ $services := .Params.services_teaser }}
-<section class="what-we-do-section reveal-up">
-  <div class="what-we-do-intro">
-    {{ with $services.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
-    {{ with $services.title }}<h2>{{ . }}<span class="blue-dot">.</span></h2>{{ end }}
-    {{ with $services.action }}<a class="button secondary mt-6" style="margin-top: 1.5rem" href="{{ .url | relLangURL }}">{{ .label }} &rarr;</a>{{ end }}
-  </div>
-  <div class="service-list">
-    {{ range $services.rows }}
-      <div class="service-row">
-        <div class="service-icon"><i class="{{ .icon }}"></i></div>
-        <div>
-          <h3>{{ .title }}</h3>
-          <p>{{ .description }}</p>
-        </div>
-        <div class="service-arrow"><i class="bi bi-chevron-right"></i></div>
-      </div>
-    {{ end }}
+    {{ with $why.action }}<a class="button secondary mt-6" style="margin-top: 1.5rem" href="{{ .url | relLangURL }}">{{ .label }} &rarr;</a>{{ end }}
   </div>
 </section>
 

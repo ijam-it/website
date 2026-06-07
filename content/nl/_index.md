@@ -41,28 +41,9 @@ why:
   paragraphs:
     - "Bij iJam werk je direct met senior professionals die verantwoordelijkheid nemen. Geen grote teams met veel overdracht, maar ervaren denkers die schakelen tussen strategie, architectuur, uitvoering en organisatie."
     - "Wij zijn op ons best in omgevingen waar veel samenkomt: techniek, security, processen, mensen, governance en delivery. Juist daar brengen wij rust, richting en voortgang."
-services_teaser:
-  eyebrow: "Wat we doen"
-  title: "We werken op het snijvlak van technologie en organisatie"
   action:
     label: "Bekijk alle diensten"
     url: "diensten/"
-  rows:
-    - title: "Platform Engineering"
-      icon: "bi bi-layers"
-      description: "Wij ontwerpen en bouwen interne platformen die ontwikkelteams veiliger en onafhankelijker maken."
-    - title: "Cloud & Kubernetes"
-      icon: "bi bi-cloud"
-      description: "Wij helpen organisaties met cloudstrategie, migratie, architectuur en platformkeuzes."
-    - title: "Secure Software Delivery"
-      icon: "bi bi-lock"
-      description: "Wij brengen security dichter bij het ontwikkelproces via secure CI/CD, threat modeling en vulnerability management."
-    - title: "Security Architecture & Monitoring"
-      icon: "bi bi-shield"
-      description: "Wij ondersteunen met security architectuur, monitoring, SIEM, threat intelligence en incident response."
-    - title: "Digital Transformation & Team Building"
-      icon: "bi bi-people"
-      description: "Wij begeleiden organisaties in verandering, bouwen high-performing teams en verbeteren werkwijzen."
 labels_teaser:
   eyebrow: "Onze gespecialiseerde labels"
   title: "Labels binnen het iJam ecosysteem"

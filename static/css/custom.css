@@ -802,26 +802,6 @@ a:hover {
   color: var(--ijam-muted);
 }
 
-.service-list {
-  display: grid;
-  gap: 0.75rem;
-  margin-top: 2rem;
-}
-
-.service-row {
-  display: grid;
-  grid-template-columns: 3rem minmax(0, 1fr) auto;
-  gap: 1.2rem;
-  align-items: center;
-  padding: 1.5rem 0;
-  border-bottom: none;
-}
-
-.service-row:last-child {
-  border-bottom: 0;
-}
-
-.service-icon,
 .card-icon {
   display: grid;
   place-items: center;
@@ -832,23 +812,6 @@ a:hover {
   color: var(--ijam-black);
   font-weight: 900;
   font-size: 1.5rem;
-}
-
-.service-row h3 {
-  margin: 0 0 0.25rem;
-  color: var(--ijam-black);
-  font-size: 1.05rem;
-  line-height: 1.25;
-}
-
-.service-row p {
-  margin: 0;
-  color: var(--ijam-muted);
-}
-
-.service-arrow {
-  color: var(--ijam-muted);
-  font-weight: 900;
 }
 
 .page-layout {
@@ -1081,14 +1044,6 @@ a:hover {
 }
 
 @media (max-width: 640px) {
-  .service-row {
-    grid-template-columns: 2.8rem minmax(0, 1fr);
-  }
-
-  .service-arrow {
-    display: none;
-  }
-
   .process-card {
     grid-template-columns: 1fr;
   }
@@ -1248,21 +1203,9 @@ body.ijam-site {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.what-we-do-section {
-  width: min(1300px, calc(100% - 2rem));
-  margin: clamp(4rem, 8vw, 7rem) auto;
-  display: grid;
-  grid-template-columns: minmax(300px, 0.4fr) minmax(0, 1fr);
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: start;
-}
-
-.what-we-do-intro h2 {
-  font-size: clamp(2rem, 3vw, 2.5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--ijam-black);
-  margin-top: 1rem;
+.why-panel .button.secondary {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 .labels-teaser .labels-intro h2 {
@@ -1275,7 +1218,7 @@ body.ijam-site {
   .impact-cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .impact-section, .what-we-do-section {
+  .impact-section {
     grid-template-columns: 1fr;
   }
 }
