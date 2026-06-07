@@ -6,7 +6,6 @@
 {{ $hero := .Params.hero }}
 <section class="home-hero">
   <div class="hero-copy">
-    {{ with $hero.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
     {{ with $hero.title }}
       <h1>{{ range $index, $line := . }}{{ if $index }}<br>{{ end }}{{ $line }}{{ end }}<span class="blue-dot">.</span></h1>
     {{ end }}
