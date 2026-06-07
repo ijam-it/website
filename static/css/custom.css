@@ -461,59 +461,17 @@ a:hover {
   overflow: visible;
 }
 
-.person-mark {
-  display: grid;
-  place-items: center;
-  width: 3rem;
-  height: 3rem;
-  margin-bottom: 1.5rem;
-  border-radius: 0.9rem;
-  background: var(--ijam-soft);
-  color: var(--ijam-black);
-  font-weight: 900;
-}
-
-.person-card:nth-child(3n + 1) .person-mark { border-bottom: 4px solid var(--ijam-red); }
-.person-card:nth-child(3n + 2) .person-mark { border-bottom: 4px solid var(--ijam-yellow); }
-.person-card:nth-child(3n) .person-mark { border-bottom: 4px solid var(--ijam-blue); }
-
 .person-card-body {
-  position: absolute;
-  top: calc(100% - 0.75rem);
-  right: 1rem;
-  left: 1rem;
-  z-index: 20;
-  padding: 1rem;
-  border: 1px solid var(--ijam-line);
-  border-radius: 1rem;
-  background: #fff;
-  box-shadow: 0 20px 48px rgba(11, 13, 16, 0.14);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ijam-line);
   color: var(--ijam-muted);
   font-size: 0.95rem;
   line-height: 1.65;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(0.5rem);
-  visibility: hidden;
-  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
 }
 
 .person-card-body p {
   margin: 0;
-}
-
-.person-card:hover .person-card-body,
-.person-card:focus-within .person-card-body,
-.person-card:focus .person-card-body {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
-}
-
-.person-card:hover,
-.person-card:focus-within,
-.person-card:focus {
-  z-index: 5;
 }
 
 .page-shell {

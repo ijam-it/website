@@ -19,10 +19,8 @@
   </div>
   <div class="card-grid team-grid">
     {{ range .Pages.ByWeight }}
-      <article class="person-card reveal-up" tabindex="0">
-        <div class="person-mark" aria-hidden="true">{{ substr .Title 0 1 }}</div>
+      <article class="person-card reveal-up">
         <h2>{{ .Title }}</h2>
-        <p>{{ .Description }}</p>
         {{ with .Content }}
           <div class="person-card-body">{{ . }}</div>
         {{ end }}
