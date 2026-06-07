@@ -17,7 +17,7 @@
       {{ with .title }}<h2>{{ . }}<span class="blue-dot">.</span></h2>{{ end }}
       {{ with .text }}<p>{{ . }}</p>{{ end }}
       {{ with .bullets }}
-        <ul>
+        <ul class="label-points">
           {{ range . }}<li>{{ . }}</li>{{ end }}
         </ul>
       {{ end }}

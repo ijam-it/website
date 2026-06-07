@@ -882,7 +882,14 @@ a:hover {
   color: var(--ijam-black);
 }
 
-.outcome-panel h2,
+.outcome-panel h2 {
+  color: var(--ijam-black);
+}
+
+.outcome-panel p.eyebrow {
+  color: var(--ijam-blue);
+}
+
 .outcome-panel p,
 .outcome-panel li {
   color: var(--ijam-black);
