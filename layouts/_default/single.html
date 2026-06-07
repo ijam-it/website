@@ -77,12 +77,16 @@
       <a class="button" href="mailto:{{ $.Site.Params.contactEmail }}">{{ .button_label }} {{ $.Site.Params.contactEmail }}</a>
     </section>
     {{ end }}
-    <section class="contact-detail">
-      {{ range .Params.contact_details }}
-        <strong>{{ .label }}</strong>
-        {{ if .href }}<a href="{{ .href }}">{{ .value }}</a>{{ else }}<span>{{ .value }}</span>{{ end }}
+    {{ with .Params.contact_details }}
+    <section class="contact-detail" aria-label="Contact details">
+      {{ range . }}
+        <div class="contact-detail-item">
+          <strong>{{ .label }}</strong>
+          {{ if .href }}<a href="{{ .href }}">{{ .value }}</a>{{ else }}<span>{{ .value }}</span>{{ end }}
+        </div>
       {{ end }}
     </section>
+    {{ end }}
   </div>
 
   {{ else }}

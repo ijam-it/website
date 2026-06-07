@@ -1,26 +1,10 @@
 ---
-title: "Let's connect"
-description: "Are you working on a complex digital challenge? We would be happy to think along."
+title: "Contact"
+description: "Have a question or want to connect? Send us an email."
 layout_variant: "contact"
 contact_panel:
   eyebrow: "Contact"
-  title: "Discuss a complex digital challenge"
-  text: "Working on software delivery, security, cloud, platform engineering or digital transformation? We would be happy to think along."
+  title: "Tell us what you are working on"
+  text: "We will respond personally and help you think through the next step."
   button_label: "Email"
-contact_details:
-  - label: "Email"
-    value: "info@ijam-it.nl"
-    href: "mailto:info@ijam-it.nl"
-  - label: "LinkedIn"
-    value: "iJam"
-  - label: "Location"
-    value: "The Netherlands"
 ---
-
-Are you working on a complex digital challenge? Are you looking for senior help with software delivery, security, cloud, platform engineering or digital transformation?
-
-We would be happy to think along.
-
-**Email:** {{< cloakemail address="info@ijam-it.nl" >}}  
-**LinkedIn:** iJam  
-**Location:** The Netherlands
