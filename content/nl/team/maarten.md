@@ -1,11 +1,11 @@
 ---
 title: "Maarten"
 weight: 2
-description: "Technology leader, kwartiermaker & organisator van digitale verandering"
+description: "Kwartiermaker, programmamanager & leider van digitale verandering"
 build:
   render: never
 ---
 
-Maarten bouwt en ontwikkelt teams, afdelingen en programma's in complexe organisaties. Hij brengt structuur, energie en richting in omgevingen waar techniek, organisatie, inkoop, processen en mensen samenkomen.
+Maarten zet teams, afdelingen en programma's op in complexe organisaties en brengt ze snel naar resultaat. Hij combineert programmamanagement, leiderschap en veranderkracht met gevoel voor techniek, inkoop, processen, leveranciers en mensen.
 
-Zijn ervaring omvat programmamanagement, agile transformatie, security, software development, leveranciersmanagement, teamopbouw en leiderschap binnen overheid, onderwijs, loterij, publieke dienstverlening en enterprise IT.
+Zijn ervaring ligt onder andere in het opbouwen van DevOps- en softwareontwikkelteams, aansturen van multidisciplinaire securityteams, Europese aanbestedingen, leveranciersmanagement, agile transformatie en service delivery. Hij werkte aan nieuwe ontwikkelafdelingen, landelijke detectievoorzieningen, inkoop van dreigingsinformatie, uitrol van securityoplossingen, integraties tussen securitysystemen en grootschalige verandertrajecten binnen overheid, onderwijs, loterij en publieke dienstverlening.

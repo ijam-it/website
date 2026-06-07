@@ -1,11 +1,11 @@
 ---
 title: "Ivo"
 weight: 3
-description: "Security architect & digital resilience specialist"
+description: "Platform lead, technical product owner & DevOps specialist"
 build:
   render: never
 ---
 
-Ivo has deep experience in security architecture, CERT work, security monitoring and threat intelligence. He helps organisations reduce complex security challenges to their essence and translate risks to practical measures.
+Ivo helps organisations design, build and adopt scalable platforms for development teams. He combines technical depth with product ownership, stakeholder management and coaching of platform teams.
 
-His experience includes government, financial institutions, SOC environments, threat intelligence platforms, SIEM, detection and response, and security for critical infrastructure.
+His experience includes cloud platforms, automation, reliability insight, network design, security and release and configuration management. He has worked on large-scale platform environments, services for multiple user groups, cloud migrations and modernising software delivery so development teams can deliver more safely and quickly.

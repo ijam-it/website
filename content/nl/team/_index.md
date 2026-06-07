@@ -6,6 +6,6 @@ proof:
   text: "Geen onnodige lagen. Je werkt met mensen die strategie, architectuur en uitvoering kunnen verbinden."
 ---
 
-iJam bestaat uit senior professionals die hun sporen hebben verdiend in complexe IT-omgevingen. We hebben gewerkt aan digitale dienstverlening, securityplatformen, cloudmigraties, ontwikkelplatformen, SOC-omgevingen, threat intelligence, teamopbouw en organisatieverandering.
+iJam bestaat uit senior professionals die hun sporen hebben verdiend in complexe IT-omgevingen. We hebben gewerkt aan digitale dienstverlening, securityplatformen, cloudmigraties, ontwikkelplatformen, security operations, dreigingsinformatie, teamopbouw en organisatieverandering.
 
 Wat ons bindt is een praktische manier van werken: scherp analyseren, verantwoordelijkheid nemen en oplossingen bouwen die in de praktijk werken.

@@ -1,11 +1,11 @@
 ---
 title: "Richard"
 weight: 5
-description: "Senior technology professional & specialist in SOC tooling"
+description: "Security architect, operations specialist & technical lead"
 build:
   render: never
 ---
 
-Richard versterkt iJam met senior ervaring in technologie, delivery en klantgerichte oplossingen. Zijn rol binnen iJam richt zich op het helpen van organisaties met praktische, betrouwbare en toekomstbestendige IT-oplossingen.
+Richard helpt organisaties digitale weerbaarheid concreet te verbeteren met securityarchitectuur, monitoringdiensten en technische realisatie. Hij schakelt tussen product ownership, technisch ontwerp, integraties en operationele security in complexe omgevingen.
 
-Hij houdt het meest van complexe omgevingen waarbij tijdens systeemitegratie met de kleinste facetten rekening moet worden gehouden.
+Zijn ervaring ligt onder andere in registraties en meldprocessen, kwetsbaarhedenbeheer, werkplekbeveiliging, securitymonitoring, detectie, dreigingsinformatie en security automation. Hij werkte aan digitale diensten, integraties tussen securitysystemen, standaardisatie van informatie-uitwisseling en beveiliging van grote overheids-, financiele en telecomomgevingen.

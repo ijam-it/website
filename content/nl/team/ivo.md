@@ -1,11 +1,11 @@
 ---
 title: "Ivo"
 weight: 3
-description: "Security architect & specialist in digitale weerbaarheid"
+description: "Platform lead, technical product owner & DevOps specialist"
 build:
   render: never
 ---
 
-Ivo heeft diepe ervaring in securityarchitectuur, CERT-werk, security monitoring en threat intelligence. Hij helpt organisaties om complexe securityvraagstukken terug te brengen tot de essentie en vertaalt risico's naar praktische maatregelen.
+Ivo helpt organisaties schaalbare platformen ontwerpen, bouwen en laten landen bij ontwikkelteams. Hij combineert technische diepgang met product ownership, stakeholdermanagement en coaching van platformteams.
 
-Zijn ervaring ligt onder andere bij overheid, financiele instellingen, SOC-omgevingen, threat intelligence platformen, SIEM, detection & response en beveiliging van kritieke infrastructuur.
+Zijn ervaring ligt onder andere in cloudplatformen, automatisering, inzicht in betrouwbaarheid, netwerkontwerp, security en beheer van releases en configuratie. Hij werkte aan grootschalige platformomgevingen, diensten voor meerdere gebruikersgroepen, cloudmigraties en modernisering van software delivery om ontwikkelteams veiliger en sneller te laten leveren.
