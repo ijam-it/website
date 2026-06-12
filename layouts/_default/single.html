@@ -68,7 +68,7 @@
       {{ with .eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
       {{ with .title }}<h2>{{ . }}<span class="blue-dot">.</span></h2>{{ end }}
       {{ with .text }}<p>{{ . }}</p>{{ end }}
-      <a class="button" href="mailto:{{ $.Site.Params.contactEmail }}">{{ .button_label }} {{ $.Site.Params.contactEmail }}</a>
+      {{ partial "cloakemail" (dict "address" $.Site.Params.contactEmail "class" "button") }}
     </section>
     {{ end }}
     {{ with .Params.contact_details }}

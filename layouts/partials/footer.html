@@ -1,19 +1,19 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div>
-      <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">iJam</a>
+      <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Params.site.name }}</a>
       <p>{{ .Site.Params.footerIntro }}</p>
-      <p class="registered">iJam IT Solutions</p>
+      <p class="registered">{{ .Site.Params.site.legalName }}</p>
     </div>
-    <nav class="footer-links" aria-label="Footer navigation">
+    <nav class="footer-links" aria-label="{{ i18n "footerNavigation" }}">
       {{ range .Site.Menus.main }}
         <a href="{{ .URL | relURL }}">{{ .Name }}</a>
       {{ end }}
     </nav>
   </div>
   <div class="footer-bottom">
-    <span>&copy; {{ now.Year }} iJam IT Solutions</span>
-    <a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
+    <span>&copy; {{ now.Year }} {{ .Site.Params.site.legalName }}</span>
+    {{ partial "cloakemail" (dict "address" .Site.Params.contactEmail) }}
   </div>
 </footer>
 <script>

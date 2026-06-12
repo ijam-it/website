@@ -2,3 +2,11 @@ viewDetails:
   other: "View details"
 visit:
   other: "Visit"
+homeLabel:
+  other: "iJam home"
+menu:
+  other: "Menu"
+mainNavigation:
+  other: "Main navigation"
+footerNavigation:
+  other: "Footer navigation"

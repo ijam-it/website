@@ -1157,8 +1157,9 @@ a:hover {
 
 .contact-card p {
   color: var(--ijam-muted);
-  max-width: 34rem;
+  max-width: 42rem;
   margin-inline: auto;
+  text-wrap: balance;
 }
 
 .contact-card .button {

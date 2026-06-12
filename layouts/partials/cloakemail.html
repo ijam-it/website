@@ -1,0 +1,22 @@
+{{- $address := .address -}}
+{{- $protocol := .protocol | default "mailto" -}}
+{{- $class := .class -}}
+{{- $parts := split $address "@" -}}
+{{- $user := index $parts 0 -}}
+{{- $domain := index $parts 1 -}}
+{{- $fingerprint := md5 (print $address $protocol (index (seq 999 | shuffle) 0)) | truncate 8 "" -}}
+<span class="cloaked-email" data-user="{{ range $index := seq (sub (len $user) 1) 0 }}{{ substr $user $index 1 }}{{ end }}" data-domain="{{ range $index := seq (sub (len $domain) 1) 0 }}{{ substr $domain $index 1 }}{{ end }}" data-protocol="{{ $protocol }}"{{ with $class }} data-class="{{ . }}"{{ end }} id="email-{{ $fingerprint }}"></span>
+<script>
+  (() => {
+    const span = document.querySelector('#email-{{ $fingerprint }}');
+    if (!span) return;
+    const user = span.dataset.user.split('').reverse().join('');
+    const domain = span.dataset.domain.split('').reverse().join('');
+    const address = `${user}@${domain}`;
+    const link = document.createElement('a');
+    link.href = `${span.dataset.protocol}:${address}`;
+    link.textContent = address;
+    if (span.dataset.class) link.className = span.dataset.class;
+    span.replaceWith(link);
+  })();
+</script>
