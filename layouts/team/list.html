@@ -29,3 +29,17 @@
   </div>
 </section>
 {{ end }}
+
+{{ define "scripts" }}
+<script>
+  const teamGrid = document.querySelector('.team-grid');
+  if (teamGrid) {
+    const cards = Array.from(teamGrid.children);
+    for (let index = cards.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1));
+      [cards[index], cards[randomIndex]] = [cards[randomIndex], cards[index]];
+    }
+    cards.forEach(card => teamGrid.appendChild(card));
+  }
+</script>
+{{ end }}
