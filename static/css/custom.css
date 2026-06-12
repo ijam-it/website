@@ -7,10 +7,10 @@
   --ijam-red: #d9232e;
   --ijam-yellow: #f4be23;
   --ijam-blue: #1769d6;
-  --ijam-focus: rgba(23, 105, 214, 0.4);
-  --ijam-bg: #ffffff;
-  --ijam-header-bg: rgba(255, 255, 255, 0.92);
-  --ijam-chip-bg: rgba(255, 255, 255, 0.72);
+  --ijam-focus: rgb(23 105 214 / 40%);
+  --ijam-bg: #fff;
+  --ijam-header-bg: rgb(255 255 255 / 92%);
+  --ijam-chip-bg: rgb(255 255 255 / 72%);
 }
 
 
@@ -30,9 +30,9 @@ html {
 
 body.ijam-site {
   margin: 0;
-  background: var(--ijam-bg);
+  background: var(--ijam-soft);
   color: var(--ijam-ink);
-  font-family: "Montserrat", "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Montserrat, "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.65;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -98,6 +98,10 @@ a:hover {
   transform: scaleX(1);
 }
 
+.site-nav a.is-active {
+  color: var(--ijam-blue);
+}
+
 .lang-switch {
   display: inline-flex;
   align-items: center;
@@ -156,7 +160,7 @@ a:hover {
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
   gap: clamp(2rem, 6vw, 5rem);
   align-items: center;
-  padding: clamp(3rem, 7vw, 6rem) 0 clamp(3rem, 7vw, 6rem);
+  padding: clamp(3rem, 7vw, 6rem) 0;
 }
 
 .eyebrow {
@@ -188,7 +192,7 @@ a:hover {
   line-height: 1.35;
 }
 
-.home-hero p:not(.eyebrow):not(.lead),
+.home-hero p:not(.eyebrow, .lead),
 .split-section p,
 .trust-band p,
 .section-block > p,
@@ -253,21 +257,19 @@ a:hover {
   position: relative;
   min-height: 420px;
   border-radius: 2rem;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(217, 35, 46, 0.12), transparent 28%),
-    radial-gradient(circle at 88% 18%, rgba(244, 190, 35, 0.2), transparent 24%),
-    linear-gradient(145deg, #f8f9fb, #fff);
-  border: 1px solid var(--ijam-line);
-  overflow: hidden;
+  background: none;
+  border: none;
+  overflow: visible;
 }
 
 .chip-card {
+  z-index: 1;
   position: absolute;
   inset: 14%;
-  border: 1px solid var(--ijam-line);
+  border: none;
   border-radius: 1.25rem;
-  background: var(--ijam-chip-bg);
-  box-shadow: 0 28px 70px rgba(11, 13, 16, 0.12);
+  background: #fff;
+  box-shadow: 0 30px 80px rgb(11 13 16 / 8%);
 }
 
 .chip-card::before,
@@ -276,7 +278,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 18%;
-  border: 1px solid rgba(11, 13, 16, 0.08);
+  border: 1px solid rgb(11 13 16 / 8%);
   border-radius: 0.8rem;
 }
 
@@ -285,7 +287,7 @@ a:hover {
 }
 
 .chip-lines {
-  inset: auto 12% 16% 12%;
+  inset: auto 12% 16%;
   height: 1px;
   border: 0;
   background: linear-gradient(90deg, var(--ijam-red), var(--ijam-yellow), var(--ijam-blue));
@@ -406,14 +408,14 @@ a:hover {
   border: 1px solid var(--ijam-line);
   border-radius: 1.2rem;
   background: #fff;
-  box-shadow: 0 16px 44px rgba(11, 13, 16, 0.04);
+  box-shadow: 0 16px 44px rgb(11 13 16 / 4%);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .info-card:hover,
 .person-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 48px rgba(11, 13, 16, 0.08);
+  box-shadow: 0 20px 48px rgb(11 13 16 / 8%);
 }
 
 .info-card::before {
@@ -606,7 +608,7 @@ a:hover {
 
 .site-footer p,
 .registered {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255 255 255 / 70%);
   margin-top: 1rem;
 }
 
@@ -618,7 +620,7 @@ a:hover {
 
 .footer-links a,
 .footer-bottom a {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgb(255 255 255 / 78%);
   transition: color 0.2s ease;
 }
 
@@ -632,12 +634,12 @@ a:hover {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.2rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.62);
+  border-top: 1px solid rgb(255 255 255 / 12%);
+  color: rgb(255 255 255 / 62%);
   font-size: 0.9rem;
 }
 
-@media (max-width: 980px) {
+@media (width <= 980px) {
   .site-header {
     grid-template-columns: auto 1fr auto;
   }
@@ -655,7 +657,6 @@ a:hover {
     align-items: flex-start;
     gap: 0.7rem;
     border-top: 1px solid var(--ijam-line);
-    
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -689,7 +690,7 @@ a:hover {
   }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .site-header {
     gap: 0.75rem;
     padding: 0.8rem 1rem;
@@ -752,7 +753,7 @@ a:hover {
   border: 1px solid var(--ijam-line);
   border-radius: 1.5rem;
   background: #fff;
-  box-shadow: 0 16px 44px rgba(11, 13, 16, 0.04);
+  box-shadow: 0 16px 44px rgb(11 13 16 / 4%);
 }
 
 .signal-grid {
@@ -821,7 +822,7 @@ a:hover {
   border: 1px solid var(--ijam-line);
   border-radius: 1.25rem;
   background: #fff;
-  box-shadow: 0 14px 42px rgba(11, 13, 16, 0.04);
+  box-shadow: 0 14px 42px rgb(11 13 16 / 4%);
 }
 
 .process-card {
@@ -871,11 +872,6 @@ a:hover {
 
 .outcome-panel p.eyebrow {
   color: var(--ijam-blue);
-}
-
-.outcome-panel p,
-.outcome-panel li {
-  color: var(--ijam-black);
 }
 
 .outcome-panel p,
@@ -939,14 +935,14 @@ a:hover {
   border: 1px solid var(--ijam-line);
   border-radius: 1.2rem;
   background: #fff;
-  box-shadow: 0 16px 44px rgba(11, 13, 16, 0.04);
+  box-shadow: 0 16px 44px rgb(11 13 16 / 4%);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .label-link-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(23, 105, 214, 0.2);
-  box-shadow: 0 20px 48px rgba(11, 13, 16, 0.08);
+  border-color: rgb(23 105 214 / 20%);
+  box-shadow: 0 20px 48px rgb(11 13 16 / 8%);
 }
 
 .label-link-eyebrow {
@@ -1003,10 +999,6 @@ a:hover {
 
 .team-proof span {
   color: var(--ijam-muted);
-}
-
-.person-card {
-  background: #fff;
 }
 
 .career-main {
@@ -1097,7 +1089,7 @@ a:hover {
   border-radius: 1.6rem;
   background: #fff;
   color: var(--ijam-black);
-  box-shadow: 0 20px 60px rgba(11, 13, 16, 0.04);
+  box-shadow: 0 20px 60px rgb(11 13 16 / 4%);
   text-align: center;
 }
 
@@ -1124,7 +1116,7 @@ a:hover {
   padding: clamp(1.5rem, 4vw, 3rem);
   border: 1px solid var(--ijam-line);
   border-radius: 1.6rem;
-  background: rgba(255, 255, 255, 0.64);
+  background: rgb(255 255 255 / 64%);
 }
 
 .contact-detail strong {
@@ -1141,7 +1133,7 @@ a:hover {
   font-weight: 700;
 }
 
-@media (max-width: 980px) {
+@media (width <= 980px) {
   .signal-grid,
   .page-layout,
   .team-intro-grid,
@@ -1162,7 +1154,7 @@ a:hover {
   }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .process-card {
     grid-template-columns: 1fr;
   }
@@ -1174,11 +1166,6 @@ a:hover {
     transform: none;
     transition: none;
   }
-}
-
-/* New High-End B2B Styles */
-body.ijam-site {
-  background: var(--ijam-soft);
 }
 
 .blue-dot {
@@ -1193,25 +1180,12 @@ body.ijam-site {
   width: 150%;
   height: 150%;
   background:
-    radial-gradient(circle at 30% 30%, rgba(217, 35, 46, 0.08), transparent 40%),
-    radial-gradient(circle at 70% 30%, rgba(244, 190, 35, 0.08), transparent 40%),
-    radial-gradient(circle at 50% 70%, rgba(23, 105, 214, 0.08), transparent 50%),
-    radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
+    radial-gradient(circle at 30% 30%, rgb(217 35 46 / 8%), transparent 40%),
+    radial-gradient(circle at 70% 30%, rgb(244 190 35 / 8%), transparent 40%),
+    radial-gradient(circle at 50% 70%, rgb(23 105 214 / 8%), transparent 50%),
+    radial-gradient(circle at center, rgb(255 255 255 / 100%) 0%, rgb(255 255 255 / 0%) 60%);
   z-index: 0;
   pointer-events: none;
-}
-
-.hero-visual {
-  background: none;
-  border: none;
-  overflow: visible;
-}
-
-.chip-card {
-  z-index: 1;
-  background: #ffffff;
-  border: none;
-  box-shadow: 0 30px 80px rgba(11, 13, 16, 0.08);
 }
 
 .impact-section {
@@ -1240,7 +1214,7 @@ body.ijam-site {
 .impact-card {
   border-radius: 1.25rem;
   padding: 2rem 1.5rem;
-  box-shadow: 0 10px 40px rgba(11, 13, 16, 0.03);
+  box-shadow: 0 10px 40px rgb(11 13 16 / 3%);
   border: 1px solid var(--ijam-line);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
@@ -1249,7 +1223,7 @@ body.ijam-site {
 
 .impact-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 48px rgba(11, 13, 16, 0.08);
+  box-shadow: 0 20px 48px rgb(11 13 16 / 8%);
 }
 
 .impact-card .card-icon {
@@ -1294,7 +1268,7 @@ body.ijam-site {
 .impact-card.accent-red p,
 .impact-card.accent-blue p,
 .impact-card.accent-black p {
-  color: rgba(255, 255, 255, 0.96);
+  color: rgb(255 255 255 / 96%);
 }
 
 .impact-card.accent-yellow h3,
@@ -1315,15 +1289,15 @@ body.ijam-site {
 }
 
 .why-panel p.eyebrow {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255 255 255 / 60%);
 }
 
 .why-panel p:not(.eyebrow) {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255 255 255 / 80%);
 }
 
 .why-panel .button.secondary {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgb(255 255 255 / 20%);
   color: #fff;
 }
 
@@ -1331,18 +1305,32 @@ body.ijam-site {
   font-size: clamp(2rem, 3vw, 2.5rem);
   font-weight: 800;
   line-height: 1.1;
+  margin-top: 0.5rem;
 }
 
-@media (max-width: 1024px) {
+.labels-teaser .labels-intro {
+  margin-bottom: 2.5rem;
+}
+
+.labels-teaser .labels-intro p {
+  margin-top: 1rem;
+}
+
+.block-action {
+  margin-top: 1.5rem;
+}
+
+@media (width <= 1024px) {
   .impact-cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .impact-section {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .impact-cards {
     grid-template-columns: 1fr;
   }

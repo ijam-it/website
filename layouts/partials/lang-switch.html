@@ -1,29 +1,29 @@
-{{ $current := .RelPermalink }}
-{{ $nl := "/" }}
-{{ $en := "/en/" }}
-{{ if eq .Site.Language.Lang "nl" }}
-  {{ if hasPrefix $current "/aanpak/" }}{{ $en = replace $current "/aanpak/" "/en/approach/" }}{{ end }}
-  {{ if hasPrefix $current "/diensten/" }}{{ $en = replace $current "/diensten/" "/en/services/" }}{{ end }}
-  {{ if hasPrefix $current "/labels/" }}{{ $en = replace $current "/labels/" "/en/labels/" }}{{ end }}
-  {{ if hasPrefix $current "/team/" }}{{ $en = replace $current "/team/" "/en/team/" }}{{ end }}
-  {{ if hasPrefix $current "/werken-bij/" }}{{ $en = replace $current "/werken-bij/" "/en/careers/" }}{{ end }}
-  {{ if hasPrefix $current "/contact/" }}{{ $en = replace $current "/contact/" "/en/contact/" }}{{ end }}
-{{ else }}
-  {{ $nl = "/" }}
-  {{ if hasPrefix $current "/en/approach/" }}{{ $nl = replace $current "/en/approach/" "/aanpak/" }}{{ end }}
-  {{ if hasPrefix $current "/en/services/" }}{{ $nl = replace $current "/en/services/" "/diensten/" }}{{ end }}
-  {{ if hasPrefix $current "/en/labels/" }}{{ $nl = replace $current "/en/labels/" "/labels/" }}{{ end }}
-  {{ if hasPrefix $current "/en/team/" }}{{ $nl = replace $current "/en/team/" "/team/" }}{{ end }}
-  {{ if hasPrefix $current "/en/careers/" }}{{ $nl = replace $current "/en/careers/" "/werken-bij/" }}{{ end }}
-  {{ if hasPrefix $current "/en/contact/" }}{{ $nl = replace $current "/en/contact/" "/contact/" }}{{ end }}
-{{ end }}
+{{- $current := .RelPermalink }}
+{{- $nl := "/" }}
+{{- $en := "/en/" }}
+{{- if eq .Site.Language.Lang "nl" }}
+  {{- if hasPrefix $current "/aanpak/" }}{{ $en = replace $current "/aanpak/" "/en/approach/" }}{{ end }}
+  {{- if hasPrefix $current "/diensten/" }}{{ $en = replace $current "/diensten/" "/en/services/" }}{{ end }}
+  {{- if hasPrefix $current "/labels/" }}{{ $en = replace $current "/labels/" "/en/labels/" }}{{ end }}
+  {{- if hasPrefix $current "/team/" }}{{ $en = replace $current "/team/" "/en/team/" }}{{ end }}
+  {{- if hasPrefix $current "/werken-bij/" }}{{ $en = replace $current "/werken-bij/" "/en/careers/" }}{{ end }}
+  {{- if hasPrefix $current "/contact/" }}{{ $en = replace $current "/contact/" "/en/contact/" }}{{ end }}
+{{- else }}
+  {{- $nl = "/" }}
+  {{- if hasPrefix $current "/en/approach/" }}{{ $nl = replace $current "/en/approach/" "/aanpak/" }}{{ end }}
+  {{- if hasPrefix $current "/en/services/" }}{{ $nl = replace $current "/en/services/" "/diensten/" }}{{ end }}
+  {{- if hasPrefix $current "/en/labels/" }}{{ $nl = replace $current "/en/labels/" "/labels/" }}{{ end }}
+  {{- if hasPrefix $current "/en/team/" }}{{ $nl = replace $current "/en/team/" "/team/" }}{{ end }}
+  {{- if hasPrefix $current "/en/careers/" }}{{ $nl = replace $current "/en/careers/" "/werken-bij/" }}{{ end }}
+  {{- if hasPrefix $current "/en/contact/" }}{{ $nl = replace $current "/en/contact/" "/contact/" }}{{ end }}
+{{- end }}
 
 <nav class="lang-switch" aria-label="Language switcher">
-  {{ if eq .Site.Language.Lang "nl" }}
+  {{- if eq .Site.Language.Lang "nl" }}
     <span aria-current="true">NL</span>
     <a href="{{ $en }}">EN</a>
-  {{ else }}
+  {{- else }}
     <a href="{{ $nl }}">NL</a>
     <span aria-current="true">EN</span>
-  {{ end }}
+  {{- end }}
 </nav>

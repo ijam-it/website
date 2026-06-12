@@ -54,6 +54,16 @@ Team member cards can show a LinkedIn link by adding this shortcode as the last 
 {{</* linkedin url="https://www.linkedin.com/in/..." */>}}
 ```
 
+## Way of Working
+
+Before considering a change done, build the site and check local generated links:
+
+```sh
+make check
+```
+
+This runs Stylelint for `static/css/custom.css`, builds the site with `hugo --destination public`, normalizes generated HTML whitespace, validates generated HTML with `html-validate`, and checks local links with `lychee --offline --root-dir public "public/**/*.html"`. Use Lychee in offline mode for regular local checks. This verifies links and assets in the generated site without external network, TLS, redirect or rate-limit noise.
+
 ## TODO
 
 - welke taal? NL? EN? multi? 
