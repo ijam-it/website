@@ -26,7 +26,7 @@ impact:
     - title: "Security & Resilience"
       icon: "bi bi-link-45deg"
       accent: "accent-red"
-      description: "We strengthen digital resilience through security architecture, monitoring, threat intelligence, vulnerability management and incident response."
+      description: "We design and improve security operations with a focus on architecture, monitoring, detection, threat intelligence and vulnerability management."
     - title: "Secure Platforms"
       icon: "bi bi-shield-check"
       accent: "accent-yellow"

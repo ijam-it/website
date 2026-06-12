@@ -26,7 +26,7 @@ impact:
     - title: "Security & Resilience"
       icon: "bi bi-link-45deg"
       accent: "accent-red"
-      description: "Wij versterken digitale weerbaarheid met ervaring in security architecture, monitoring, threat intelligence, vulnerability management en incident response."
+      description: "Wij ontwerpen en verbeteren security-operaties met focus op architectuur, monitoring, detectie, threat intelligence en vulnerability management."
     - title: "Secure Platforms"
       icon: "bi bi-shield-check"
       accent: "accent-yellow"
