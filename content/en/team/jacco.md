@@ -6,6 +6,8 @@ build:
   render: never
 ---
 
-Jacco helps organisations reduce complex security challenges to their essence and turn them into usable services. He combines security architecture, incident response, security monitoring and threat information with clear communication and product-oriented work.
+Jacco helps organisations turn complex security challenges into usable services. He combines security architecture, monitoring and threat information with product-oriented work.
 
-His experience includes vulnerability services, digital portals, platforms for threat information, network detection, security monitoring, security data analysis, processing threat indicators and detection methods. He has worked across government and financial institutions on security services, information exchange, monitoring and automation of vulnerability information.
+His experience includes vulnerability services, threat information, network detection, security monitoring, security data analysis and automation.
+
+{{< linkedin url="https://www.linkedin.com/in/jaccoligthart/" >}}

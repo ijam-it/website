@@ -6,6 +6,8 @@ build:
   render: never
 ---
 
-Maarten zet teams, afdelingen en programma's op in complexe organisaties en brengt ze snel naar resultaat. Hij combineert programmamanagement, leiderschap en veranderkracht met gevoel voor techniek, inkoop, processen, leveranciers en mensen.
+Maarten zet teams, afdelingen en programma's op in complexe organisaties en brengt ze snel naar resultaat. Hij combineert programmamanagement en leiderschap met gevoel voor techniek, processen en mensen.
 
-Zijn ervaring ligt onder andere in het opbouwen van DevOps- en softwareontwikkelteams, aansturen van multidisciplinaire securityteams, Europese aanbestedingen, leveranciersmanagement, agile transformatie en service delivery. Hij werkte aan nieuwe ontwikkelafdelingen, landelijke detectievoorzieningen, inkoop van dreigingsinformatie, uitrol van securityoplossingen, integraties tussen securitysystemen en grootschalige verandertrajecten binnen overheid, onderwijs, loterij en publieke dienstverlening.
+Zijn ervaring ligt in DevOps- en softwareteams, securityteams, aanbestedingen, leveranciersmanagement, agile transformatie en service delivery.
+
+{{< linkedin url="https://www.linkedin.com/in/maarten-riemersma-6b10527/" >}}

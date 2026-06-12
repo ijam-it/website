@@ -6,6 +6,8 @@ build:
   render: never
 ---
 
-Armin helpt organisaties hun software delivery te versnellen en vereenvoudigen met moderne platformen, DevOps-werkwijzen en praktische inzet van AI. Hij verbindt strategie, architectuur en hands-on realisatie, en begeleidt teams van technische keuzes tot productie.
+Armin helpt organisaties software delivery te versnellen met moderne platformen, DevOps-werkwijzen en praktische inzet van AI. Hij verbindt strategie, architectuur en hands-on realisatie.
 
-Zijn ervaring ligt onder andere in platformstrategie, cloudtransformatie, geautomatiseerde delivery, softwarearchitectuur, security in ontwikkelprocessen, AI in applicaties en AI-ondersteund ontwikkelen. Hij werkt graag op het snijvlak van techniek, teams en organisatie, met oplossingen die veilig, schaalbaar en prettig te gebruiken zijn.
+Zijn ervaring ligt in platformstrategie, cloudtransformatie, geautomatiseerde delivery, softwarearchitectuur en security in ontwikkelprocessen.
+
+{{< linkedin url="https://www.linkedin.com/in/armincoralic/" >}}

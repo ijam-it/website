@@ -46,6 +46,14 @@ Use these exact iJam colors for logos, favicons, blocks, accents and related pro
 
 The Tella blog and summary partials are not part of the current site design. If blog, recent-post or theme summary features are enabled later, review the inherited partials first: they may reference theme placeholder assets such as `/img/default.jpg`.
 
+## Content Notes
+
+Team member cards can show a LinkedIn link by adding this shortcode as the last line of the team member content:
+
+```go-html-template
+{{</* linkedin url="https://www.linkedin.com/in/..." */>}}
+```
+
 ## TODO
 
 - welke taal? NL? EN? multi? 

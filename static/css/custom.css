@@ -459,9 +459,14 @@ a:hover {
 .person-card {
   min-height: 250px;
   overflow: visible;
+  display: flex;
+  flex-direction: column;
 }
 
 .person-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--ijam-line);
@@ -472,6 +477,26 @@ a:hover {
 
 .person-card-body p {
   margin: 0;
+}
+
+.person-card-body p + p {
+  margin-top: 1rem;
+}
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  color: var(--ijam-blue);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.linkedin-link:hover {
+  color: var(--ijam-black);
 }
 
 .page-shell {

@@ -6,6 +6,8 @@ build:
   render: never
 ---
 
-Armin helps organisations accelerate and simplify software delivery with modern platforms, DevOps ways of working and practical use of AI. He connects strategy, architecture and hands-on delivery, guiding teams from technical choices to production.
+Armin helps organisations accelerate software delivery with modern platforms, DevOps ways of working and practical use of AI. He connects strategy, architecture and hands-on delivery.
 
-His experience includes platform strategy, cloud transformation, automated delivery, software architecture, security in development processes, AI in applications and AI-supported development. He works at the intersection of technology, teams and organisation, with solutions that are secure, scalable and pleasant to use.
+His experience includes platform strategy, cloud transformation, automated delivery, software architecture and security in development processes.
+
+{{< linkedin url="https://www.linkedin.com/in/armincoralic/" >}}

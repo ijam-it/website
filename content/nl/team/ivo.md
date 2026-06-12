@@ -6,6 +6,8 @@ build:
   render: never
 ---
 
-Ivo helpt organisaties schaalbare platformen ontwerpen, bouwen en laten landen bij ontwikkelteams. Hij combineert technische diepgang met product ownership, stakeholdermanagement en coaching van platformteams.
+Ivo helpt organisaties schaalbare platformen ontwerpen, bouwen en laten landen bij ontwikkelteams. Hij combineert technische diepgang met product ownership en coaching van platformteams.
 
-Zijn ervaring ligt onder andere in cloudplatformen, automatisering, inzicht in betrouwbaarheid, netwerkontwerp, security en beheer van releases en configuratie. Hij werkte aan grootschalige platformomgevingen, diensten voor meerdere gebruikersgroepen, cloudmigraties en modernisering van software delivery om ontwikkelteams veiliger en sneller te laten leveren.
+Zijn ervaring ligt in cloudplatformen, automatisering, betrouwbaarheid, netwerkontwerp, security en release- en configuratiebeheer.
+
+{{< linkedin url="https://www.linkedin.com/in/ivoverberk/" >}}
