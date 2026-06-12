@@ -3,12 +3,15 @@
 
 <svg
    width="820mm"
-   height="820mm"
-   viewBox="0 0 820 820"
+   height="1242mm"
+   viewBox="0 0 820 1242"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
-   sodipodi:docname="logo-notekst.svg"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="logo.png"
+   inkscape:export-xdpi="13.088567"
+   inkscape:export-ydpi="13.088567"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,14 +27,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.12551319"
-     inkscape:cx="4848.096"
+     inkscape:cx="4852.0797"
      inkscape:cy="3031.5539"
      inkscape:window-width="1920"
      inkscape:window-height="1006"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showgrid="false" />
   <defs
      id="defs1">
     <rect
@@ -173,7 +177,7 @@
        id="rect1029123-93"
        width="200"
        height="45"
-       x="-7.1054274e-15"
+       x="0"
        y="215"
        rx="22.500002"
        ry="22.5" />
@@ -182,7 +186,7 @@
        id="rect1029123-0-1"
        width="200"
        height="45"
-       x="-7.1054274e-15"
+       x="0"
        y="560"
        rx="22.500002"
        ry="22.5" />
@@ -191,7 +195,7 @@
        id="rect1029123-9-9"
        width="200"
        height="45"
-       x="-7.1054274e-15"
+       x="0"
        y="445"
        rx="22.500002"
        ry="22.5" />
@@ -200,7 +204,7 @@
        id="rect1029123-7-4"
        width="200"
        height="45"
-       x="-7.1054274e-15"
+       x="0"
        y="330"
        rx="22.500002"
        ry="22.5" />
@@ -235,5 +239,24 @@
        inkscape:transform-center-x="0.11459884"
        inkscape:transform-center-y="-28.767664"
        transform="matrix(0.33504635,0,0,0.33504635,226.17554,286.60909)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(19.844266,0,0,19.844266,-13761.146,-77118.15)"
+       id="text3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4441px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32,wght=700';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32, 'wght' 700;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#000000;fill-opacity:1"><tspan
+         x="693.1543"
+         y="3939.3938"
+         id="tspan2">iJam IT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:148.167px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+       x="121.50162"
+       y="1239.3195"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:148.167px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32;stroke-width:0.264583"
+         x="121.50162"
+         y="1239.3195">solutions</tspan></text>
   </g>
 </svg>

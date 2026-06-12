@@ -205,21 +205,21 @@
        rx="22.500002"
        ry="22.5" />
     <rect
-       style="fill:#0000ff;fill-opacity:1;stroke-width:0.999999"
+       style="fill:#1769d6;fill-opacity:1;stroke-width:0.999999"
        id="rect1029124"
        width="160"
        height="160"
        x="440"
        y="220" />
     <circle
-       style="fill:#ffff00;fill-opacity:1;stroke-width:0.264583"
+       style="fill:#f4be23;fill-opacity:1;stroke-width:0.264583"
        id="path1"
        cx="410"
        cy="540"
        r="100" />
     <path
        sodipodi:type="star"
-       style="fill:#ff0000;fill-opacity:1;stroke-width:0.264583"
+       style="fill:#d9232e;fill-opacity:1;stroke-width:0.264583"
        id="path2"
        inkscape:flatsided="true"
        sodipodi:sides="3"

@@ -14,6 +14,7 @@ $ cp themes/tella/exampleSite/package.json .
 $ npm install
 $ npm run build:css
 
+$ magick raw/logo.svg -resize 423x640 static/img/logo/logo.png
 $ magick raw/logo-notekst.svg -define icon:auto-resize=256,64,48,32,16 static/favicon.ico
 $ magick raw/logo-notekst.svg -resize 16x16 static/favicon-16x16.png
 $ magick raw/logo-notekst.svg -resize 32x32 static/favicon-32x32.png
