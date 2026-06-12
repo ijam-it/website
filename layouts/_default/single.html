@@ -6,9 +6,7 @@
 <article class="page-shell">
   <header class="page-hero compact">
     <h1>{{ .Title }}<span class="blue-dot">.</span></h1>
-    {{ if ne .Params.layout_variant "services" }}
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    {{ end }}
   </header>
 
   {{ if eq .Params.layout_variant "process" }}
@@ -41,26 +39,22 @@
   </div>
 
   {{ else if eq .Params.layout_variant "services" }}
-  <div class="page-layout">
-    {{ with .Params.side_panel }}
-    <aside class="sticky-aside {{ .class }}">
-      {{ with .eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
-      {{ with .title }}<h2>{{ . }}<span class="blue-dot">.</span></h2>{{ end }}
-      {{ with .text }}<p>{{ . }}</p>{{ end }}
-    </aside>
-    {{ end }}
-    <div class="designed-stack">
+  <div class="services-main">
       {{ if .Content }}
       <div class="content-panel prose-content">
         {{ .Content }}
       </div>
       {{ end }}
-      {{ range .Params.service_cards }}
+    <div class="card-grid section-grid services-grid">
+      {{ range $card := .Params.service_cards }}
+      {{ $markerClass := "service-marker marker-square marker-blue" }}
+      {{ if in (slice "PE" "CK") $card.code }}{{ $markerClass = "service-marker marker-circle marker-yellow" }}{{ end }}
+      {{ if eq $card.code "SM" }}{{ $markerClass = "service-marker marker-triangle marker-red" }}{{ end }}
       <section class="process-card reveal-up">
-        <span class="step-number">{{ .code }}</span>
+        <span class="{{ $markerClass }}" data-code="{{ $card.code }}">{{ $card.code }}</span>
         <div>
-          <h2>{{ .title }}</h2>
-          <p>{{ .description }}</p>
+          <h2>{{ $card.title }}</h2>
+          <p>{{ $card.description }}</p>
         </div>
       </section>
       {{ end }}
@@ -97,4 +91,20 @@
   {{ end }}
   {{ end }}
 </article>
+{{ end }}
+
+{{ define "scripts" }}
+{{ if eq .Params.layout_variant "services" }}
+<script>
+  const servicesGrid = document.querySelector('.services-grid');
+  if (servicesGrid) {
+    const cards = Array.from(servicesGrid.children);
+    for (let index = cards.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1));
+      [cards[index], cards[randomIndex]] = [cards[randomIndex], cards[index]];
+    }
+    cards.forEach(card => servicesGrid.appendChild(card));
+  }
+</script>
+{{ end }}
 {{ end }}

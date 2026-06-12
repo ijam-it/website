@@ -1,11 +1,7 @@
 ---
 title: "Wat wij doen"
-description: "iJam werkt op het snijvlak van software, security, cloud, platform engineering en organisatieontwikkeling."
 layout_variant: "services"
-side_panel:
-  class: "outcome-panel"
-  eyebrow: "Capabilities"
-  text: "Waar senior ervaring het verschil maakt. iJam helpt bij vraagstukken waar software, security, cloud, platform engineering en organisatie elkaar raken."
+description: "Waar senior ervaring het verschil maakt. iJam helpt bij vraagstukken waar software, security, cloud, platform engineering en organisatie elkaar raken."
 service_cards:
   - code: "PE"
     title: "Platform Engineering"

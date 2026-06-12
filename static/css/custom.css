@@ -842,6 +842,63 @@ a:hover {
   font-weight: 900;
 }
 
+.service-marker {
+  align-self: start;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--ijam-black);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.marker-circle {
+  border-radius: 999px;
+}
+
+.marker-square {
+  border-radius: 0.35rem;
+}
+
+.marker-triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-right: 1.6rem solid transparent;
+  border-bottom: 3rem solid var(--ijam-red);
+  border-left: 1.6rem solid transparent;
+  color: #fff;
+  font-size: 0;
+}
+
+.marker-triangle::after {
+  content: attr(data-code);
+  position: absolute;
+  top: 1.15rem;
+  left: 50%;
+  font-size: 0.72rem;
+  font-weight: 900;
+  transform: translateX(-50%);
+}
+
+.marker-red {
+  background: var(--ijam-red);
+}
+
+.marker-blue {
+  background: var(--ijam-blue);
+  color: #fff;
+}
+
+.marker-yellow {
+  background: var(--ijam-yellow);
+}
+
+.marker-triangle.marker-red {
+  background: transparent;
+}
+
 .process-card h2,
 .designed-card h2,
 .designed-card h3 {

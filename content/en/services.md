@@ -1,11 +1,7 @@
 ---
 title: "What we do"
-description: "iJam works at the intersection of software, security, cloud, platform engineering and organisational development."
 layout_variant: "services"
-side_panel:
-  class: "outcome-panel"
-  eyebrow: "Capabilities"
-  text: "Where senior experience makes the difference. iJam helps where software, security, cloud, platform engineering and organisational change meet."
+description: "Where senior experience makes the difference. iJam helps where software, security, cloud, platform engineering and organisational change meet."
 service_cards:
   - code: "PE"
     title: "Platform Engineering"
