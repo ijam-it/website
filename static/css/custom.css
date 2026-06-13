@@ -568,8 +568,11 @@ a:hover {
 
 .prose-content h2 {
   margin-top: 2rem;
-  font-size: 2rem;
-  letter-spacing: -0.03em;
+  color: var(--ijam-blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .prose-content h3 {
@@ -927,10 +930,12 @@ a:hover {
 .designed-card h2,
 .designed-card h3 {
   margin: 0 0 0.65rem;
-  color: var(--ijam-black);
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
-  letter-spacing: -0.035em;
+  color: var(--ijam-blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
   line-height: 1.15;
+  text-transform: uppercase;
 }
 
 .process-card p,
@@ -1072,9 +1077,12 @@ a:hover {
 .team-proof strong {
   display: block;
   margin-bottom: 0.75rem;
-  font-size: clamp(1.6rem, 2.6vw, 2.35rem);
-  line-height: 1.05;
-  letter-spacing: -0.045em;
+  color: var(--ijam-blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.15;
+  text-transform: uppercase;
   overflow-wrap: anywhere;
 }
 
