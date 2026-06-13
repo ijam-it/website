@@ -82,7 +82,17 @@ Before considering a change done, build the site and check local generated links
 make check
 ```
 
-This runs Stylelint for `static/css/custom.css`, builds the site with `hugo --destination public`, normalizes generated HTML whitespace, validates generated HTML with `html-validate`, and checks local links with `lychee --offline --root-dir public "public/**/*.html"`. Use Lychee in offline mode for regular local checks. This verifies links and assets in the generated site without external network, TLS, redirect or rate-limit noise.
+This runs Stylelint for `static/css/custom.css`, builds the site with `hugo --destination public`, normalizes generated HTML whitespace, validates generated HTML with `html-validate`, checks generated HTML for empty `div`/`span`/`i` elements, and checks local links with `lychee --offline --root-dir public "public/**/*.html"`. Use Lychee in offline mode for regular local checks. This verifies links and assets in the generated site without external network, TLS, redirect or rate-limit noise.
+
+Intentional decorative empty elements must be explicit by using `aria-hidden="true"`, `hidden`, `role="presentation"`, `role="none"`, or a class allowlisted in `scripts/check-empty-elements.js`. Otherwise, remove the dead markup.
+
+For a browser-based accessibility audit, run:
+
+```sh
+make audit-a11y
+```
+
+This starts a local Hugo server and runs Pa11y against the homepage, services and team pages in Dutch and English.
 
 ## TODO
 

@@ -51,7 +51,7 @@
       {{ if in (slice "PE" "CK") $card.code }}{{ $markerClass = "service-marker marker-circle marker-yellow" }}{{ end }}
       {{ if eq $card.code "SM" }}{{ $markerClass = "service-marker marker-triangle marker-red" }}{{ end }}
       <section class="process-card reveal-up">
-        <span class="{{ $markerClass }}" data-code="{{ $card.code }}">{{ $card.code }}</span>
+        <span class="{{ $markerClass }}" data-code="{{ $card.code }}" aria-hidden="true"></span>
         <div>
           <h2>{{ $card.title }}</h2>
           <p>{{ $card.description }}</p>

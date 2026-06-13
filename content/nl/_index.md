@@ -20,15 +20,12 @@ impact:
   title: "Complexiteit omzetten in helderheid en vooruitgang"
   cards:
     - title: "Software Delivery"
-      icon: "bi bi-box"
       accent: "accent-blue"
       description: "Wij helpen organisaties van idee naar productie, met aandacht voor kwaliteit, snelheid, security en beheerbaarheid."
     - title: "Security & Resilience"
-      icon: "bi bi-link-45deg"
       accent: "accent-red"
       description: "Wij ontwerpen en verbeteren security-operaties met focus op architectuur, monitoring, detectie, threat intelligence en vulnerability management."
     - title: "Secure Platforms"
-      icon: "bi bi-shield-check"
       accent: "accent-yellow"
       description: "Wij ontwerpen en bouwen platformen waarop teams veilig, zelfstandig en voorspelbaar software kunnen leveren."
 why:

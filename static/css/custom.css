@@ -806,18 +806,6 @@ a:hover {
   color: var(--ijam-muted);
 }
 
-.card-icon {
-  display: grid;
-  place-items: center;
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 0.9rem;
-  background: transparent;
-  color: var(--ijam-black);
-  font-weight: 900;
-  font-size: 1.5rem;
-}
-
 .page-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
@@ -1302,10 +1290,6 @@ a:hover {
 .impact-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 48px rgb(11 13 16 / 8%);
-}
-
-.impact-card .card-icon {
-  display: none;
 }
 
 .impact-card.accent-red {

@@ -21,7 +21,7 @@
   </div>
   <div class="hero-visual" aria-hidden="true">
     <div class="hero-glow"></div>
-    <div class="chip-card">
+    <div class="chip-card" aria-hidden="true">
       <span class="shape triangle"></span>
       <span class="shape circle"></span>
       <span class="shape square"></span>
@@ -39,7 +39,6 @@
   <div class="impact-cards">
     {{ range $impact.cards }}
       <article class="impact-card {{ .accent }}">
-        <div class="card-icon"><i class="{{ .icon }}"></i></div>
         <h3>{{ .title }}</h3>
         <p>{{ .description }}</p>
       </article>

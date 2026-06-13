@@ -20,15 +20,12 @@ impact:
   title: "Turning complexity into clarity and progress"
   cards:
     - title: "Software Delivery"
-      icon: "bi bi-box"
       accent: "accent-blue"
       description: "We help organisations move from idea to production with a focus on quality, speed, security and maintainability."
     - title: "Security & Resilience"
-      icon: "bi bi-link-45deg"
       accent: "accent-red"
       description: "We design and improve security operations with a focus on architecture, monitoring, detection, threat intelligence and vulnerability management."
     - title: "Secure Platforms"
-      icon: "bi bi-shield-check"
       accent: "accent-yellow"
       description: "We design and build platforms that help teams deliver software securely, independently and predictably."
 why:
