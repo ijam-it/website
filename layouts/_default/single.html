@@ -45,7 +45,7 @@
         {{ .Content }}
       </div>
       {{ end }}
-    <div class="card-grid section-grid services-grid">
+    <div class="card-grid section-grid services-grid shuffle-grid">
       {{ range $card := .Params.service_cards }}
       {{ $markerClass := "service-marker marker-square marker-blue" }}
       {{ if in (slice "PE" "CK") $card.code }}{{ $markerClass = "service-marker marker-circle marker-yellow" }}{{ end }}

@@ -391,6 +391,14 @@ a:hover {
   margin-top: 2rem;
 }
 
+.js .shuffle-grid {
+  opacity: 0;
+}
+
+.js .shuffle-grid.is-shuffled {
+  opacity: 1;
+}
+
 .two-cols {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -855,6 +863,7 @@ a:hover {
 }
 
 .service-marker {
+  position: relative;
   align-self: start;
   display: grid;
   place-items: center;
@@ -863,6 +872,10 @@ a:hover {
   color: var(--ijam-black);
   font-size: 0.78rem;
   font-weight: 900;
+}
+
+.service-marker::after {
+  content: attr(data-code);
 }
 
 .marker-circle {
@@ -885,7 +898,6 @@ a:hover {
 }
 
 .marker-triangle::after {
-  content: attr(data-code);
   position: absolute;
   top: 1.15rem;
   left: 50%;

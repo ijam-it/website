@@ -7,4 +7,5 @@
     [cards[index], cards[randomIndex]] = [cards[randomIndex], cards[index]];
   }
   cards.forEach(card => grid.insertBefore(card, script));
+  grid.classList.add('is-shuffled');
 })();

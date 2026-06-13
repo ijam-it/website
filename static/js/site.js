@@ -1,5 +1,3 @@
-document.documentElement.classList.add('js');
-
 document.querySelectorAll('.cloaked-email').forEach(span => {
   const user = span.dataset.user.split('').reverse().join('');
   const domain = span.dataset.domain.split('').reverse().join('');
