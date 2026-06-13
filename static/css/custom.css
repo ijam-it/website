@@ -543,6 +543,10 @@ a:hover {
   background: #fff;
 }
 
+.standalone-panel {
+  margin-inline: auto;
+}
+
 .prose-content {
   color: var(--ijam-muted);
   font-size: 1.05rem;
@@ -953,8 +957,8 @@ a:hover {
   min-height: 260px;
 }
 
-.label-card.xsgrant-card::before { background: var(--ijam-blue); }
-.label-card.opsteady-card::before { background: #16b981; }
+.label-card.xsgrant-card::before { background: var(--ijam-red); }
+.label-card.opsteady-card::before { background: var(--ijam-yellow); }
 
 .label-logo {
   display: inline-flex;
@@ -1113,7 +1117,7 @@ a:hover {
   font-weight: 900;
 }
 
-.contact-card p {
+.contact-card p:not(.eyebrow) {
   color: var(--ijam-muted);
   max-width: 42rem;
   margin-inline: auto;
