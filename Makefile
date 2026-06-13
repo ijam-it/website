@@ -22,7 +22,7 @@ check-links: normalize-html
 
 audit-a11y:
 	@hugo server --disableFastRender --bind 127.0.0.1 --port 1313 --baseURL http://127.0.0.1:1313/ >/tmp/ijam-hugo-server.log 2>&1 & pid=$$!; \
-	trap 'kill $$pid' EXIT; \
+	trap 'kill $$pid 2>/dev/null || true' EXIT; \
 	for attempt in $$(seq 1 30); do \
 		curl -fsS http://127.0.0.1:1313/ >/dev/null 2>&1 && break; \
 		sleep 1; \
@@ -36,6 +36,10 @@ audit-a11y:
 		http://127.0.0.1:1313/en/ \
 		http://127.0.0.1:1313/diensten/ \
 		http://127.0.0.1:1313/en/services/ \
+		http://127.0.0.1:1313/werken-bij/ \
+		http://127.0.0.1:1313/en/careers/ \
+		http://127.0.0.1:1313/werken-bij/frontend-designer-ux-engineer/ \
+		http://127.0.0.1:1313/en/careers/frontend-designer-ux-engineer/ \
 		http://127.0.0.1:1313/team/ \
 		http://127.0.0.1:1313/en/team/; do \
 		npx pa11y $$url || exit $$?; \

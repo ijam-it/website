@@ -51,14 +51,14 @@ The Tella blog and summary partials are not part of the current site design. If 
 The site overrides Tella layouts to keep Hugo content in `content/` and visual structure in `layouts/` and `static/css/custom.css`.
 
 - `layouts/_default/baseof.html`: replaces the theme shell with a minimal iJam page structure, project head/header/footer partials, a main content block and an optional scripts block. Presentation only.
-- `layouts/partials/head.html`: defines project metadata, fonts, favicons, manifest and stylesheet loading. It intentionally omits analytics and Open Graph/Twitter metadata for now. Presentation/site chrome only.
+- `layouts/partials/head.html`: defines project metadata, optional `meta_title`, fonts, favicons, manifest and stylesheet loading. It intentionally omits analytics and Open Graph/Twitter metadata for now. Presentation/site chrome only.
 - `layouts/partials/header.html`: renders the logo, menu button, main menu from `hugo.toml` and the language switcher. UI labels come from `i18n/`; no page content lives here.
 - `layouts/partials/lang-switch.html`: maps localized routes between Dutch and English and renders `NL`/`EN`. Routing/UI only.
 - `layouts/partials/footer.html`: renders footer navigation from `hugo.toml`, branding/contact values from site params and small JavaScript behaviours for mobile navigation and reveal animations. Email output uses the local `cloakemail` partial. No page content lives here.
 - `layouts/partials/cloakemail.html`: overrides the `hugo-cloak-email` theme partial with validation-friendly output. It keeps the same cloaking goal, but avoids the upstream partial's inline body `<style>` tag so `html-validate` can remain strict.
 - `layouts/index.html`: replaces the Tella homepage/slider with an iJam homepage assembled from front matter in `content/*/_index.md`: hero, impact cards, why block and label teaser. Layout only; text comes from content files.
 - `layouts/_default/single.html`: renders generic pages and layout variants (`process`, `services`, `contact`) from front matter and page content. Includes service-card marker styling hooks and client-side services tile randomization. Layout only; page copy comes from content files.
-- `layouts/_default/list.html`: renders section pages, including careers/werken-bij vacancies from front matter. Layout only; text comes from content files.
+- `layouts/_default/list.html`: renders section pages, including careers/werken-bij with static intro content on the left and vacancy cards from child pages on the right. Layout only; text comes from content files.
 - `layouts/team/list.html`: renders the team page from team content files and randomizes team cards client-side. Layout only; member text and LinkedIn shortcodes come from content files.
 - `layouts/labels/list.html`: renders label cards from label content files and front matter. Layout only; label text and external URLs come from content files.
 - `layouts/shortcodes/linkedin.html`: renders a reusable LinkedIn link with Font Awesome icon. Content supplies the URL and optional label.
@@ -92,22 +92,8 @@ For a browser-based accessibility audit, run:
 make audit-a11y
 ```
 
-This starts a local Hugo server and runs Pa11y against the homepage, services and team pages in Dutch and English.
+This starts a local Hugo server and runs Pa11y against the homepage, services, careers and team pages in Dutch and English.
 
 ## TODO
 
-- welke taal? NL? EN? multi? 
-- content:
-    - tekst bij 'About'
-    - tekst bij 'Contact'
-    - Hoeveel Slides? 
-    - Mooie one-liners voor de slides
-    - willen we die 'Features' op de frontpage? wat moet daar dan staan?
-    - Vacature teksten
-- artwork:
-    - favicon.ico
-    - logo
-    - pagina vullende slides
-    - plaatjes bij vacatures
-    - icons bij 'Features'
-- later reviewen of analytics nodig is
+- Review whether analytics are needed.
