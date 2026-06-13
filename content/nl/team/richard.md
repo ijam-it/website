@@ -2,6 +2,7 @@
 title: "Richard"
 weight: 5
 description: "Security architect, operations specialist & technical lead"
+accent: "accent-red"
 build:
   render: never
 ---

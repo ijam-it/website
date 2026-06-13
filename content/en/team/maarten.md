@@ -2,6 +2,7 @@
 title: "Maarten"
 weight: 2
 description: "Organisational builder, programme manager & leader in digital change"
+accent: "accent-yellow"
 build:
   render: never
 ---

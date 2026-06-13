@@ -2,6 +2,7 @@
 title: "Jacco"
 weight: 4
 description: "Security architect, threat information specialist & product owner"
+accent: "accent-red"
 build:
   render: never
 ---

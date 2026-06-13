@@ -2,6 +2,7 @@
 title: "Maarten"
 weight: 2
 description: "Kwartiermaker, programmamanager & leider van digitale verandering"
+accent: "accent-yellow"
 build:
   render: never
 ---

@@ -21,25 +21,13 @@
     {{ range .Pages.ByWeight }}
       <article class="person-card reveal-up">
         <h2>{{ .Title }}</h2>
+        <span class="person-accent {{ .Params.accent | default "accent-blue" }}" aria-hidden="true"></span>
         {{ with .Content }}
           <div class="person-card-body">{{ . }}</div>
         {{ end }}
       </article>
     {{ end }}
+    {{ partial "shuffle-grid.html" . }}
   </div>
 </section>
-{{ end }}
-
-{{ define "scripts" }}
-<script>
-  const teamGrid = document.querySelector('.team-grid');
-  if (teamGrid) {
-    const cards = Array.from(teamGrid.children);
-    for (let index = cards.length - 1; index > 0; index -= 1) {
-      const randomIndex = Math.floor(Math.random() * (index + 1));
-      [cards[index], cards[randomIndex]] = [cards[randomIndex], cards[index]];
-    }
-    cards.forEach(card => teamGrid.appendChild(card));
-  }
-</script>
 {{ end }}

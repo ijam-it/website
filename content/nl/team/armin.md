@@ -2,6 +2,7 @@
 title: "Armin"
 weight: 1
 description: "Platform architect, AI specialist & DevOps lead"
+accent: "accent-blue"
 build:
   render: never
 ---

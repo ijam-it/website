@@ -58,6 +58,7 @@
         </div>
       </section>
       {{ end }}
+      {{ partial "shuffle-grid.html" . }}
     </div>
   </div>
 
@@ -91,20 +92,4 @@
   {{ end }}
   {{ end }}
 </article>
-{{ end }}
-
-{{ define "scripts" }}
-{{ if eq .Params.layout_variant "services" }}
-<script>
-  const servicesGrid = document.querySelector('.services-grid');
-  if (servicesGrid) {
-    const cards = Array.from(servicesGrid.children);
-    for (let index = cards.length - 1; index > 0; index -= 1) {
-      const randomIndex = Math.floor(Math.random() * (index + 1));
-      [cards[index], cards[randomIndex]] = [cards[randomIndex], cards[index]];
-    }
-    cards.forEach(card => servicesGrid.appendChild(card));
-  }
-</script>
-{{ end }}
 {{ end }}

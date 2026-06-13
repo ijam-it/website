@@ -443,6 +443,26 @@ a:hover {
   line-height: 1.2;
 }
 
+.person-accent {
+  display: block;
+  width: 2.6rem;
+  height: 0.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 999px;
+}
+
+.person-accent.accent-red {
+  background: var(--ijam-red);
+}
+
+.person-accent.accent-yellow {
+  background: var(--ijam-yellow);
+}
+
+.person-accent.accent-blue {
+  background: var(--ijam-blue);
+}
+
 .info-card h2 a::before,
 .info-card h3 a::before,
 .person-card h2 a::before {

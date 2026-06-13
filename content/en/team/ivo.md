@@ -2,6 +2,7 @@
 title: "Ivo"
 weight: 3
 description: "Platform lead, technical product owner & DevOps specialist"
+accent: "accent-yellow"
 build:
   render: never
 ---
