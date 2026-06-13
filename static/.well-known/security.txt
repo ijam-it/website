@@ -1,0 +1,3 @@
+Contact: mailto:info@ijam-it.nl
+Preferred-Languages: nl, en
+Canonical: https://ijam-it.nl/.well-known/security.txt
