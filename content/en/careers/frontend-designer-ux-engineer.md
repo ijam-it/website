@@ -23,4 +23,4 @@ You will work on digital products where usability, reliability and clarity matte
 - build or guide frontend implementations
 - improve existing digital products
 - collaborate with engineers, product owners and clients
-- contribute to design quality within iJam and our labels
+- contribute to design quality within iJam® and our labels

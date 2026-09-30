@@ -3,12 +3,12 @@
 
 <svg
    width="820mm"
-   height="1242mm"
-   viewBox="0 0 820 1242"
+   height="1227.6672mm"
+   viewBox="0 0 820 1227.6672"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
-   sodipodi:docname="logo.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="logo-ijamr-it-solutions-2.svg"
    inkscape:export-filename="logo.png"
    inkscape:export-xdpi="13.088567"
    inkscape:export-ydpi="13.088567"
@@ -27,13 +27,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.12551319"
-     inkscape:cx="4852.0797"
-     inkscape:cy="3031.5539"
-     inkscape:window-width="1920"
-     inkscape:window-height="1006"
+     inkscape:cx="1151.2734"
+     inkscape:cy="2075.4791"
+     inkscape:window-width="1541"
+     inkscape:window-height="1008"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      showgrid="false" />
   <defs
@@ -209,21 +209,21 @@
        rx="22.500002"
        ry="22.5" />
     <rect
-       style="fill:#1769d6;fill-opacity:1;stroke-width:0.999999"
+       style="fill:#0000ff;fill-opacity:1;stroke-width:0.999999"
        id="rect1029124"
        width="160"
        height="160"
        x="440"
        y="220" />
     <circle
-       style="fill:#f4be23;fill-opacity:1;stroke-width:0.264583"
+       style="fill:#ffff00;fill-opacity:1;stroke-width:0.264583"
        id="path1"
        cx="410"
        cy="540"
        r="100" />
     <path
        sodipodi:type="star"
-       style="fill:#d9232e;fill-opacity:1;stroke-width:0.264583"
+       style="fill:#ff0000;fill-opacity:1;stroke-width:0.264583"
        id="path2"
        inkscape:flatsided="true"
        sodipodi:sides="3"
@@ -241,22 +241,21 @@
        transform="matrix(0.33504635,0,0,0.33504635,226.17554,286.60909)" />
     <text
        xml:space="preserve"
-       transform="matrix(19.844266,0,0,19.844266,-13761.146,-77118.15)"
+       transform="matrix(19.844266,0,0,19.844266,-13754.822,-77143.951)"
        id="text3"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4441px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32,wght=700';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32, 'wght' 700;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#000000;fill-opacity:1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.2219px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32,wght=700';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32, 'wght' 700;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#000000;fill-opacity:1"><tspan
          x="693.1543"
-         y="3939.3938"
-         id="tspan2">iJam IT</tspan></text>
+         y="3941.0394"
+         id="tspan2">iJam®</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:148.167px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke-width:0.264583"
-       x="121.50162"
-       y="1239.3195"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:158.75px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+       x="11.846008"
+       y="1225.8069"
        id="text4"><tspan
          sodipodi:role="line"
-         id="tspan3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:148.167px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans, @opsz=32';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32;stroke-width:0.264583"
-         x="121.50162"
-         y="1239.3195">solutions</tspan></text>
+         id="tspan1"
+         x="11.846008"
+         y="1225.8069">IT solutions</tspan></text>
   </g>
 </svg>

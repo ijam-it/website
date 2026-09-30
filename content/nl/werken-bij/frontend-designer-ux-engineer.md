@@ -23,4 +23,4 @@ Je werkt aan portalen, dashboards, workflows en formulieren waar gebruiksgemak, 
 - bouwen of begeleiden van frontend implementaties
 - verbeteren van bestaande digitale producten
 - samenwerken met engineers, product owners en klanten
-- bijdragen aan designkwaliteit binnen iJam en onze labels
+- bijdragen aan designkwaliteit binnen iJam® en onze labels

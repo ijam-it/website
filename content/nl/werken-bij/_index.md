@@ -1,9 +1,9 @@
 ---
-title: "Werken bij iJam"
+title: "Werken bij iJam®"
 description: "Voor senior professionals die autonomie, kwaliteit en inhoud belangrijk vinden."
 ---
 
-Bij iJam werk je aan vraagstukken die ertoe doen. We zoeken mensen die verantwoordelijkheid nemen, kwaliteit belangrijk vinden en energie krijgen van complexe digitale omgevingen.
+Bij iJam® werk je aan vraagstukken die ertoe doen. We zoeken mensen die verantwoordelijkheid nemen, kwaliteit belangrijk vinden en energie krijgen van complexe digitale omgevingen.
 
 Wij zijn een klein senior team. Dat betekent veel autonomie, directe samenwerking en ruimte om echt invloed te hebben op de oplossingen die we bouwen.
 

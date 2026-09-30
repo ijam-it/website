@@ -24,4 +24,4 @@ Je achtergrond kan liggen in security, software development, platform engineerin
 - adviseren over architectuur, security en delivery
 - begeleiden van teams en technische keuzes
 - bouwen aan platformen, applicaties of security capabilities
-- bijdragen aan de ontwikkeling van iJam, xsGrant en Opsteady
+- bijdragen aan de ontwikkeling van iJam®, xsGrant en Opsteady

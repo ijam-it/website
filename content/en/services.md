@@ -1,7 +1,7 @@
 ---
 title: "What we do"
 layout_variant: "services"
-description: "Where senior experience makes the difference. iJam helps where software, security, cloud, platform engineering and organisational change meet."
+description: "Where senior experience makes the difference. iJam® helps where software, security, cloud, platform engineering and organisational change meet."
 service_cards:
   - code: "PE"
     title: "Platform Engineering"

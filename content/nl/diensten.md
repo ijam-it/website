@@ -1,7 +1,7 @@
 ---
 title: "Wat wij doen"
 layout_variant: "services"
-description: "Waar senior ervaring het verschil maakt. iJam helpt bij vraagstukken waar software, security, cloud, platform engineering en organisatie elkaar raken."
+description: "Waar senior ervaring het verschil maakt. iJam® helpt bij vraagstukken waar software, security, cloud, platform engineering en organisatie elkaar raken."
 service_cards:
   - code: "PE"
     title: "Platform Engineering"
