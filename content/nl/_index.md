@@ -1,15 +1,15 @@
 ---
-title: "iJam IT Solutions"
+title: "iJam® IT Solutions"
 description: "Wij helpen organisaties veilige, schaalbare en toekomstbestendige digitale oplossingen bouwen."
 hero:
-  eyebrow: "iJam IT Solutions"
+  eyebrow: "iJam® IT Solutions"
   title:
     - "Experienced minds."
     - "Reliable solutions"
   lead: "Wij helpen organisaties veilige, schaalbare en toekomstbestendige digitale oplossingen bouwen."
-  text: "iJam is een collectief van senior IT-professionals met diepe ervaring in software delivery, security, cloud, platform engineering en digitale transformatie."
+  text: "iJam® is een collectief van senior IT-professionals met diepe ervaring in software delivery, security, cloud, platform engineering en digitale transformatie."
   actions:
-    - label: "Maak kennis met iJam"
+    - label: "Maak kennis met iJam®"
       url: "team/"
       style: "primary"
     - label: "Bekijk onze aanpak"
@@ -29,18 +29,18 @@ impact:
       accent: "accent-yellow"
       description: "Wij ontwerpen en bouwen platformen waarop teams veilig, zelfstandig en voorspelbaar software kunnen leveren."
 why:
-  eyebrow: "Waarom iJam"
+  eyebrow: "Waarom iJam®"
   title: "Senior betrokkenheid, zonder onnodige lagen"
   paragraphs:
-    - "Bij iJam werk je direct met senior professionals die verantwoordelijkheid nemen. Geen grote teams met veel overdracht, maar ervaren denkers die schakelen tussen strategie, architectuur, uitvoering en organisatie."
+    - "Bij iJam® werk je direct met senior professionals die verantwoordelijkheid nemen. Geen grote teams met veel overdracht, maar ervaren denkers die schakelen tussen strategie, architectuur, uitvoering en organisatie."
     - "Wij zijn op ons best in omgevingen waar veel samenkomt: techniek, security, processen, mensen, governance en delivery. Juist daar brengen wij rust, richting en voortgang."
   action:
     label: "Bekijk alle diensten"
     url: "diensten/"
 labels_teaser:
   eyebrow: "Onze gespecialiseerde labels"
-  title: "Labels binnen het iJam ecosysteem"
-  text: "Naast iJam bouwen we gerichte labels voor specifieke producten en managed platformen."
+  title: "Labels binnen het iJam® ecosysteem"
+  text: "Naast iJam® bouwen we gerichte labels voor specifieke producten en managed platformen."
   action:
     label: "Bekijk alle labels"
     url: "labels/"

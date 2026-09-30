@@ -24,4 +24,4 @@ You do not have to fit into a single box. Strong experience in security, softwar
 - advise on architecture, security and delivery
 - guide teams and technical decisions
 - build platforms, applications or security capabilities
-- contribute to the development of iJam, xsGrant and Opsteady
+- contribute to the development of iJam®, xsGrant and Opsteady

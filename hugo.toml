@@ -1,5 +1,5 @@
 baseURL = "https://ijam-it.nl"
-title = "iJam IT Solutions"
+title = "iJam® IT Solutions"
 locale = "nl-NL"
 defaultContentLanguage = "nl"
 defaultContentLanguageInSubdir = false
@@ -9,7 +9,7 @@ enableRobotsTXT = true
 cleanDestinationDir = true
 
 [params]
-  description = "iJam helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
+  description = "iJam® helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
   tagline = "Experienced minds. Reliable solutions."
   showBlog = false
   mainSections = []
@@ -17,12 +17,12 @@ cleanDestinationDir = true
 
   [params.logo]
     main = "img/logo/logo.png"
-    alt = "iJam IT Solutions"
+    alt = "iJam® IT Solutions"
     size = "h-14"
 
   [params.site]
-    name = "iJam"
-    legalName = "iJam IT Solutions"
+    name = "iJam®"
+    legalName = "iJam® IT Solutions"
 
   [params.icon]
     fontawesome = true
@@ -32,10 +32,10 @@ cleanDestinationDir = true
     label = "Nederlands"
     locale = "nl-NL"
     weight = 1
-    title = "iJam IT Solutions"
+    title = "iJam® IT Solutions"
     contentDir = "content/nl"
     [languages.nl.params]
-      description = "iJam helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
+      description = "iJam® helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
       contactEmail = "info@ijam-it.nl"
       footerIntro = "Experienced minds. Reliable solutions."
 
@@ -43,10 +43,10 @@ cleanDestinationDir = true
     label = "English"
     locale = "en-GB"
     weight = 2
-    title = "iJam IT Solutions"
+    title = "iJam® IT Solutions"
     contentDir = "content/en"
     [languages.en.params]
-      description = "iJam helps organisations make complex digital challenges simpler, safer and easier to manage."
+      description = "iJam® helps organisations make complex digital challenges simpler, safer and easier to manage."
       contactEmail = "info@ijam-it.nl"
       footerIntro = "Experienced minds. Reliable solutions."
 
