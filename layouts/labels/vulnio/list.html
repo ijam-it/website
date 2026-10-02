@@ -1,0 +1,135 @@
+{{ define "main" }}
+<main class="vulnio-site">
+  <section class="flyer flyer-assessment" aria-labelledby="assessment-title">
+    <div class="flyer-inner">
+      <a class="vulnio-logo" href="#estate-impact" aria-label="{{ .Params.brand }}">
+        Vuln<span>i</span>o
+      </a>
+
+      <header class="hero">
+        <p class="kicker">{{ .Params.assessment.kicker }}</p>
+        <h1 id="assessment-title">{{ .Params.assessment.title_before }} <strong>{{ .Params.assessment.title_accent }}</strong><br>{{ .Params.assessment.title_after }}</h1>
+        <p class="lede"><strong>{{ .Params.assessment.lede_strong }}</strong> {{ .Params.assessment.lede }}</p>
+      </header>
+
+      <article class="product-window assessment-window">
+        <header class="window-bar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="warning-mark" aria-hidden="true"></span>
+          <span>{{ .Params.assessment.breadcrumb_before }} <b>/</b> <strong>{{ .Params.assessment.breadcrumb_after }}</strong></span>
+          <span class="live"><i aria-hidden="true"></i>{{ .Params.live }}</span>
+        </header>
+        <div class="window-body">
+          <div class="assessment-heading">
+            <p class="mono">{{ .Params.assessment.cve }}</p>
+            <div class="assessment-badges">
+              <span class="pill pill-danger">{{ .Params.assessment.score }}</span>
+              <span class="pill pill-warning">{{ .Params.assessment.status }}</span>
+            </div>
+            <h2>{{ .Params.assessment.product }}</h2>
+          </div>
+
+          <div class="evidence-grid">
+            <div class="column evidence-column">
+              <h3>{{ .Params.assessment.evidence_label }}</h3>
+              {{ range .Params.assessment.evidence }}
+              <div class="signal {{ if .uncertain }}uncertain{{ end }}">
+                <span class="signal-icon {{ .icon }}" aria-hidden="true"></span>
+                <span>{{ .name }}</span>
+              </div>
+              {{ end }}
+            </div>
+            <div class="column conditions-column">
+              <h3>{{ .Params.assessment.conditions_label }}</h3>
+              {{ range .Params.assessment.conditions }}
+              <div class="condition {{ if .uncertain }}uncertain{{ end }}">
+                <span aria-hidden="true">{{ if .uncertain }}?{{ else }}✓{{ end }}</span>
+                <span>{{ .name }}</span>
+              </div>
+              {{ end }}
+            </div>
+            <div class="column verdict-column">
+              <h3>{{ .Params.assessment.verdict_label }}</h3>
+              <div class="verdict-ring">
+                <div><strong>{{ .Params.assessment.verdict_score }}</strong><span>{{ .Params.assessment.verdict }}</span></div>
+              </div>
+              <p>{{ .Params.assessment.gap }}</p>
+            </div>
+            <svg class="connector-map" viewBox="0 0 1000 390" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M225 80 C265 80 265 80 305 80 M225 155 C270 155 260 80 305 80 M225 230 L305 230 M225 305 L305 305" />
+              <path d="M674 80 C745 80 735 190 785 210 M674 155 C742 155 733 205 785 210 M674 230 C730 230 748 215 785 210" />
+              <path class="uncertain-line" d="M674 305 C742 305 744 235 785 220" />
+              <circle cx="265" cy="80" r="5"/><circle cx="265" cy="230" r="5"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <div class="outcome-grid">
+        {{ range .Params.assessment.outcomes }}
+        <div class="outcome {{ .class }}"><span aria-hidden="true">{{ .symbol }}</span><strong>{{ .label }}</strong></div>
+        {{ end }}
+      </div>
+    </div>
+
+  </section>
+
+  <section id="estate-impact" class="flyer flyer-estate" aria-labelledby="estate-title">
+    <div class="flyer-inner">
+      <header class="hero estate-hero">
+        <p class="kicker">{{ .Params.estate.kicker }}</p>
+        <h2 id="estate-title"><span>{{ .Params.estate.title_before }}</span><br>{{ .Params.estate.title_start }} <strong>{{ .Params.estate.title_accent }}</strong></h2>
+        <p class="lede"><strong>{{ .Params.estate.lede_strong }}</strong> {{ .Params.estate.lede }}</p>
+      </header>
+
+      <article class="product-window estate-window">
+        <header class="window-bar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="warning-mark" aria-hidden="true"></span>
+          <span>{{ .Params.estate.breadcrumb_before }} <b>/</b> <strong>{{ .Params.estate.breadcrumb_after }}</strong></span>
+          <span class="live"><i aria-hidden="true"></i>{{ .Params.live }}</span>
+        </header>
+        <div class="window-body">
+          <div class="ask-field"><span aria-hidden="true"></span><p>{{ .Params.estate.question_before }} <strong>{{ .Params.estate.question_cve }}</strong> {{ .Params.estate.question_after }}</p><i aria-hidden="true"></i></div>
+          <div class="impact-heading"><h3>{{ .Params.estate.impact_label }}</h3><p><strong>{{ .Params.estate.matched_number }}</strong> {{ .Params.estate.matched_text }}</p></div>
+          <div class="impact-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="impact-stats">
+            {{ range .Params.estate.impact }}
+            <div class="impact-stat {{ .class }}">
+              <strong>{{ .number }}</strong><h4>{{ .title }}</h4><p>{{ .description }}</p>
+            </div>
+            {{ end }}
+          </div>
+          <div class="fix-first-heading"><h3>{{ .Params.estate.fix_label }}</h3><p><strong>{{ .Params.estate.fix_number }}</strong> {{ .Params.estate.fix_text }}</p></div>
+          <ol class="fix-list">
+            {{ range .Params.estate.systems }}
+            <li>
+              <span class="rank">{{ .rank }}</span><strong>{{ .name }}</strong>
+              <div class="tags">{{ range .tags }}<span class="{{ .class }}">{{ .label }}</span>{{ end }}</div>
+            </li>
+            {{ end }}
+          </ol>
+          <p class="schedule-note"><strong>{{ .Params.estate.more }}</strong> {{ .Params.estate.schedule }}</p>
+        </div>
+      </article>
+
+      <div class="feature-grid">
+        {{ range .Params.estate.features }}
+        <article>
+          <span class="feature-icon {{ .icon }}" aria-hidden="true"></span>
+          <h3>{{ .title }}</h3><p>{{ .text }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <footer class="assessment-footer">
+    <p>{{ .Params.assessment.product_by }}</p>
+    <a class="ijam-lockup" href="{{ .Params.site_url }}">
+      <img src="{{ "/img/logo/logo.png" | relURL }}" alt="iJam® IT solutions">
+    </a>
+    <p><span>{{ .Params.assessment.learn_more }}</span><a href="{{ .Params.site_url }}"><strong>{{ .Params.site_label }}</strong></a></p>
+  </footer>
+</main>
+{{ end }}

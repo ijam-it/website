@@ -976,6 +976,7 @@ a:hover {
 
 .label-card.xsgrant-card::before { background: var(--ijam-red); }
 .label-card.opsteady-card::before { background: var(--ijam-yellow); }
+.label-card.vulnio-card::before { background: var(--ijam-blue); }
 
 .label-logo {
   display: inline-flex;
