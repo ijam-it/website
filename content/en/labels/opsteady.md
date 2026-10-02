@@ -1,6 +1,6 @@
 ---
 title: "Opsteady"
-weight: 2
+weight: 3
 description: "A fully managed software delivery platform from code to production with built-in security and observability."
 external_url: "https://opsteady.com/"
 card_class: "opsteady-card"

@@ -1,6 +1,6 @@
 ---
 title: "Vulnio"
-weight: 3
+weight: 1
 description: "Evidence-backed vulnerability assessment that shows what is affected, what is not, and which evidence is still missing."
 external_url: "/en/labels/vulnio/"
 card_class: "vulnio-card"

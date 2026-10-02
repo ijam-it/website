@@ -1,6 +1,6 @@
 ---
 title: "xsGrant"
-weight: 1
+weight: 2
 description: "Just-in-time access management dat permanente rechten vervangt door veilige, tijdelijke toegang."
 external_url: "https://xsgrant.com/"
 card_class: "xsgrant-card"
