@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Description }}">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; upgrade-insecure-requests">
+  <title>{{ .Title }} | iJam® IT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+  <link rel="stylesheet" href="{{ "/css/vulnio.css" | relURL }}">
+</head>
+<body>
+  {{ block "main" . }}{{ end }}
+</body>
+</html>
