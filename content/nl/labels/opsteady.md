@@ -1,6 +1,6 @@
 ---
 title: "Opsteady"
-weight: 2
+weight: 3
 description: "Een volledig beheerd software delivery-platform van code tot productie, met ingebouwde security en observability."
 external_url: "https://opsteady.com/"
 card_class: "opsteady-card"

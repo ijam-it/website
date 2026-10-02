@@ -86,14 +86,16 @@ a:focus-visible {
 
 .vulnio-logo span::before {
   position: absolute;
-  top: 0.12em;
-  left: 50%;
-  width: 0.16em;
-  height: 0.16em;
-  border-radius: 50%;
-  background: var(--red);
+  z-index: 1;
+  top: 0.1em;
+  left: 65%;
+  width: 0;
+  height: 0;
+  border-right: 0.18em solid transparent;
+  border-bottom: 0.30em solid var(--red);
+  border-left: 0.18em solid transparent;
   content: "";
-  transform: translateX(-16%);
+  transform: translateX(-50%);
 }
 
 .hero {
@@ -275,6 +277,7 @@ a:focus-visible {
 .column {
   position: relative;
   z-index: 2;
+  min-width: 0;
 }
 
 .column h3 {
@@ -829,7 +832,7 @@ a:focus-visible {
   border-radius: 0.25rem;
 }
 
-@media (width <= 760px) {
+@media (width <= 1024px) {
   .flyer-inner {
     width: min(100% - 1.5rem, 36rem);
   }
@@ -916,6 +919,12 @@ a:focus-visible {
 
   .feature-grid article {
     min-height: 0;
+  }
+}
+
+@media (orientation: landscape) and (pointer: coarse) {
+  body {
+    touch-action: pan-y;
   }
 }
 

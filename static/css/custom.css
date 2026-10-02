@@ -259,7 +259,7 @@ a:hover {
   border-radius: 2rem;
   background: none;
   border: none;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .chip-card {
@@ -976,7 +976,7 @@ a:hover {
 
 .label-card.xsgrant-card::before { background: var(--ijam-red); }
 .label-card.opsteady-card::before { background: var(--ijam-yellow); }
-.label-card.vulnio-card::before { background: var(--ijam-blue); }
+.label-card.vulnio-card::before { background: var(--ijam-red); }
 
 .label-logo {
   display: inline-flex;
