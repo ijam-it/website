@@ -277,6 +277,7 @@ a:focus-visible {
 .column {
   position: relative;
   z-index: 2;
+  min-width: 0;
 }
 
 .column h3 {
@@ -831,7 +832,7 @@ a:focus-visible {
   border-radius: 0.25rem;
 }
 
-@media (width <= 760px) {
+@media (width <= 1024px) {
   .flyer-inner {
     width: min(100% - 1.5rem, 36rem);
   }
@@ -918,6 +919,12 @@ a:focus-visible {
 
   .feature-grid article {
     min-height: 0;
+  }
+}
+
+@media (orientation: landscape) and (pointer: coarse) {
+  body {
+    touch-action: pan-y;
   }
 }
 

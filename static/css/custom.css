@@ -259,7 +259,7 @@ a:hover {
   border-radius: 2rem;
   background: none;
   border: none;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .chip-card {
