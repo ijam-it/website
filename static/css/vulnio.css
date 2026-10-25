@@ -42,6 +42,23 @@ a:focus-visible {
   overflow: hidden;
 }
 
+.vulnio-video {
+  width: min(100%, 60rem);
+  overflow: hidden;
+  margin: 0 auto clamp(2.2rem, 5vw, 3.3rem);
+  border: 1px solid #293666;
+  border-radius: 1.4rem;
+  background: #080b1c;
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 28%);
+}
+
+.vulnio-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 .flyer {
   position: relative;
   min-height: 100vh;

@@ -12,6 +12,12 @@
         <p class="lede"><strong>{{ .Params.assessment.lede_strong }}</strong> {{ .Params.assessment.lede }}</p>
       </header>
 
+      <figure class="vulnio-video">
+        <video controls preload="metadata" playsinline poster="{{ "/img/vulnio-poster.jpg" | relURL }}" aria-label="{{ .Params.brand }} video">
+          <source src="{{ "/video/vulnio.mp4" | relURL }}" type="video/mp4">
+        </video>
+      </figure>
+
       <article class="product-window assessment-window">
         <header class="window-bar">
           <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
