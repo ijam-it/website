@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build:css": "tailwindcss -i themes/tella/assets/css/style.css -o static/css/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test scripts/test-*.js"
   },
   "keywords": [],
   "devDependencies": {
