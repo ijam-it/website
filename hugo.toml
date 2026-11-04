@@ -10,15 +10,12 @@ cleanDestinationDir = true
 
 [params]
   description = "iJam® helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
-  tagline = "Experienced minds. Reliable solutions."
   showBlog = false
   mainSections = []
-  googleFonts = true
 
   [params.logo]
     main = "img/logo/logo.png"
     alt = "iJam® IT Solutions"
-    size = "h-14"
 
   [params.site]
     name = "iJam®"

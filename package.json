@@ -7,18 +7,13 @@
   "author": "wamo <ainznino@pm.me>",
   "license": "MIT",
   "scripts": {
-    "build:css": "tailwindcss -i themes/tella/assets/css/style.css -o static/css/style.css",
     "test": "node --test scripts/test-*.js"
   },
   "keywords": [],
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.11",
-    "@tailwindcss/forms": "^0.5.11",
-    "@tailwindcss/typography": "^0.5.19",
     "html-validate": "^11.5.3",
     "pa11y": "^9.1.1",
     "stylelint": "^17.13.0",
-    "stylelint-config-standard": "^40.0.0",
-    "tailwindcss": "^4.1.11"
+    "stylelint-config-standard": "^40.0.0"
   }
 }

@@ -10,16 +10,11 @@ $ git submodule add https://github.com/opera7133/tella.git themes/tella
 $ git submodule add https://github.com/martignoni/hugo-cloak-email.git themes/hugo-cloak-email
 $ git submodule update --init --recursive
 $ git submodule update --remote --merge
-$ cp themes/tella/exampleSite/package.json .
 $ npm install
-$ npm run build:css
 
 $ magick raw/logo.svg -resize 423x640 static/img/logo/logo.png
 $ magick raw/logo-notekst.svg -define icon:auto-resize=256,64,48,32,16 static/favicon.ico
-$ magick raw/logo-notekst.svg -resize 16x16 static/favicon-16x16.png
-$ magick raw/logo-notekst.svg -resize 32x32 static/favicon-32x32.png
 $ magick raw/logo-notekst.svg -resize 64x64 static/favicon-64x64.png
-$ magick raw/logo-notekst.svg -resize 96x96 static/favicon-96x96.png
 $ magick raw/logo-notekst.svg -resize 180x180 static/apple-touch-icon.png
 $ magick raw/logo-notekst.svg -resize 192x192 static/web-app-manifest-192x192.png
 $ magick raw/logo-notekst.svg -resize 512x512 static/web-app-manifest-512x512.png
@@ -29,6 +24,8 @@ $ hugo server
 ```
 
 ## Styling Guide
+
+Stylesheets in `static/css/` are maintained directly. `style.css` contains the shared reset and base styles, `custom.css` styles the main site, and `vulnio.css` styles the Vulnio pages. No Tailwind or PostCSS build step is required.
 
 Use these exact iJam® colors for logos, favicons, blocks, accents and related projects:
 
@@ -62,11 +59,12 @@ The site overrides Tella layouts to keep Hugo content in `content/` and visual s
 - `layouts/team/list.html`: renders the team page from team content files and randomizes team cards client-side. Layout only; member text and LinkedIn shortcodes come from content files.
 - `layouts/labels/list.html`: renders label cards from label content files and front matter. Layout only; label text and external URLs come from content files.
 - `layouts/shortcodes/linkedin.html`: renders a reusable LinkedIn link with Font Awesome icon. Content supplies the URL and optional label.
-- `layouts/shortcodes/ghcode.html`: legacy GitHub link shortcode kept for possible future use. It is currently unused by content.
 
 Content separation review: current layouts do not contain business/page body copy. Branding comes from `hugo.toml`, UI labels come from `i18n/`, and page text comes from `content/` or front matter. Remaining hardcoded strings are structural values or shortcode fallback labels.
 
 ## Content Notes
+
+Label cards use front matter in `content/*/labels/*.md`; their Markdown bodies supply the RSS feeds.
 
 Team member cards can show a LinkedIn link by adding this shortcode as the last line of the team member content:
 
