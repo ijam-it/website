@@ -8,6 +8,7 @@
   {{- partial "header.html" . -}}
   <main id="main-content">
     {{- block "main" . }}{{- end }}
+    {{- partial "closing-cta.html" . }}
   </main>
   {{- partial "footer.html" . -}}
   {{ block "scripts" . }}{{ end }}

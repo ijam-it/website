@@ -1,0 +1,13 @@
+{{- /*
+  Maps a pillar key to its colour, shape and CSS hooks.
+  delivery = blue square, security = red triangle, platform = yellow circle.
+  Anything else falls back to neutral (black square).
+*/ -}}
+{{- $map := dict
+  "delivery" (dict "key" "delivery" "accent" "accent-blue" "shape" "is-square" "marker" "marker-square marker-blue")
+  "security" (dict "key" "security" "accent" "accent-red" "shape" "is-triangle" "marker" "marker-triangle marker-red")
+  "platform" (dict "key" "platform" "accent" "accent-yellow" "shape" "is-circle" "marker" "marker-circle marker-yellow")
+  "neutral" (dict "key" "neutral" "accent" "accent-black" "shape" "is-square" "marker" "marker-square marker-black")
+-}}
+{{- $key := . | default "neutral" -}}
+{{- return (or (index $map $key) (index $map "neutral")) -}}

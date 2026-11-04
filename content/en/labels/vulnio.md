@@ -3,7 +3,8 @@ title: "Vulnio"
 weight: 1
 description: "Evidence-backed vulnerability assessment that shows what is affected, what is not, and which evidence is still missing."
 external_url: "/en/labels/vulnio/"
-card_class: "vulnio-card"
+pillar: "security"
+category: "Vulnerability assessment"
 visit_label: "Explore Vulnio"
 intro: "Vulnio helps security and infrastructure teams move from generic vulnerability lists to decisions grounded in the reality of their estate."
 focus_points:

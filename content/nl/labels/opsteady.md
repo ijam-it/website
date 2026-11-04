@@ -3,8 +3,9 @@ title: "Opsteady"
 weight: 3
 description: "Een volledig beheerd software delivery-platform van code tot productie, met ingebouwde security en observability."
 external_url: "https://opsteady.com/"
-card_class: "opsteady-card"
-visit_label: "Naar Opsteady"
+pillar: "platform"
+category: "Beheerd platform"
+visit_label: "Bezoek Opsteady"
 intro: "Opsteady is bedoeld voor teams die een productie-klaar software delivery-platform willen zonder de kosten en doorlooptijd van het zelf samenstellen en beheren ervan."
 focus_points:
   - "Brengt de volledige route van code tot productie samen in één beheerd platform."

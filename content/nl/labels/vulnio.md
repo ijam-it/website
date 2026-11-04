@@ -3,7 +3,8 @@ title: "Vulnio"
 weight: 1
 description: "Evidence-based vulnerability assessment die laat zien wat kwetsbaar is, wat niet en welk bewijs nog ontbreekt."
 external_url: "/labels/vulnio/"
-card_class: "vulnio-card"
+pillar: "security"
+category: "Vulnerability assessment"
 visit_label: "Ontdek Vulnio"
 intro: "Vulnio helpt security- en infrastructuurteams om generieke kwetsbaarhedenlijsten om te zetten naar beslissingen op basis van hun eigen IT-landschap."
 focus_points:
