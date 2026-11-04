@@ -8,6 +8,11 @@ theme = ["hugo-cloak-email", "tella"]
 enableRobotsTXT = true
 cleanDestinationDir = true
 
+# Class-based syntax highlighting: Hugo's default inline styles are blocked by the CSP.
+# Regenerate static/css/syntax.css with: hugo gen chromastyles --style=github-dark
+[markup.highlight]
+  noClasses = false
+
 [params]
   description = "iJam® helpt organisaties complexe digitale vraagstukken eenvoudiger, veiliger en beter beheersbaar te maken."
   showBlog = false
@@ -20,9 +25,6 @@ cleanDestinationDir = true
   [params.site]
     name = "iJam®"
     legalName = "iJam® IT Solutions"
-
-  [params.icon]
-    fontawesome = true
 
 [languages]
   [languages.nl]

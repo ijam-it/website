@@ -21,6 +21,7 @@
     {{ range .Pages.ByWeight }}
       <article class="person-card reveal-up">
         <h2>{{ .Title }}</h2>
+        {{ with .Description }}<p class="person-role">{{ . }}</p>{{ end }}
         <span class="person-accent {{ .Params.accent | default "accent-blue" }}" aria-hidden="true"></span>
         {{ with .Content }}
           <div class="person-card-body">{{ . }}</div>

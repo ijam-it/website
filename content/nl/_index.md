@@ -19,13 +19,13 @@ impact:
   title: "Complexiteit omzetten in helderheid en vooruitgang"
   cards:
     - title: "Software Delivery"
-      accent: "accent-blue"
+      pillar: "delivery"
       description: "Wij helpen organisaties van idee naar productie, met aandacht voor kwaliteit, snelheid, security en beheerbaarheid."
     - title: "Security & Resilience"
-      accent: "accent-red"
+      pillar: "security"
       description: "Wij ontwerpen en verbeteren security-operaties met focus op architectuur, monitoring, detectie, threat intelligence en vulnerability management."
     - title: "Secure Platforms"
-      accent: "accent-yellow"
+      pillar: "platform"
       description: "Wij ontwerpen en bouwen platformen waarop teams veilig, zelfstandig en voorspelbaar software kunnen leveren."
 why:
   eyebrow: "Waarom iJam®"
@@ -43,15 +43,4 @@ labels_teaser:
   action:
     label: "Bekijk alle labels"
     url: "labels/"
-  cards:
-    - title: "xsGrant"
-      eyebrow: "Security-oplossing"
-      description: "Just-in-time access management om risico door permanente privileged access weg te nemen."
-      url: "https://www.xsgrant.com/"
-      label: "Bezoek xsGrant"
-    - title: "Opsteady"
-      eyebrow: "Beheerd platform"
-      description: "Een managed software delivery-platform voor veilig ontwikkelen, releasen en opereren."
-      url: "https://www.opsteady.com/"
-      label: "Bezoek Opsteady"
 ---

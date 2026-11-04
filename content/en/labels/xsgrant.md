@@ -3,7 +3,8 @@ title: "xsGrant"
 weight: 2
 description: "Just-in-time access management that replaces standing privileges with secure, time-bound access."
 external_url: "https://xsgrant.com/"
-card_class: "xsgrant-card"
+pillar: "security"
+category: "Access management"
 visit_label: "Visit xsGrant"
 intro: "xsGrant is built for organisations that want to reduce privileged access risk without replacing their existing identity and directory stack."
 focus_points:

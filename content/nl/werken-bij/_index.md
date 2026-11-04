@@ -1,6 +1,10 @@
 ---
 title: "Werken bij iJam®"
 description: "Voor senior professionals die autonomie, kwaliteit en inhoud belangrijk vinden."
+apply:
+  eyebrow: "Solliciteren"
+  title: "Interesse? Laten we kennismaken"
+  text: "Stuur een korte mail met wie je bent, waar je energie van krijgt en een link naar je LinkedIn of cv. We reageren persoonlijk."
 ---
 
 Bij iJam® werk je aan vraagstukken die ertoe doen. We zoeken mensen die verantwoordelijkheid nemen, kwaliteit belangrijk vinden en energie krijgen van complexe digitale omgevingen.

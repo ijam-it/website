@@ -19,13 +19,13 @@ impact:
   title: "Turning complexity into clarity and progress"
   cards:
     - title: "Software Delivery"
-      accent: "accent-blue"
+      pillar: "delivery"
       description: "We help organisations move from idea to production with a focus on quality, speed, security and maintainability."
     - title: "Security & Resilience"
-      accent: "accent-red"
+      pillar: "security"
       description: "We design and improve security operations with a focus on architecture, monitoring, detection, threat intelligence and vulnerability management."
     - title: "Secure Platforms"
-      accent: "accent-yellow"
+      pillar: "platform"
       description: "We design and build platforms that help teams deliver software securely, independently and predictably."
 why:
   eyebrow: "Why iJam®"
@@ -43,15 +43,4 @@ labels_teaser:
   action:
     label: "View all labels"
     url: "labels/"
-  cards:
-    - title: "xsGrant"
-      eyebrow: "Security product"
-      description: "Just-in-time access management for removing standing privileged access risk."
-      url: "https://www.xsgrant.com/"
-      label: "Visit xsGrant"
-    - title: "Opsteady"
-      eyebrow: "Managed platform"
-      description: "A managed software delivery platform for secure development, deployment and operations."
-      url: "https://www.opsteady.com/"
-      label: "Visit Opsteady"
 ---

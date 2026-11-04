@@ -3,8 +3,9 @@ title: "xsGrant"
 weight: 2
 description: "Just-in-time access management dat permanente rechten vervangt door veilige, tijdelijke toegang."
 external_url: "https://xsgrant.com/"
-card_class: "xsgrant-card"
-visit_label: "Naar xsGrant"
+pillar: "security"
+category: "Access management"
+visit_label: "Bezoek xsGrant"
 intro: "xsGrant is bedoeld voor organisaties die risico rond privileged access willen verkleinen zonder hun bestaande identity- en directorystack te vervangen."
 focus_points:
   - "Vervangt permanente verhoogde rechten door veilige, tijdelijke toegang."

@@ -1,0 +1,27 @@
+{{- /* Wraps Markdown tables for horizontal scrolling and uses classes instead of inline
+       style="text-align" (blocked by the Content-Security-Policy) for column alignment. */ -}}
+<div class="table-wrap">
+<table
+  {{- range $k, $v := .Attributes }}
+    {{- if $v }} {{ printf "%s=%q" $k $v | safeHTMLAttr }}{{ end }}
+  {{- end }}>
+  <thead>
+    {{- range .THead }}
+    <tr>
+      {{- range . }}
+      <th{{ with .Alignment }}{{ if ne . "left" }} class="align-{{ . }}"{{ end }}{{ end }}>{{ .Text }}</th>
+      {{- end }}
+    </tr>
+    {{- end }}
+  </thead>
+  <tbody>
+    {{- range .TBody }}
+    <tr>
+      {{- range . }}
+      <td{{ with .Alignment }}{{ if ne . "left" }} class="align-{{ . }}"{{ end }}{{ end }}>{{ .Text }}</td>
+      {{- end }}
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+</div>
