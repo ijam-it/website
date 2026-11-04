@@ -2,7 +2,6 @@
 title: "iJam® IT Solutions"
 description: "We help organisations build secure, scalable and future-ready digital solutions."
 hero:
-  eyebrow: "iJam® IT Solutions"
   title:
     - "Experienced minds."
     - "Reliable solutions"
