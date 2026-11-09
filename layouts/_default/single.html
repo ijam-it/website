@@ -39,26 +39,34 @@
   </div>
 
   {{ else if eq .Params.layout_variant "services" }}
+  {{ $pillarOrder := slice "delivery" "security" "platform" "neutral" }}
   <div class="services-main">
       {{ if .Content }}
       <div class="content-panel prose-content">
         {{ .Content }}
       </div>
       {{ end }}
-    <div class="card-grid section-grid services-grid shuffle-grid">
-      {{ range $card := .Params.service_cards }}
-      {{ $markerClass := "service-marker marker-square marker-blue" }}
-      {{ if in (slice "PE" "CK") $card.code }}{{ $markerClass = "service-marker marker-circle marker-yellow" }}{{ end }}
-      {{ if eq $card.code "SM" }}{{ $markerClass = "service-marker marker-triangle marker-red" }}{{ end }}
+    <ul class="pillar-legend">
+      {{ range site.Home.Params.impact.cards }}
+        <li>{{ partial "pillar-shape.html" .pillar }}{{ .title }}</li>
+      {{ end }}
+      {{ with .Params.pillar_neutral_label }}
+        <li>{{ partial "pillar-shape.html" "neutral" }}{{ . }}</li>
+      {{ end }}
+    </ul>
+    <div class="card-grid section-grid services-grid">
+      {{ range $pillar := $pillarOrder }}
+      {{ range $card := where $.Params.service_cards "pillar" $pillar }}
+      {{ $p := partial "pillar.html" $card.pillar }}
       <section class="process-card reveal-up">
-        <span class="{{ $markerClass }}" data-code="{{ $card.code }}" aria-hidden="true"></span>
+        <span class="service-marker {{ $p.marker }}" data-code="{{ $card.code }}" aria-hidden="true"></span>
         <div>
           <h2>{{ $card.title }}</h2>
           <p>{{ $card.description }}</p>
         </div>
       </section>
       {{ end }}
-      {{ partial "shuffle-grid.html" . }}
+      {{ end }}
     </div>
   </div>
 

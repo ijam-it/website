@@ -3,7 +3,8 @@ title: "Opsteady"
 weight: 3
 description: "A fully managed software delivery platform from code to production with built-in security and observability."
 external_url: "https://opsteady.com/"
-card_class: "opsteady-card"
+pillar: "platform"
+category: "Managed platform"
 visit_label: "Visit Opsteady"
 intro: "Opsteady is for teams that want a production-ready software delivery platform without the cost and delay of assembling and running one themselves."
 focus_points:

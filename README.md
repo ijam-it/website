@@ -39,6 +39,10 @@ Use these exact iJam® colors for logos, favicons, blocks, accents and related p
 - Blue: `#1769d6`
 - Background: `#ffffff`
 
+`custom.css` starts with design tokens (colour, type scale, spacing, radius, shadow). Use the tokens instead of raw values. White cards and panels share one surface recipe, defined in the "Surfaces" block, so add new card types to those selector lists rather than restyling borders, radius and shadow per component.
+
+Syntax highlighting uses CSS classes (`markup.highlight.noClasses = false`), because the Content-Security-Policy blocks Hugo's default inline styles. `static/css/syntax.css` is generated with `hugo gen chromastyles --style=github-dark` and only loads on pages that contain highlighted code.
+
 ## Theme Notes
 
 The Tella blog and summary partials are not part of the current site design. If blog, recent-post or theme summary features are enabled later, review the inherited partials first: they may reference theme placeholder assets such as `/img/default.jpg`.
@@ -53,18 +57,23 @@ The site overrides Tella layouts to keep Hugo content in `content/` and visual s
 - `layouts/partials/lang-switch.html`: maps localized routes between Dutch and English and renders `NL`/`EN`. Routing/UI only.
 - `layouts/partials/footer.html`: renders footer navigation from `hugo.toml`, branding/contact values from site params and small JavaScript behaviours for mobile navigation and reveal animations. Email output uses the local `cloakemail` partial. No page content lives here.
 - `layouts/partials/cloakemail.html`: overrides the `hugo-cloak-email` theme partial with validation-friendly output. It keeps the same cloaking goal, but avoids the upstream partial's inline body `<style>` tag so `html-validate` can remain strict.
-- `layouts/index.html`: replaces the Tella homepage/slider with an iJam® homepage assembled from front matter in `content/*/_index.md`: hero, impact cards, why block and label teaser. Layout only; text comes from content files.
-- `layouts/_default/single.html`: renders generic pages and layout variants (`process`, `services`, `contact`) from front matter and page content. Includes service-card marker styling hooks and client-side services tile randomization. Layout only; page copy comes from content files.
+- `layouts/index.html`: replaces the Tella homepage/slider with an iJam® homepage assembled from front matter in `content/*/_index.md`: hero, impact cards, why block and label teaser. The label teaser cards are generated from the label pages in `content/*/labels/` (title, `category`, description, `external_url`, `visit_label`). Layout only; text comes from content files.
+- `layouts/_default/single.html`: renders generic pages and layout variants (`process`, `services`, `contact`) from front matter and page content. Service cards are ordered by pillar (delivery, security, platform, neutral) with a pillar legend built from the homepage impact cards. Layout only; page copy comes from content files.
 - `layouts/_default/list.html`: renders section pages, including careers/werken-bij with static intro content on the left and vacancy cards from child pages on the right. Layout only; text comes from content files.
 - `layouts/team/list.html`: renders the team page from team content files and randomizes team cards client-side. Layout only; member text and LinkedIn shortcodes come from content files.
+- `layouts/partials/pillar.html` / `pillar-shape.html`: map a `pillar` key (`delivery` = blue square, `security` = red triangle, `platform` = yellow circle, `neutral` = black square) to accent, shape and marker classes. Used by homepage impact cards, service cards and label cards.
+- `layouts/partials/closing-cta.html`: closing call-to-action above the footer on every page except contact. Text comes from `contact_panel` in the contact page, or from `apply` in the careers section front matter for careers pages.
 - `layouts/labels/list.html`: renders label cards from label content files and front matter. Layout only; label text and external URLs come from content files.
-- `layouts/shortcodes/linkedin.html`: renders a reusable LinkedIn link with Font Awesome icon. Content supplies the URL and optional label.
+- `layouts/shortcodes/linkedin.html`: renders a reusable LinkedIn link with an inline SVG icon (no icon font). Content supplies the URL and optional label.
+- `layouts/_default/_markup/render-table.html`: wraps Markdown tables in a scrollable `.table-wrap` and uses `align-*` classes instead of inline `text-align` styles, which the Content-Security-Policy blocks.
 
 Content separation review: current layouts do not contain business/page body copy. Branding comes from `hugo.toml`, UI labels come from `i18n/`, and page text comes from `content/` or front matter. Remaining hardcoded strings are structural values or shortcode fallback labels.
 
 ## Content Notes
 
-Label cards use front matter in `content/*/labels/*.md`; their Markdown bodies supply the RSS feeds.
+Label cards use front matter in `content/*/labels/*.md` (including `pillar` and `category`); their Markdown bodies supply the RSS feeds.
+
+Homepage impact cards, service cards and labels each set a `pillar` key; see `layouts/partials/pillar.html`.
 
 Team member cards can show a LinkedIn link by adding this shortcode as the last line of the team member content:
 

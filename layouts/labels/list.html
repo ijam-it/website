@@ -4,10 +4,11 @@
     <h1>{{ .Title }}<span class="blue-dot">.</span></h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
-  <div class="card-grid two-cols">
+  <div class="card-grid three-cols">
     {{ range .Pages.ByWeight }}
       {{ $label := . }}
-      <article id="{{ $label.File.TranslationBaseName }}" class="info-card label-card {{ $label.Params.card_class }}">
+      {{ $p := partial "pillar.html" $label.Params.pillar }}
+      <article id="{{ $label.File.TranslationBaseName }}" class="info-card label-card {{ $p.accent }}">
         <div class="label-logo">{{ $label.Title }}</div>
         <p class="label-summary">{{ $label.Description }}</p>
         {{ with $label.Params.intro }}
@@ -19,7 +20,7 @@
           </ul>
         {{ end }}
         {{ with $label.Params.external_url }}
-          <div class="hero-actions"><a class="button secondary" href="{{ . }}">{{ $label.Params.visit_label | default (i18n "visit") }}</a></div>
+          <div class="hero-actions"><a class="button secondary" href="{{ . }}">{{ $label.Params.visit_label | default (i18n "visit") }} &rarr;</a></div>
         {{ end }}
       </article>
     {{ end }}

@@ -1,0 +1,23 @@
+{{- /*
+  Closing call-to-action shown above the footer. Opt-in only:
+  - Careers pages show the `apply` block from the careers section front matter.
+  - Other pages show it only when they set `closing_cta: true`, reusing the
+    `contact_panel` text from the contact page.
+*/ -}}
+{{- $cta := "" -}}
+{{- with .CurrentSection -}}{{- with .Params.apply -}}{{- $cta = . -}}{{- end -}}{{- end -}}
+{{- if and (not $cta) .Params.closing_cta -}}
+  {{- with site.GetPage "/contact" -}}{{- $cta = .Params.contact_panel -}}{{- end -}}
+{{- end -}}
+{{- with $cta -}}
+<section class="closing-cta" aria-labelledby="closing-cta-title">
+  <div>
+    {{ with .eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h2 id="closing-cta-title">{{ .title }}<span class="blue-dot">.</span></h2>
+  </div>
+  <div>
+    {{ with .text }}<p>{{ . }}</p>{{ end }}
+    {{ partial "cloakemail" (dict "address" site.Params.contactEmail "class" "button primary") }}
+  </div>
+</section>
+{{- end -}}

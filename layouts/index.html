@@ -38,8 +38,9 @@
   </div>
   <div class="impact-cards">
     {{ range $impact.cards }}
-      <article class="impact-card {{ .accent }}">
-        <h3>{{ .title }}</h3>
+      {{ $p := partial "pillar.html" .pillar }}
+      <article class="impact-card {{ $p.accent }}">
+        <h3>{{ partial "pillar-shape.html" .pillar }}<span>{{ .title }}</span></h3>
         <p>{{ .description }}</p>
       </article>
     {{ end }}
@@ -66,15 +67,17 @@
     {{ with $labels.text }}<p>{{ . }}</p>{{ end }}
     {{ with $labels.action }}<a class="button secondary block-action" href="{{ .url | relLangURL }}">{{ .label }} &rarr;</a>{{ end }}
   </div>
-  <div class="labels-directory two-cols">
-    {{ range $labels.cards }}
-      <a class="label-link-card" href="{{ .url }}">
-        <span class="label-link-eyebrow">{{ .eyebrow }}</span>
-        <h3>{{ .title }}</h3>
-        <p>{{ .description }}</p>
-        <span class="label-link-action">{{ .label }} &rarr;</span>
+  {{ with site.GetPage "/labels" }}
+  <div class="labels-directory three-cols">
+    {{ range .Pages.ByWeight }}
+      <a class="label-link-card" href="{{ .Params.external_url }}">
+        <span class="label-link-eyebrow">{{ partial "pillar-shape.html" .Params.pillar }}{{ .Params.category }}</span>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Description }}</p>
+        <span class="label-link-action">{{ .Params.visit_label | default (i18n "visit") }} &rarr;</span>
       </a>
     {{ end }}
   </div>
+  {{ end }}
 </section>
 {{ end }}
